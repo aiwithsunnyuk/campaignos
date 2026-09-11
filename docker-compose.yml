@@ -1,0 +1,10 @@
+services:
+  campaignos:
+    build: .
+    container_name: campaignos
+    ports:
+      - "8501:8501"
+    environment:
+      APP_NAME: CampaignOS
+      DATA_DIR: data/synthetic
+    restart: unless-stopped

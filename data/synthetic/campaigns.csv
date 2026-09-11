@@ -1,0 +1,26 @@
+campaign_id,campaign_name,business_type,product_id,region,objective,status,budget,start_date
+CMP-0001,DevOps Leadership 2026,SAP Training,PROD-008,WW,Engagement,Completed,7291,2026-08-14
+CMP-0002,Agentic AI Awareness,Training & Education,PROD-005,WW,Engagement,Draft,45466,2026-05-03
+CMP-0003,Gen AI Transformation,Event Decoration,PROD-009,AMEA,Nurture,Planning,12848,2026-08-05
+CMP-0004,Azure DevOps Skills,SAP Training,PROD-010,Europe,Event Registration,Running,41454,2026-01-25
+CMP-0005,PMP Career Accelerator,SAP Training,PROD-009,WW,Event Registration,Planning,55466,2026-07-06
+CMP-0006,AI Scrum Master Program,SAP Training,PROD-007,APAC,Awareness,Running,12364,2026-07-12
+CMP-0007,SAP S/4HANA Skills,SAP Training,PROD-001,Europe,Lead Generation,Planning,28447,2026-06-25
+CMP-0008,Professional Information Subscription,Professional Information Services,PROD-004,Europe,Customer Expansion,Planning,50434,2026-06-07
+CMP-0009,Smart Farming Equipment Demo,Professional Information Services,PROD-008,AMEA,Awareness,Draft,67965,2026-08-13
+CMP-0010,Event Decoration Season,Legal Services,PROD-010,Europe,Engagement,Completed,21239,2026-06-06
+CMP-0011,Legal Consultation Awareness,Legal Services,PROD-009,WW,Customer Expansion,Completed,37073,2026-05-16
+CMP-0012,Product Owner AI Readiness,Event Decoration,PROD-005,Europe,Lead Generation,Running,44268,2026-07-07
+CMP-0013,APAC Technology Leaders,Farming Machinery,PROD-005,APAC,Nurture,Draft,9738,2026-02-06
+CMP-0014,Europe Digital Transformation,Training & Education,PROD-010,WW,Lead Generation,Running,31342,2026-05-05
+CMP-0015,AMEA Business Growth,Event Decoration,PROD-005,WW,Event Registration,Draft,13948,2026-06-12
+CMP-0016,WW Customer Engagement,Training & Education,PROD-001,Europe,Customer Expansion,Completed,46212,2026-03-06
+CMP-0017,IT Decision Maker Nurture,Professional Information Services,PROD-010,Europe,Engagement,Completed,7419,2026-08-12
+CMP-0018,High Intent Re-engagement,SAP Training,PROD-001,WW,Event Registration,Completed,64955,2026-01-17
+CMP-0019,Webinar Conversion Program,Training & Education,PROD-009,APAC,Event Registration,Draft,61202,2026-08-08
+CMP-0020,Customer Expansion,Legal Services,PROD-003,APAC,Event Registration,Completed,71644,2026-02-22
+CMP-0021,Lead Generation Sprint,Training & Education,PROD-004,Europe,Customer Expansion,Planning,18892,2026-06-04
+CMP-0022,Product Education Series,Event Decoration,PROD-010,APAC,Event Registration,Planning,71303,2026-08-04
+CMP-0023,Regional Demand Generation,Professional Information Services,PROD-003,WW,Engagement,Completed,64278,2026-01-09
+CMP-0024,Partner Enablement,Professional Information Services,PROD-004,APAC,Customer Expansion,Running,53625,2026-02-14
+CMP-0025,Lifecycle Nurture,Legal Services,PROD-009,APAC,Event Registration,Planning,28381,2026-08-22

@@ -1,0 +1,6 @@
+streamlit>=1.40,<2
+pandas>=2.2,<3
+numpy==1.26.4
+pyarrow==14.0.2
+Faker>=30,<40
+pytest>=8,<9
