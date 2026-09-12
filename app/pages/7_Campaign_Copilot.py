@@ -54,9 +54,12 @@ health = provider.health()
 status_col, model_col = st.columns(2)
 with status_col:
     if health:
-    st.success("Local LLM available")
-else 
-    st.info("Local LLM unavailable. CampaignOS will use its deterministic fallback engine.")
+        st.success("Local LLM available")
+    else:
+        st.info(
+            "Local LLM unavailable. CampaignOS will use its deterministic fallback engine."
+        )
+
 with model_col:
     st.write(f"**Configured model:** `{provider.model}`")
 st.write("No cloud API key is required. If Ollama is running locally, CampaignOS uses it; otherwise the same workflow remains demonstrable through the deterministic fallback.")
