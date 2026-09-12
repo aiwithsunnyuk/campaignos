@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.content.models import Content
+from src.content.models import Content, PersonalizationToken
 from src.content.engine import (
     prepare_preview,
     content_summary,
@@ -48,6 +48,23 @@ def build_content(
         subject=subject,
         preheader=preheader,
         html_body=html_body,
+        personalization_tokens=[
+            PersonalizationToken(
+                token="first_name",
+                description="Contact first name",
+                default_value="there",
+            ),
+            PersonalizationToken(
+                token="last_name",
+                description="Contact last name",
+                default_value="",
+            ),
+            PersonalizationToken(
+                token="product_name",
+                description="Campaign/product name",
+                default_value="CampaignOS",
+            ),
+        ],
     )
 
 
