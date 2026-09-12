@@ -7,3 +7,12 @@ __pycache__/
 .env
 data/generated/
 *.db
+
+# Security and secret material
+*.env
+*.pem
+*.key
+credentials.*
+secrets.*
+*_credentials.*
+*_secrets.*
