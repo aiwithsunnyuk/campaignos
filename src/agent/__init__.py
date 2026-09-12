@@ -9,6 +9,7 @@ from .models import (
 )
 from .analyzer import CampaignIntelligenceAnalyzer
 from .decision_engine import CampaignDecisionEngine
+from .orchestrator import CampaignAgentOrchestrator
 
 __all__ = [
     "AgentAction",
@@ -20,4 +21,5 @@ __all__ = [
     "ObservationSeverity",
     "CampaignIntelligenceAnalyzer",
     "CampaignDecisionEngine",
+    "CampaignAgentOrchestrator",
 ]
