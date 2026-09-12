@@ -1,4 +1,4 @@
-from src.agent.models import (
+from .models import (
     AgentAction,
     AgentDecision,
     AgentObservation,
@@ -7,6 +7,8 @@ from src.agent.models import (
     DecisionStatus,
     ObservationSeverity,
 )
+from .analyzer import CampaignIntelligenceAnalyzer
+from .decision_engine import CampaignDecisionEngine
 
 __all__ = [
     "AgentAction",
@@ -16,4 +18,6 @@ __all__ = [
     "AgentRequest",
     "DecisionStatus",
     "ObservationSeverity",
+    "CampaignIntelligenceAnalyzer",
+    "CampaignDecisionEngine",
 ]
