@@ -63,6 +63,7 @@ def test_campaign_snapshot():
         campaign_id="CAM-HAC-001",
         campaign_name="Career Switch to Azure Data",
         program_id="HAC-001",
+        program_name="Azure Data Engineer",
         region="India",
         primary_channel="WhatsApp",
     )

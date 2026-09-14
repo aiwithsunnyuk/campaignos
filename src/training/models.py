@@ -60,13 +60,21 @@ class TrainingCampaign:
     campaign_id: str
     campaign_name: str
     program_id: str
+    program_name: str
+    campaign_type: str = "Live Training"
     objective: str = "Training enquiry"
+    career_persona: str = ""
     region: str = "Global"
+    session_date: str = ""
+    session_time: str = ""
+    delivery_mode: str = "Verify with client"
     primary_channel: str = "WhatsApp"
+    secondary_channel: str = "Email"
     status: str = "Draft"
     audience: str = ""
     session_label: str = ""
     cta: str = "Course enquiry"
+    notes: str = ""
     metadata: dict[str, Any] = field(default_factory=dict)
 
     def validate(self) -> None:
@@ -76,6 +84,8 @@ class TrainingCampaign:
             raise ValueError("campaign_name is required")
         if not self.program_id.strip():
             raise ValueError("program_id is required")
+        if not self.program_name.strip():
+            raise ValueError("program_name is required")
 
 
 @dataclass(frozen=True)

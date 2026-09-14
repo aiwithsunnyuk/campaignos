@@ -16,7 +16,7 @@ def test_build_training_campaign():
         session_label="14 Sep 2026 • 6:30 AM • 60 minutes",
     )
     assert campaign.status == "Draft"
-    assert campaign.primary_channel == "WhatsApp"
+    assert campaign.primary_channel == "WhatsApp Community"
     assert campaign.program_id == "P-001"
 
 

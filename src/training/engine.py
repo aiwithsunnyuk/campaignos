@@ -44,7 +44,7 @@ def score_training_intent(signals: Mapping[str, bool | int | float]) -> tuple[in
         stage = LeadIntentStage.HIGH_INTENT
     elif score >= 50:
         stage = LeadIntentStage.ENGAGED
-    elif score >= 30:
+    elif score >= 15:
         stage = LeadIntentStage.INTERESTED
     else:
         stage = LeadIntentStage.AWARENESS
