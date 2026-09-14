@@ -110,24 +110,66 @@ def identify_persona(
     interest: str,
     experience_level: str,
 ) -> CareerPersona | None:
-    """Select the strongest matching persona using explicit profile fields only."""
+    """Select the strongest persona using normalized career-intent signals."""
+
+    def normalize(value: str) -> str:
+        value = value.lower().strip()
+        replacements = {
+            "ai / gen ai": "ai",
+            "gen ai": "ai",
+            "qa / testing": "testing",
+            "quality assurance": "testing",
+            "software testing": "testing",
+            "data engineering": "data engineering",
+            "cybersecurity": "cybersecurity",
+            "cyber security": "cybersecurity",
+            "devops": "devops",
+            "scrum master": "scrum master",
+            "product owner": "product owner",
+        }
+        return replacements.get(value, value)
+
     values = {
-        "background": background.lower().strip(),
-        "career_goal": career_goal.lower().strip(),
-        "interest": interest.lower().strip(),
-        "experience_level": experience_level.lower().strip(),
+        "background": normalize(background),
+        "career_goal": normalize(career_goal),
+        "interest": normalize(interest),
+        "experience_level": normalize(experience_level),
     }
+
     best: tuple[int, CareerPersona] | None = None
+
     for persona in CAREER_PERSONAS:
         score = 0
-        if values["background"] in {v.lower() for v in persona.backgrounds}:
+
+        persona_backgrounds = {normalize(v) for v in persona.backgrounds}
+        persona_goals = {normalize(v) for v in persona.goals}
+        persona_interests = {normalize(v) for v in persona.interests}
+        persona_experience = {normalize(v) for v in persona.experience_levels}
+
+        if values["background"] in persona_backgrounds:
             score += 2
-        if values["career_goal"] in {v.lower() for v in persona.goals}:
+
+        if values["career_goal"] in persona_goals:
             score += 5
-        if values["interest"] in {v.lower() for v in persona.interests}:
+        elif any(
+            values["career_goal"] in goal or goal in values["career_goal"]
+            for goal in persona_goals
+        ):
+            score += 5
+
+        if values["interest"] in persona_interests:
             score += 3
-        if values["experience_level"] in {v.lower() for v in persona.experience_levels}:
+        elif any(
+            values["interest"] in interest_value
+            or interest_value in values["interest"]
+            for interest_value in persona_interests
+        ):
+            score += 3
+
+        if values["experience_level"] in persona_experience:
             score += 1
+
         if best is None or score > best[0]:
             best = (score, persona)
+
     return best[1] if best and best[0] > 0 else None
