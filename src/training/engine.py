@@ -57,32 +57,83 @@ def recommend_programs(
     *,
     limit: int = 3,
 ) -> list[ProgramRecommendation]:
-    """Recommend programs using transparent tag/goal matching."""
+    """Recommend programmes using persona-aware, transparent scoring.
+
+    Scoring is deterministic and based only on explicit profile fields and
+    catalogue metadata. It does not infer sensitive attributes.
+    """
+    from .personas import identify_persona
+
     profile.validate()
+    persona = identify_persona(
+        background=profile.background,
+        career_goal=profile.career_goal,
+        interest=profile.interest,
+        experience_level=profile.experience_level,
+    )
+
     scored: list[ProgramRecommendation] = []
-    query = {
-        profile.background.lower(),
-        profile.career_goal.lower(),
-        profile.interest.lower(),
-        profile.experience_level.lower(),
-        profile.learning_preference.lower(),
-        profile.region.lower(),
-    }
     for program in programs:
         program.validate()
         score = 0
         reasons: list[str] = []
-        tags = {item.lower() for item in (*program.audience_tags, *program.career_paths)}
-        for term in query:
-            if not term:
-                continue
-            matches = [tag for tag in tags if term in tag or tag in term]
-            if matches:
+        tags = {item.lower().strip() for item in (*program.audience_tags, *program.career_paths)}
+        categories = {item.lower().strip() for item in (program.category,)}
+        name = program.name.lower()
+
+        if persona:
+            if profile.career_goal.lower().strip() in {v.lower() for v in persona.goals}:
+                goal_matches = [
+                    path for path in program.career_paths
+                    if path.lower().strip() in {v.lower() for v in persona.goals}
+                ]
+                if goal_matches:
+                    score += 35
+                    reasons.append(f"Supports {profile.career_goal} career goal")
+
+            if program.category.lower().strip() in {
+                value.lower().strip() for value in persona.priority_categories
+            }:
                 score += 20
-                reasons.append(f"Matches {term}")
-        if profile.interest.lower() in program.name.lower():
-            score += 25
-            reasons.append("Program name matches stated interest")
+                reasons.append(f"Fits {persona.name} priority category")
+
+            if profile.background.lower().strip() in tags:
+                score += 15
+                reasons.append(f"Fits {profile.background} audience")
+
+            if profile.experience_level.lower().strip() in tags:
+                score += 10
+                reasons.append(f"Fits {profile.experience_level} experience level")
+
+            if profile.interest.lower().strip() in tags or profile.interest.lower().strip() in name:
+                score += 15
+                reasons.append(f"Aligns with {profile.interest} interest")
+
+            if program.name in persona.foundational_programs:
+                score += 5
+                reasons.append("Useful foundation for this career persona")
+        else:
+            # Backward-compatible transparent fallback for profiles outside
+            # the predefined persona set.
+            query = {
+                profile.background.lower(),
+                profile.career_goal.lower(),
+                profile.interest.lower(),
+                profile.experience_level.lower(),
+                profile.learning_preference.lower(),
+                profile.region.lower(),
+            }
+            for term in query:
+                if not term:
+                    continue
+                matches = [tag for tag in tags if term in tag or tag in term]
+                if matches:
+                    score += 15
+                    reasons.append(f"Matches {term}")
+            if profile.interest.lower() in name:
+                score += 20
+                reasons.append("Program name matches stated interest")
+
         score = min(100, score)
         if score > 0:
             scored.append(
@@ -93,9 +144,9 @@ def recommend_programs(
                     reasons=tuple(reasons),
                 )
             )
+
     scored.sort(key=lambda item: (-item.score, item.program_name))
     return scored[: max(1, limit)]
-
 
 def build_campaign_snapshot(
     campaign: TrainingCampaign,

@@ -12,6 +12,7 @@ if str(ROOT) not in sys.path:
 
 from src.training.campaign_builder import build_training_campaign, render_training_message
 from src.training.engine import recommend_programs
+from src.training.personas import identify_persona
 from src.training.models import TrainingLeadProfile, TrainingProgram
 
 st.set_page_config(page_title="Training Growth Hub", page_icon="🎓", layout="wide")
