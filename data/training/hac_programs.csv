@@ -1,0 +1,20 @@
+program_id,name,category,audience_tags,career_paths,delivery_mode,active
+HAC-001,Azure Data Engineer,Data & Cloud,"career switcher|IT professional|data aspirant|cloud aspirant","data engineering|cloud|analytics|IT transition",Verify with client,true
+HAC-002,Dev-Sec-Ops,DevOps & Security,"IT professional|DevOps aspirant|cloud aspirant","DevOps|cloud|security|IT upskilling",Verify with client,true
+HAC-003,Hands-on Python Training,Development & Data,"career switcher|beginner|developer aspirant|data aspirant","Python development|automation|data|IT transition",Verify with client,true
+HAC-004,Quality Assurance / Manual Testing,Quality Assurance,"career switcher|QA aspirant|beginner|IT professional","QA|software testing|IT transition",Verify with client,true
+HAC-005,AI/ML with Gen AI,AI & Machine Learning,"AI aspirant|data professional|IT professional","AI|machine learning|GenAI|IT upskilling",Verify with client,true
+HAC-006,Cybersecurity + Tools,Cybersecurity,"cybersecurity aspirant|IT professional|career switcher","cybersecurity|security|IT transition",Verify with client,true
+HAC-007,Generative AI + Agentic AI with Azure Cloud,AI & Cloud,"AI aspirant|Azure aspirant|IT professional","GenAI|agentic AI|Azure|AI upskilling",Verify with client,true
+HAC-008,Power BI Data Analyst (BI + MySQL),Data & Analytics,"career switcher|data aspirant|analyst|beginner","data analytics|BI|Power BI|IT transition",Verify with client,true
+HAC-009,Tech Business Analyst,Business Analysis,"career switcher|business professional|IT professional","business analysis|requirements|IT transition",Verify with client,true
+HAC-010,Scrum Master Training,Agile & Product,"career switcher|project professional|IT professional","Scrum Master|Agile|IT transition",Verify with client,true
+HAC-011,Product Owner Training,Agile & Product,"career switcher|product professional|IT professional","Product Owner|Agile|product management",Verify with client,true
+HAC-012,PMP Certification,Project Management,"project professional|manager|career switcher","project management|PMP|delivery",Verify with client,true
+HAC-013,SAFe Agilist 6.0,Agile & Product,"Agile professional|Scrum Master|manager|IT professional","SAFe|enterprise agility|Agile",Verify with client,true
+HAC-014,Data Science,Data & AI,"data aspirant|technical professional|career switcher","data science|machine learning|analytics",Verify with client,true
+HAC-015,Digital Marketing,Digital Marketing,"career switcher|marketing professional|beginner","digital marketing|SEO|social media|IT transition",Verify with client,true
+HAC-016,Professional Scrum Master I (PSM I),Agile Certification,"Scrum aspirant|Agile professional|IT professional","PSM|Scrum Master|Agile",Verify with client,true
+HAC-017,Professional Scrum Product Owner I (PSPO I),Agile Certification,"Product Owner aspirant|Agile professional|IT professional","PSPO|Product Owner|Agile",Verify with client,true
+HAC-018,Certified LeSS Practitioner,Agile Certification,"Agile professional|Scrum professional|manager","LeSS|Agile scaling|product development",Verify with client,true
+HAC-019,Automation Testing,Quality Assurance,"QA aspirant|IT professional|tester","automation testing|QA|software testing",Verify with client,true
