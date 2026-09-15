@@ -101,7 +101,7 @@ with left:
     selected_id = st.selectbox(
         "Training program",
         options=list(program_map),
-        format_func=lambda value: program_map[value].program_name,
+        format_func=lambda value: program_map[value].name,
     )
     region = st.selectbox("Region", ["India", "Australia", "APAC", "Europe", "Global"])
     campaign_type = st.selectbox("Campaign type", CAMPAIGN_TYPES)
