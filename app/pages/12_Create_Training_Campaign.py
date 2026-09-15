@@ -49,17 +49,44 @@ if catalogue.empty:
 
 def row_to_program(row: pd.Series) -> TrainingProgram:
     def split_list(value: str) -> list[str]:
+        if pd.isna(value):
+            return []
         return [item.strip() for item in str(value).split("|") if item.strip()]
 
+    def first_available(*keys: str, default: str = "") -> str:
+        for key in keys:
+            if key in row.index and not pd.isna(row[key]):
+                return str(row[key])
+        return default
+
+    program_id = first_available("program_id")
+    program_name = first_available("program_name", "name", default=program_id)
+    category = first_available("category")
+    subcategory = first_available(
+        "subcategory",
+        default=category,
+    )
+    career_paths = split_list(
+        first_available("career_paths")
+    )
+    target_personas = split_list(
+        first_available("target_personas", "audience_tags")
+    )
+    tags = split_list(
+        first_available("tags", "audience_tags")
+    )
+    delivery_mode = first_available(
+        "delivery_mode",
+        default="Verify with client",
+    )
+
     return TrainingProgram(
-        program_id=str(row["program_id"]),
-        program_name=str(row["program_name"]),
-        category=str(row["category"]),
-        subcategory=str(row["subcategory"]),
-        career_paths=split_list(row["career_paths"]),
-        target_personas=split_list(row["target_personas"]),
-        tags=split_list(row["tags"]),
-        delivery_mode=str(row["delivery_mode"]),
+        program_id=program_id,
+        name=program_name,
+        category=category,
+        audience_tags=tuple(target_personas),
+        career_paths=tuple(career_paths),
+        delivery_mode=delivery_mode,
     )
 
 

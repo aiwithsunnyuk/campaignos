@@ -61,7 +61,7 @@ with tabs[0]:
     c1, c2, c3 = st.columns(3)
     with c1:
         region = st.selectbox("Target region", ["India", "Australia", "APAC", "Europe", "AMEA", "Global"], index=0)
-        channel = st.selectbox("Primary channel", ["WhatsApp", "Email", "Social", "Website"])
+        channel = st.selectbox("Primary channel", ["WhatsApp Community", "Email", "Social", "Website"])
     with c2:
         session_date = st.date_input("Session date", value=date.today())
         session_time = st.text_input("Session time", value="6:30 AM")
