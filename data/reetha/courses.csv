@@ -1,0 +1,13 @@
+course_id,tenant_id,name,category,delivery_mode,duration,price,status,created_at,updated_at
+CRS-001,reetha,Generative AI,AI,hybrid,4 weeks,12000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-002,reetha,Data Science,Data,hybrid,8 weeks,18000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-003,reetha,Python Programming,Programming,online,6 weeks,12000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-004,reetha,Cloud Computing,Cloud,hybrid,4 weeks,45000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-005,reetha,AWS Certification,Cloud,classroom,4 weeks,12000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-006,reetha,Azure Certification,Cloud,online,6 weeks,18000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-007,reetha,DevOps Engineering,DevOps,hybrid,4 weeks,45000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-008,reetha,Cybersecurity,Security,online,12 weeks,18000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-009,reetha,Power BI Analytics,Analytics,classroom,8 weeks,12000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-010,reetha,Machine Learning,AI,online,12 weeks,25000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-011,reetha,Full Stack Development,Development,classroom,6 weeks,18000,active,2026-01-01T00:00:00,2026-01-01T00:00:00
+CRS-012,reetha,Digital Marketing,Marketing,classroom,4 weeks,12000,active,2026-01-01T00:00:00,2026-01-01T00:00:00

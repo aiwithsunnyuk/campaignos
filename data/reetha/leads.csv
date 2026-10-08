@@ -1,0 +1,251 @@
+lead_id,tenant_id,first_name,last_name,email,phone,source,lifecycle_stage,interest,course_id,lead_score,created_at,updated_at
+LEAD-0001,reetha,Aditya,Patel,aditya.patel1@example.com,9219778234,LinkedIn,qualified,CRS-003,CRS-008,20.24,2026-06-24T00:00:00,2026-07-17T00:00:00
+LEAD-0002,reetha,Nikhil,Patel,nikhil.patel2@example.com,9918150683,Meta,demo,CRS-002,CRS-011,42.38,2026-09-14T00:00:00,2026-10-04T00:00:00
+LEAD-0003,reetha,Rohan,Gupta,rohan.gupta3@example.com,9264109919,LinkedIn,contacted,CRS-009,CRS-009,88.89,2026-04-12T00:00:00,2026-05-01T00:00:00
+LEAD-0004,reetha,Sneha,Verma,sneha.verma4@example.com,9220117054,LinkedIn,engaged,CRS-004,CRS-001,38.07,2026-01-10T00:00:00,2026-01-28T00:00:00
+LEAD-0005,reetha,Ananya,Kumar,ananya.kumar5@example.com,9976198296,Google Ads,demo,CRS-003,CRS-003,69.48,2026-09-06T00:00:00,2026-10-06T00:00:00
+LEAD-0006,reetha,Rohan,Sharma,rohan.sharma6@example.com,9666585408,Organic Search,demo,CRS-007,CRS-004,89.67,2026-05-16T00:00:00,2026-06-09T00:00:00
+LEAD-0007,reetha,Meera,Rao,meera.rao7@example.com,9528414718,Email,enrolled,CRS-006,CRS-008,87.47,2026-06-09T00:00:00,2026-06-23T00:00:00
+LEAD-0008,reetha,Ananya,Rao,ananya.rao8@example.com,9168747287,LinkedIn,new,CRS-010,CRS-009,37.26,2026-04-26T00:00:00,2026-05-03T00:00:00
+LEAD-0009,reetha,Aarav,Kumar,aarav.kumar9@example.com,9345824373,Google Ads,new,CRS-006,CRS-002,58.56,2026-01-31T00:00:00,2026-02-08T00:00:00
+LEAD-0010,reetha,Kiran,Verma,kiran.verma10@example.com,9678998028,Meta,enrolled,CRS-010,CRS-010,55.45,2026-04-20T00:00:00,2026-05-15T00:00:00
+LEAD-0011,reetha,Kavya,Naidu,kavya.naidu11@example.com,9201281557,Google Ads,enrolled,CRS-007,CRS-006,51.77,2026-04-08T00:00:00,2026-04-22T00:00:00
+LEAD-0012,reetha,Pooja,Reddy,pooja.reddy12@example.com,9165082363,Instagram,enrolled,CRS-006,CRS-002,38.65,2026-02-20T00:00:00,2026-02-26T00:00:00
+LEAD-0013,reetha,Rohan,Verma,rohan.verma13@example.com,9552991960,Meta,engaged,CRS-008,CRS-004,85.59,2026-03-13T00:00:00,2026-03-15T00:00:00
+LEAD-0014,reetha,Kavya,Iyer,kavya.iyer14@example.com,9154318806,Email,demo,CRS-001,CRS-002,89.48,2026-02-20T00:00:00,2026-03-19T00:00:00
+LEAD-0015,reetha,Priya,Sharma,priya.sharma15@example.com,9621453189,Instagram,contacted,CRS-007,CRS-001,32.35,2026-07-28T00:00:00,2026-07-28T00:00:00
+LEAD-0016,reetha,Arjun,Patel,arjun.patel16@example.com,9406284028,Instagram,enrolled,CRS-012,CRS-009,69.64,2026-08-21T00:00:00,2026-09-05T00:00:00
+LEAD-0017,reetha,Rahul,Rao,rahul.rao17@example.com,9333754555,Google Ads,demo,CRS-012,CRS-009,24.57,2026-06-01T00:00:00,2026-06-11T00:00:00
+LEAD-0018,reetha,Aarav,Reddy,aarav.reddy18@example.com,9639931481,Organic Search,demo,CRS-003,CRS-001,92.06,2026-09-02T00:00:00,2026-09-04T00:00:00
+LEAD-0019,reetha,Pooja,Sharma,pooja.sharma19@example.com,9738914080,Google Ads,enrolled,CRS-004,CRS-007,28.99,2026-02-05T00:00:00,2026-03-05T00:00:00
+LEAD-0020,reetha,Divya,Rao,divya.rao20@example.com,9765055833,Google Ads,qualified,CRS-011,CRS-010,62.39,2026-01-21T00:00:00,2026-01-31T00:00:00
+LEAD-0021,reetha,Nikhil,Patel,nikhil.patel21@example.com,9819112790,Email,engaged,CRS-004,CRS-005,49.68,2026-04-15T00:00:00,2026-05-06T00:00:00
+LEAD-0022,reetha,Kiran,Patel,kiran.patel22@example.com,9439492674,Organic Search,new,CRS-001,CRS-008,66.59,2026-08-23T00:00:00,2026-09-10T00:00:00
+LEAD-0023,reetha,Ananya,Kumar,ananya.kumar23@example.com,9643189555,LinkedIn,contacted,CRS-006,CRS-002,85.95,2026-04-20T00:00:00,2026-05-01T00:00:00
+LEAD-0024,reetha,Vikram,Sharma,vikram.sharma24@example.com,9995226828,WhatsApp,enrolled,CRS-005,CRS-010,93.79,2026-08-13T00:00:00,2026-09-07T00:00:00
+LEAD-0025,reetha,Kiran,Iyer,kiran.iyer25@example.com,9817112652,Organic Search,demo,CRS-005,CRS-011,27.77,2026-01-05T00:00:00,2026-02-02T00:00:00
+LEAD-0026,reetha,Rahul,Patel,rahul.patel26@example.com,9214929002,Email,demo,CRS-003,CRS-005,41.13,2026-03-01T00:00:00,2026-03-07T00:00:00
+LEAD-0027,reetha,Meera,Singh,meera.singh27@example.com,9838194420,Email,engaged,CRS-009,CRS-008,38.83,2026-04-15T00:00:00,2026-05-14T00:00:00
+LEAD-0028,reetha,Pooja,Reddy,pooja.reddy28@example.com,9781057736,Instagram,engaged,CRS-001,CRS-001,45.02,2026-02-17T00:00:00,2026-02-21T00:00:00
+LEAD-0029,reetha,Kiran,Patel,kiran.patel29@example.com,9895890631,Instagram,demo,CRS-012,CRS-007,62.07,2026-03-24T00:00:00,2026-03-27T00:00:00
+LEAD-0030,reetha,Ananya,Sharma,ananya.sharma30@example.com,9996139578,LinkedIn,demo,CRS-009,CRS-003,52.23,2026-01-19T00:00:00,2026-01-20T00:00:00
+LEAD-0031,reetha,Vikram,Singh,vikram.singh31@example.com,9484194737,Meta,enrolled,CRS-004,CRS-011,27.71,2026-01-21T00:00:00,2026-02-14T00:00:00
+LEAD-0032,reetha,Rohan,Naidu,rohan.naidu32@example.com,9354194771,Organic Search,contacted,CRS-003,CRS-007,21.86,2026-03-21T00:00:00,2026-04-13T00:00:00
+LEAD-0033,reetha,Nikhil,Singh,nikhil.singh33@example.com,9961393416,Email,enrolled,CRS-004,CRS-005,31.94,2026-07-30T00:00:00,2026-08-21T00:00:00
+LEAD-0034,reetha,Ananya,Naidu,ananya.naidu34@example.com,9605399561,Meta,contacted,CRS-008,CRS-006,42.89,2026-01-20T00:00:00,2026-02-14T00:00:00
+LEAD-0035,reetha,Pooja,Rao,pooja.rao35@example.com,9125409494,Email,contacted,CRS-007,CRS-006,40.9,2026-04-25T00:00:00,2026-04-27T00:00:00
+LEAD-0036,reetha,Aditya,Patel,aditya.patel36@example.com,9788785773,WhatsApp,qualified,CRS-011,CRS-009,44.84,2026-06-29T00:00:00,2026-06-29T00:00:00
+LEAD-0037,reetha,Ananya,Patel,ananya.patel37@example.com,9723403479,LinkedIn,new,CRS-002,CRS-010,52.59,2026-04-02T00:00:00,2026-04-25T00:00:00
+LEAD-0038,reetha,Aditya,Singh,aditya.singh38@example.com,9750911797,WhatsApp,new,CRS-007,CRS-010,34.26,2026-08-12T00:00:00,2026-08-13T00:00:00
+LEAD-0039,reetha,Meera,Naidu,meera.naidu39@example.com,9658260221,Organic Search,demo,CRS-011,CRS-012,90.52,2026-01-01T00:00:00,2026-01-24T00:00:00
+LEAD-0040,reetha,Kiran,Rao,kiran.rao40@example.com,9563102056,Google Ads,enrolled,CRS-006,CRS-010,43.54,2026-07-06T00:00:00,2026-08-02T00:00:00
+LEAD-0041,reetha,Ananya,Patel,ananya.patel41@example.com,9432091877,Email,qualified,CRS-006,CRS-007,72.29,2026-09-17T00:00:00,2026-10-04T00:00:00
+LEAD-0042,reetha,Rahul,Rao,rahul.rao42@example.com,9813962536,Instagram,enrolled,CRS-012,CRS-003,66.16,2026-08-04T00:00:00,2026-08-13T00:00:00
+LEAD-0043,reetha,Arjun,Iyer,arjun.iyer43@example.com,9426283245,LinkedIn,contacted,CRS-007,CRS-010,65.5,2026-01-01T00:00:00,2026-01-11T00:00:00
+LEAD-0044,reetha,Kavya,Verma,kavya.verma44@example.com,9825449223,Meta,demo,CRS-008,CRS-012,32.73,2026-08-15T00:00:00,2026-08-17T00:00:00
+LEAD-0045,reetha,Vikram,Iyer,vikram.iyer45@example.com,9200273738,Organic Search,contacted,CRS-011,CRS-005,36.85,2026-06-21T00:00:00,2026-06-27T00:00:00
+LEAD-0046,reetha,Rahul,Reddy,rahul.reddy46@example.com,9362897676,Instagram,demo,CRS-002,CRS-008,51.08,2026-01-24T00:00:00,2026-02-13T00:00:00
+LEAD-0047,reetha,Divya,Rao,divya.rao47@example.com,9630833445,Instagram,contacted,CRS-003,CRS-011,71.57,2026-07-16T00:00:00,2026-08-13T00:00:00
+LEAD-0048,reetha,Aditya,Kumar,aditya.kumar48@example.com,9334978881,Meta,enrolled,CRS-009,CRS-008,23.77,2026-08-06T00:00:00,2026-08-13T00:00:00
+LEAD-0049,reetha,Nikhil,Kumar,nikhil.kumar49@example.com,9243171768,Organic Search,qualified,CRS-011,CRS-009,94.09,2026-08-22T00:00:00,2026-09-10T00:00:00
+LEAD-0050,reetha,Sneha,Verma,sneha.verma50@example.com,9558209399,Organic Search,demo,CRS-008,CRS-003,75.77,2026-09-16T00:00:00,2026-10-01T00:00:00
+LEAD-0051,reetha,Kavya,Patel,kavya.patel51@example.com,9784683755,LinkedIn,demo,CRS-008,CRS-011,37.94,2026-05-07T00:00:00,2026-05-21T00:00:00
+LEAD-0052,reetha,Ananya,Patel,ananya.patel52@example.com,9391751878,LinkedIn,engaged,CRS-009,CRS-002,30.38,2026-05-01T00:00:00,2026-05-08T00:00:00
+LEAD-0053,reetha,Arjun,Sharma,arjun.sharma53@example.com,9168965204,Instagram,qualified,CRS-006,CRS-009,54.94,2026-04-20T00:00:00,2026-04-21T00:00:00
+LEAD-0054,reetha,Priya,Naidu,priya.naidu54@example.com,9926561919,WhatsApp,enrolled,CRS-001,CRS-010,48.53,2026-07-19T00:00:00,2026-07-19T00:00:00
+LEAD-0055,reetha,Sneha,Patel,sneha.patel55@example.com,9997356828,Instagram,demo,CRS-012,CRS-012,60.96,2026-07-19T00:00:00,2026-08-07T00:00:00
+LEAD-0056,reetha,Nikhil,Rao,nikhil.rao56@example.com,9335602191,LinkedIn,qualified,CRS-008,CRS-001,49.16,2026-09-07T00:00:00,2026-09-28T00:00:00
+LEAD-0057,reetha,Kiran,Naidu,kiran.naidu57@example.com,9601856351,Meta,demo,CRS-009,CRS-001,88.02,2026-03-26T00:00:00,2026-04-13T00:00:00
+LEAD-0058,reetha,Divya,Reddy,divya.reddy58@example.com,9790147183,Instagram,contacted,CRS-008,CRS-003,23.77,2026-02-12T00:00:00,2026-02-24T00:00:00
+LEAD-0059,reetha,Sneha,Rao,sneha.rao59@example.com,9450948014,LinkedIn,qualified,CRS-005,CRS-007,38.92,2026-08-21T00:00:00,2026-08-23T00:00:00
+LEAD-0060,reetha,Kavya,Reddy,kavya.reddy60@example.com,9475767056,Meta,enrolled,CRS-002,CRS-011,23.02,2026-01-27T00:00:00,2026-01-27T00:00:00
+LEAD-0061,reetha,Priya,Rao,priya.rao61@example.com,9767154083,Meta,contacted,CRS-003,CRS-008,70.21,2026-01-11T00:00:00,2026-01-29T00:00:00
+LEAD-0062,reetha,Priya,Verma,priya.verma62@example.com,9923450567,LinkedIn,contacted,CRS-010,CRS-010,92.28,2026-05-12T00:00:00,2026-06-03T00:00:00
+LEAD-0063,reetha,Ananya,Sharma,ananya.sharma63@example.com,9216070149,WhatsApp,new,CRS-005,CRS-010,70.8,2026-06-09T00:00:00,2026-07-09T00:00:00
+LEAD-0064,reetha,Arjun,Naidu,arjun.naidu64@example.com,9181600593,WhatsApp,enrolled,CRS-011,CRS-004,27.64,2026-04-12T00:00:00,2026-05-06T00:00:00
+LEAD-0065,reetha,Vikram,Gupta,vikram.gupta65@example.com,9954942461,WhatsApp,new,CRS-006,CRS-009,52.13,2026-03-03T00:00:00,2026-03-14T00:00:00
+LEAD-0066,reetha,Ananya,Iyer,ananya.iyer66@example.com,9113585139,Organic Search,qualified,CRS-008,CRS-002,52.51,2026-06-24T00:00:00,2026-07-05T00:00:00
+LEAD-0067,reetha,Kiran,Verma,kiran.verma67@example.com,9567600762,Meta,enrolled,CRS-009,CRS-011,40.26,2026-03-20T00:00:00,2026-04-14T00:00:00
+LEAD-0068,reetha,Nikhil,Iyer,nikhil.iyer68@example.com,9599154414,Instagram,enrolled,CRS-010,CRS-005,44.17,2026-09-05T00:00:00,2026-09-12T00:00:00
+LEAD-0069,reetha,Pooja,Kumar,pooja.kumar69@example.com,9584044963,Meta,qualified,CRS-010,CRS-010,70.11,2026-05-23T00:00:00,2026-06-02T00:00:00
+LEAD-0070,reetha,Aarav,Verma,aarav.verma70@example.com,9295249057,Instagram,contacted,CRS-006,CRS-005,45.53,2026-06-16T00:00:00,2026-07-14T00:00:00
+LEAD-0071,reetha,Divya,Patel,divya.patel71@example.com,9654724287,Meta,new,CRS-004,CRS-012,50.48,2026-01-06T00:00:00,2026-01-23T00:00:00
+LEAD-0072,reetha,Aditya,Rao,aditya.rao72@example.com,9793532952,Email,qualified,CRS-008,CRS-001,26.98,2026-09-01T00:00:00,2026-09-08T00:00:00
+LEAD-0073,reetha,Arjun,Rao,arjun.rao73@example.com,9812921644,WhatsApp,engaged,CRS-008,CRS-009,59.82,2026-06-06T00:00:00,2026-06-19T00:00:00
+LEAD-0074,reetha,Meera,Iyer,meera.iyer74@example.com,9477753674,Email,qualified,CRS-005,CRS-005,38.86,2026-06-19T00:00:00,2026-06-22T00:00:00
+LEAD-0075,reetha,Meera,Rao,meera.rao75@example.com,9228370927,Email,demo,CRS-012,CRS-003,34.37,2026-06-11T00:00:00,2026-07-04T00:00:00
+LEAD-0076,reetha,Kavya,Patel,kavya.patel76@example.com,9740799178,LinkedIn,new,CRS-004,CRS-005,37.06,2026-09-26T00:00:00,2026-10-01T00:00:00
+LEAD-0077,reetha,Vikram,Reddy,vikram.reddy77@example.com,9394539550,Google Ads,new,CRS-009,CRS-005,72.31,2026-03-06T00:00:00,2026-03-10T00:00:00
+LEAD-0078,reetha,Kiran,Verma,kiran.verma78@example.com,9113169872,WhatsApp,engaged,CRS-008,CRS-008,53.04,2026-02-22T00:00:00,2026-02-27T00:00:00
+LEAD-0079,reetha,Aarav,Patel,aarav.patel79@example.com,9222500131,Organic Search,new,CRS-007,CRS-008,25.56,2026-09-02T00:00:00,2026-09-22T00:00:00
+LEAD-0080,reetha,Kiran,Reddy,kiran.reddy80@example.com,9260199682,Organic Search,demo,CRS-005,CRS-002,94.54,2026-03-19T00:00:00,2026-03-22T00:00:00
+LEAD-0081,reetha,Rohan,Naidu,rohan.naidu81@example.com,9932894596,WhatsApp,qualified,CRS-008,CRS-008,42.3,2026-04-26T00:00:00,2026-05-14T00:00:00
+LEAD-0082,reetha,Arjun,Patel,arjun.patel82@example.com,9754586204,Email,new,CRS-004,CRS-011,35.83,2026-01-31T00:00:00,2026-02-21T00:00:00
+LEAD-0083,reetha,Ananya,Sharma,ananya.sharma83@example.com,9286630878,WhatsApp,new,CRS-003,CRS-001,50.64,2026-05-03T00:00:00,2026-05-25T00:00:00
+LEAD-0084,reetha,Divya,Verma,divya.verma84@example.com,9135046782,Meta,engaged,CRS-012,CRS-005,72.72,2026-05-30T00:00:00,2026-06-13T00:00:00
+LEAD-0085,reetha,Ananya,Rao,ananya.rao85@example.com,9945923902,Organic Search,enrolled,CRS-010,CRS-011,80.29,2026-05-16T00:00:00,2026-05-22T00:00:00
+LEAD-0086,reetha,Arjun,Kumar,arjun.kumar86@example.com,9795392488,Meta,engaged,CRS-003,CRS-002,24.47,2026-04-26T00:00:00,2026-05-21T00:00:00
+LEAD-0087,reetha,Vikram,Gupta,vikram.gupta87@example.com,9571537429,Google Ads,qualified,CRS-012,CRS-005,72.48,2026-05-28T00:00:00,2026-06-27T00:00:00
+LEAD-0088,reetha,Vikram,Iyer,vikram.iyer88@example.com,9570040006,Google Ads,demo,CRS-001,CRS-007,75.09,2026-09-10T00:00:00,2026-09-29T00:00:00
+LEAD-0089,reetha,Vikram,Reddy,vikram.reddy89@example.com,9345805719,Email,demo,CRS-010,CRS-001,94.97,2026-02-16T00:00:00,2026-03-09T00:00:00
+LEAD-0090,reetha,Pooja,Patel,pooja.patel90@example.com,9919382051,Organic Search,contacted,CRS-008,CRS-009,68.86,2026-01-21T00:00:00,2026-02-19T00:00:00
+LEAD-0091,reetha,Vikram,Sharma,vikram.sharma91@example.com,9781594897,Organic Search,qualified,CRS-002,CRS-008,46.1,2026-08-12T00:00:00,2026-08-22T00:00:00
+LEAD-0092,reetha,Sneha,Kumar,sneha.kumar92@example.com,9454123990,Instagram,enrolled,CRS-008,CRS-005,69.69,2026-03-24T00:00:00,2026-04-05T00:00:00
+LEAD-0093,reetha,Pooja,Iyer,pooja.iyer93@example.com,9588365604,Google Ads,engaged,CRS-005,CRS-006,28.69,2026-01-19T00:00:00,2026-02-12T00:00:00
+LEAD-0094,reetha,Arjun,Iyer,arjun.iyer94@example.com,9806157458,Organic Search,demo,CRS-008,CRS-007,24.07,2026-01-01T00:00:00,2026-01-17T00:00:00
+LEAD-0095,reetha,Sneha,Gupta,sneha.gupta95@example.com,9771527524,Instagram,new,CRS-004,CRS-005,61.19,2026-09-13T00:00:00,2026-10-12T00:00:00
+LEAD-0096,reetha,Vikram,Verma,vikram.verma96@example.com,9230380269,Google Ads,enrolled,CRS-010,CRS-004,73.23,2026-09-06T00:00:00,2026-09-15T00:00:00
+LEAD-0097,reetha,Rohan,Reddy,rohan.reddy97@example.com,9200082623,Meta,new,CRS-008,CRS-002,68.58,2026-07-28T00:00:00,2026-08-01T00:00:00
+LEAD-0098,reetha,Kavya,Patel,kavya.patel98@example.com,9857429971,LinkedIn,qualified,CRS-008,CRS-008,38.28,2026-09-18T00:00:00,2026-10-05T00:00:00
+LEAD-0099,reetha,Rahul,Naidu,rahul.naidu99@example.com,9743576792,WhatsApp,enrolled,CRS-003,CRS-002,40.72,2026-04-08T00:00:00,2026-05-03T00:00:00
+LEAD-0100,reetha,Pooja,Naidu,pooja.naidu100@example.com,9945805127,WhatsApp,engaged,CRS-001,CRS-005,74.45,2026-06-24T00:00:00,2026-07-20T00:00:00
+LEAD-0101,reetha,Divya,Gupta,divya.gupta101@example.com,9259553112,Instagram,demo,CRS-008,CRS-006,44.93,2026-09-08T00:00:00,2026-10-02T00:00:00
+LEAD-0102,reetha,Rohan,Naidu,rohan.naidu102@example.com,9445505799,Organic Search,contacted,CRS-012,CRS-004,62.88,2026-08-22T00:00:00,2026-08-29T00:00:00
+LEAD-0103,reetha,Pooja,Naidu,pooja.naidu103@example.com,9441639230,Email,qualified,CRS-012,CRS-007,48.96,2026-01-23T00:00:00,2026-02-13T00:00:00
+LEAD-0104,reetha,Aditya,Sharma,aditya.sharma104@example.com,9139749508,Meta,demo,CRS-010,CRS-006,85.23,2026-09-11T00:00:00,2026-10-08T00:00:00
+LEAD-0105,reetha,Pooja,Verma,pooja.verma105@example.com,9664735673,Instagram,new,CRS-012,CRS-003,50.75,2026-02-21T00:00:00,2026-03-13T00:00:00
+LEAD-0106,reetha,Rahul,Kumar,rahul.kumar106@example.com,9939156387,LinkedIn,engaged,CRS-010,CRS-012,49.81,2026-08-29T00:00:00,2026-08-31T00:00:00
+LEAD-0107,reetha,Pooja,Singh,pooja.singh107@example.com,9440012324,Email,enrolled,CRS-008,CRS-009,22.69,2026-07-14T00:00:00,2026-07-16T00:00:00
+LEAD-0108,reetha,Priya,Patel,priya.patel108@example.com,9901834280,Google Ads,qualified,CRS-002,CRS-011,72.79,2026-04-27T00:00:00,2026-04-30T00:00:00
+LEAD-0109,reetha,Kavya,Sharma,kavya.sharma109@example.com,9131081879,Google Ads,engaged,CRS-001,CRS-005,46.88,2026-06-03T00:00:00,2026-06-16T00:00:00
+LEAD-0110,reetha,Rahul,Rao,rahul.rao110@example.com,9707660630,Email,contacted,CRS-003,CRS-003,25.92,2026-07-30T00:00:00,2026-08-26T00:00:00
+LEAD-0111,reetha,Arjun,Gupta,arjun.gupta111@example.com,9634366139,WhatsApp,contacted,CRS-004,CRS-008,67.84,2026-05-04T00:00:00,2026-05-18T00:00:00
+LEAD-0112,reetha,Vikram,Reddy,vikram.reddy112@example.com,9408842146,Email,demo,CRS-003,CRS-002,53.13,2026-08-27T00:00:00,2026-09-07T00:00:00
+LEAD-0113,reetha,Divya,Patel,divya.patel113@example.com,9841218491,LinkedIn,qualified,CRS-005,CRS-004,94.95,2026-08-06T00:00:00,2026-09-02T00:00:00
+LEAD-0114,reetha,Kavya,Kumar,kavya.kumar114@example.com,9509486794,WhatsApp,engaged,CRS-010,CRS-005,94.45,2026-05-02T00:00:00,2026-05-11T00:00:00
+LEAD-0115,reetha,Aarav,Naidu,aarav.naidu115@example.com,9108695125,WhatsApp,enrolled,CRS-012,CRS-001,88.3,2026-05-21T00:00:00,2026-06-13T00:00:00
+LEAD-0116,reetha,Kavya,Patel,kavya.patel116@example.com,9751831074,Organic Search,engaged,CRS-004,CRS-011,34.26,2026-04-28T00:00:00,2026-05-06T00:00:00
+LEAD-0117,reetha,Kiran,Sharma,kiran.sharma117@example.com,9773728014,Email,new,CRS-005,CRS-008,22.5,2026-02-19T00:00:00,2026-03-02T00:00:00
+LEAD-0118,reetha,Meera,Sharma,meera.sharma118@example.com,9416872439,LinkedIn,enrolled,CRS-007,CRS-003,35.06,2026-02-16T00:00:00,2026-03-13T00:00:00
+LEAD-0119,reetha,Rohan,Singh,rohan.singh119@example.com,9392624015,Organic Search,contacted,CRS-005,CRS-008,92.55,2026-09-14T00:00:00,2026-09-23T00:00:00
+LEAD-0120,reetha,Meera,Singh,meera.singh120@example.com,9602866993,Google Ads,contacted,CRS-004,CRS-011,74.32,2026-02-28T00:00:00,2026-03-12T00:00:00
+LEAD-0121,reetha,Pooja,Iyer,pooja.iyer121@example.com,9196961971,Organic Search,qualified,CRS-001,CRS-005,60.24,2026-07-07T00:00:00,2026-07-21T00:00:00
+LEAD-0122,reetha,Sneha,Patel,sneha.patel122@example.com,9983063850,Email,engaged,CRS-002,CRS-011,37.54,2026-07-15T00:00:00,2026-07-15T00:00:00
+LEAD-0123,reetha,Divya,Iyer,divya.iyer123@example.com,9755070775,Meta,enrolled,CRS-002,CRS-011,81.79,2026-06-17T00:00:00,2026-07-16T00:00:00
+LEAD-0124,reetha,Meera,Patel,meera.patel124@example.com,9225279834,Meta,new,CRS-001,CRS-005,94.69,2026-07-29T00:00:00,2026-08-01T00:00:00
+LEAD-0125,reetha,Ananya,Rao,ananya.rao125@example.com,9517305280,Instagram,engaged,CRS-011,CRS-012,72.24,2026-03-11T00:00:00,2026-03-28T00:00:00
+LEAD-0126,reetha,Arjun,Gupta,arjun.gupta126@example.com,9545478870,Email,new,CRS-008,CRS-010,50.61,2026-03-21T00:00:00,2026-04-20T00:00:00
+LEAD-0127,reetha,Vikram,Reddy,vikram.reddy127@example.com,9333291547,Instagram,qualified,CRS-004,CRS-006,27.45,2026-07-09T00:00:00,2026-07-30T00:00:00
+LEAD-0128,reetha,Sneha,Iyer,sneha.iyer128@example.com,9165015165,Instagram,engaged,CRS-004,CRS-002,91.18,2026-07-03T00:00:00,2026-07-29T00:00:00
+LEAD-0129,reetha,Kavya,Kumar,kavya.kumar129@example.com,9789024924,Email,demo,CRS-001,CRS-001,79.01,2026-04-19T00:00:00,2026-04-26T00:00:00
+LEAD-0130,reetha,Rahul,Gupta,rahul.gupta130@example.com,9173669588,Organic Search,demo,CRS-004,CRS-010,36.2,2026-04-16T00:00:00,2026-05-13T00:00:00
+LEAD-0131,reetha,Priya,Singh,priya.singh131@example.com,9946799779,WhatsApp,new,CRS-005,CRS-003,94.06,2026-03-17T00:00:00,2026-04-03T00:00:00
+LEAD-0132,reetha,Vikram,Sharma,vikram.sharma132@example.com,9809805235,Organic Search,new,CRS-003,CRS-001,46.87,2026-02-26T00:00:00,2026-03-23T00:00:00
+LEAD-0133,reetha,Priya,Gupta,priya.gupta133@example.com,9116944811,Meta,engaged,CRS-001,CRS-003,75.63,2026-06-15T00:00:00,2026-07-01T00:00:00
+LEAD-0134,reetha,Ananya,Kumar,ananya.kumar134@example.com,9581331845,Organic Search,engaged,CRS-009,CRS-010,28.18,2026-09-01T00:00:00,2026-09-17T00:00:00
+LEAD-0135,reetha,Priya,Gupta,priya.gupta135@example.com,9880871219,Organic Search,enrolled,CRS-009,CRS-005,54.35,2026-01-23T00:00:00,2026-02-22T00:00:00
+LEAD-0136,reetha,Aarav,Reddy,aarav.reddy136@example.com,9531233244,Instagram,enrolled,CRS-002,CRS-008,73.43,2026-09-03T00:00:00,2026-09-17T00:00:00
+LEAD-0137,reetha,Ananya,Kumar,ananya.kumar137@example.com,9753154389,Meta,new,CRS-003,CRS-005,66.82,2026-06-14T00:00:00,2026-07-02T00:00:00
+LEAD-0138,reetha,Rohan,Singh,rohan.singh138@example.com,9741444618,WhatsApp,engaged,CRS-008,CRS-009,65.41,2026-07-15T00:00:00,2026-07-18T00:00:00
+LEAD-0139,reetha,Aditya,Kumar,aditya.kumar139@example.com,9561784080,Instagram,contacted,CRS-007,CRS-006,82.06,2026-04-21T00:00:00,2026-05-03T00:00:00
+LEAD-0140,reetha,Arjun,Kumar,arjun.kumar140@example.com,9558234365,LinkedIn,enrolled,CRS-005,CRS-006,91.52,2026-06-10T00:00:00,2026-07-01T00:00:00
+LEAD-0141,reetha,Nikhil,Verma,nikhil.verma141@example.com,9197951867,Organic Search,new,CRS-002,CRS-007,27.24,2026-02-04T00:00:00,2026-02-27T00:00:00
+LEAD-0142,reetha,Sneha,Sharma,sneha.sharma142@example.com,9729712082,WhatsApp,demo,CRS-006,CRS-011,29.17,2026-01-31T00:00:00,2026-02-11T00:00:00
+LEAD-0143,reetha,Pooja,Naidu,pooja.naidu143@example.com,9408839723,WhatsApp,engaged,CRS-006,CRS-002,63.34,2026-01-27T00:00:00,2026-02-02T00:00:00
+LEAD-0144,reetha,Rahul,Verma,rahul.verma144@example.com,9216198604,LinkedIn,demo,CRS-006,CRS-002,77.2,2026-04-25T00:00:00,2026-05-13T00:00:00
+LEAD-0145,reetha,Priya,Naidu,priya.naidu145@example.com,9753903309,Email,enrolled,CRS-005,CRS-001,33.53,2026-01-14T00:00:00,2026-02-05T00:00:00
+LEAD-0146,reetha,Aditya,Patel,aditya.patel146@example.com,9476908532,Google Ads,contacted,CRS-003,CRS-010,69.3,2026-06-23T00:00:00,2026-06-25T00:00:00
+LEAD-0147,reetha,Rahul,Reddy,rahul.reddy147@example.com,9901131404,WhatsApp,contacted,CRS-007,CRS-007,54.02,2026-02-16T00:00:00,2026-02-21T00:00:00
+LEAD-0148,reetha,Sneha,Patel,sneha.patel148@example.com,9934120892,WhatsApp,demo,CRS-002,CRS-001,31.67,2026-06-16T00:00:00,2026-07-10T00:00:00
+LEAD-0149,reetha,Divya,Reddy,divya.reddy149@example.com,9392168202,Instagram,enrolled,CRS-007,CRS-008,65.53,2026-02-11T00:00:00,2026-02-24T00:00:00
+LEAD-0150,reetha,Vikram,Rao,vikram.rao150@example.com,9222210617,LinkedIn,qualified,CRS-002,CRS-005,70.87,2026-09-20T00:00:00,2026-10-08T00:00:00
+LEAD-0151,reetha,Kavya,Iyer,kavya.iyer151@example.com,9148766522,Meta,qualified,CRS-010,CRS-001,20.58,2026-06-07T00:00:00,2026-06-16T00:00:00
+LEAD-0152,reetha,Priya,Sharma,priya.sharma152@example.com,9410791488,LinkedIn,new,CRS-001,CRS-008,76.03,2026-05-11T00:00:00,2026-05-16T00:00:00
+LEAD-0153,reetha,Rahul,Naidu,rahul.naidu153@example.com,9637152602,WhatsApp,enrolled,CRS-006,CRS-002,49.78,2026-04-28T00:00:00,2026-05-21T00:00:00
+LEAD-0154,reetha,Aarav,Naidu,aarav.naidu154@example.com,9593657365,Google Ads,engaged,CRS-010,CRS-007,63.0,2026-01-10T00:00:00,2026-02-01T00:00:00
+LEAD-0155,reetha,Kiran,Naidu,kiran.naidu155@example.com,9223666470,Instagram,new,CRS-006,CRS-003,80.1,2026-05-29T00:00:00,2026-06-17T00:00:00
+LEAD-0156,reetha,Kavya,Singh,kavya.singh156@example.com,9568915703,Organic Search,new,CRS-004,CRS-007,64.17,2026-02-15T00:00:00,2026-03-03T00:00:00
+LEAD-0157,reetha,Ananya,Naidu,ananya.naidu157@example.com,9900801837,LinkedIn,contacted,CRS-006,CRS-003,25.73,2026-06-08T00:00:00,2026-06-28T00:00:00
+LEAD-0158,reetha,Ananya,Iyer,ananya.iyer158@example.com,9308202515,Organic Search,engaged,CRS-006,CRS-012,91.87,2026-09-19T00:00:00,2026-10-09T00:00:00
+LEAD-0159,reetha,Pooja,Sharma,pooja.sharma159@example.com,9210385522,Meta,engaged,CRS-004,CRS-003,65.18,2026-05-01T00:00:00,2026-05-25T00:00:00
+LEAD-0160,reetha,Aditya,Kumar,aditya.kumar160@example.com,9929839316,Email,qualified,CRS-008,CRS-010,76.99,2026-04-01T00:00:00,2026-04-15T00:00:00
+LEAD-0161,reetha,Kiran,Gupta,kiran.gupta161@example.com,9773469560,LinkedIn,contacted,CRS-008,CRS-002,55.17,2026-06-15T00:00:00,2026-07-05T00:00:00
+LEAD-0162,reetha,Vikram,Patel,vikram.patel162@example.com,9477895080,WhatsApp,new,CRS-005,CRS-008,53.89,2026-01-29T00:00:00,2026-01-30T00:00:00
+LEAD-0163,reetha,Sneha,Patel,sneha.patel163@example.com,9792205349,Organic Search,new,CRS-010,CRS-010,58.03,2026-02-09T00:00:00,2026-02-23T00:00:00
+LEAD-0164,reetha,Divya,Iyer,divya.iyer164@example.com,9582897882,Organic Search,demo,CRS-011,CRS-004,44.11,2026-01-22T00:00:00,2026-02-06T00:00:00
+LEAD-0165,reetha,Rohan,Sharma,rohan.sharma165@example.com,9583745511,Google Ads,engaged,CRS-012,CRS-002,57.84,2026-02-01T00:00:00,2026-02-06T00:00:00
+LEAD-0166,reetha,Aarav,Rao,aarav.rao166@example.com,9571825556,WhatsApp,demo,CRS-010,CRS-003,47.29,2026-08-13T00:00:00,2026-09-11T00:00:00
+LEAD-0167,reetha,Vikram,Naidu,vikram.naidu167@example.com,9931575232,LinkedIn,enrolled,CRS-010,CRS-001,79.19,2026-07-29T00:00:00,2026-08-18T00:00:00
+LEAD-0168,reetha,Sneha,Kumar,sneha.kumar168@example.com,9201474984,WhatsApp,enrolled,CRS-007,CRS-005,38.9,2026-06-18T00:00:00,2026-07-15T00:00:00
+LEAD-0169,reetha,Kiran,Gupta,kiran.gupta169@example.com,9457944766,Google Ads,demo,CRS-011,CRS-003,88.76,2026-03-18T00:00:00,2026-03-27T00:00:00
+LEAD-0170,reetha,Kiran,Naidu,kiran.naidu170@example.com,9738920648,Email,new,CRS-005,CRS-009,48.25,2026-03-08T00:00:00,2026-04-02T00:00:00
+LEAD-0171,reetha,Sneha,Sharma,sneha.sharma171@example.com,9200344359,Email,enrolled,CRS-007,CRS-009,47.14,2026-09-27T00:00:00,2026-10-08T00:00:00
+LEAD-0172,reetha,Vikram,Sharma,vikram.sharma172@example.com,9466932310,Organic Search,qualified,CRS-004,CRS-004,95.0,2026-04-20T00:00:00,2026-04-24T00:00:00
+LEAD-0173,reetha,Ananya,Patel,ananya.patel173@example.com,9645127678,Organic Search,demo,CRS-012,CRS-009,22.83,2026-02-21T00:00:00,2026-03-03T00:00:00
+LEAD-0174,reetha,Nikhil,Gupta,nikhil.gupta174@example.com,9741288486,Instagram,contacted,CRS-003,CRS-003,82.35,2026-03-09T00:00:00,2026-04-02T00:00:00
+LEAD-0175,reetha,Divya,Sharma,divya.sharma175@example.com,9146914391,Instagram,engaged,CRS-011,CRS-012,37.81,2026-08-13T00:00:00,2026-08-27T00:00:00
+LEAD-0176,reetha,Divya,Patel,divya.patel176@example.com,9351258749,WhatsApp,contacted,CRS-005,CRS-008,87.8,2026-08-18T00:00:00,2026-08-24T00:00:00
+LEAD-0177,reetha,Sneha,Gupta,sneha.gupta177@example.com,9595725097,Organic Search,engaged,CRS-007,CRS-009,59.56,2026-08-14T00:00:00,2026-09-13T00:00:00
+LEAD-0178,reetha,Rahul,Rao,rahul.rao178@example.com,9368438908,Google Ads,enrolled,CRS-008,CRS-006,61.59,2026-03-12T00:00:00,2026-03-15T00:00:00
+LEAD-0179,reetha,Meera,Iyer,meera.iyer179@example.com,9406084084,Google Ads,contacted,CRS-005,CRS-008,87.9,2026-03-05T00:00:00,2026-03-09T00:00:00
+LEAD-0180,reetha,Pooja,Naidu,pooja.naidu180@example.com,9338411494,Organic Search,qualified,CRS-006,CRS-001,51.12,2026-02-16T00:00:00,2026-02-28T00:00:00
+LEAD-0181,reetha,Rohan,Singh,rohan.singh181@example.com,9514642708,Google Ads,engaged,CRS-004,CRS-001,43.9,2026-05-01T00:00:00,2026-05-04T00:00:00
+LEAD-0182,reetha,Pooja,Singh,pooja.singh182@example.com,9247746438,Google Ads,engaged,CRS-008,CRS-012,82.33,2026-03-16T00:00:00,2026-04-09T00:00:00
+LEAD-0183,reetha,Meera,Verma,meera.verma183@example.com,9760725160,Google Ads,new,CRS-001,CRS-005,36.17,2026-08-18T00:00:00,2026-08-22T00:00:00
+LEAD-0184,reetha,Rohan,Gupta,rohan.gupta184@example.com,9554466340,Google Ads,engaged,CRS-004,CRS-005,29.14,2026-09-28T00:00:00,2026-10-05T00:00:00
+LEAD-0185,reetha,Arjun,Gupta,arjun.gupta185@example.com,9167438668,Google Ads,qualified,CRS-010,CRS-009,21.23,2026-08-23T00:00:00,2026-09-08T00:00:00
+LEAD-0186,reetha,Divya,Rao,divya.rao186@example.com,9412750915,Instagram,new,CRS-010,CRS-006,38.04,2026-03-15T00:00:00,2026-03-28T00:00:00
+LEAD-0187,reetha,Rahul,Kumar,rahul.kumar187@example.com,9487195336,Google Ads,demo,CRS-009,CRS-009,78.98,2026-09-26T00:00:00,2026-10-12T00:00:00
+LEAD-0188,reetha,Rohan,Reddy,rohan.reddy188@example.com,9604803700,Google Ads,enrolled,CRS-007,CRS-006,39.02,2026-07-19T00:00:00,2026-07-19T00:00:00
+LEAD-0189,reetha,Sneha,Kumar,sneha.kumar189@example.com,9358906986,Email,enrolled,CRS-011,CRS-002,77.86,2026-06-26T00:00:00,2026-07-19T00:00:00
+LEAD-0190,reetha,Aditya,Singh,aditya.singh190@example.com,9147605080,LinkedIn,demo,CRS-006,CRS-011,33.13,2026-03-10T00:00:00,2026-04-03T00:00:00
+LEAD-0191,reetha,Kiran,Verma,kiran.verma191@example.com,9778321204,Meta,contacted,CRS-002,CRS-012,78.21,2026-09-03T00:00:00,2026-09-17T00:00:00
+LEAD-0192,reetha,Aarav,Patel,aarav.patel192@example.com,9147036629,Organic Search,contacted,CRS-001,CRS-006,90.0,2026-04-14T00:00:00,2026-04-30T00:00:00
+LEAD-0193,reetha,Arjun,Iyer,arjun.iyer193@example.com,9371993587,Google Ads,enrolled,CRS-004,CRS-005,46.77,2026-08-31T00:00:00,2026-09-24T00:00:00
+LEAD-0194,reetha,Aarav,Singh,aarav.singh194@example.com,9233654018,Organic Search,engaged,CRS-007,CRS-007,75.75,2026-05-20T00:00:00,2026-06-17T00:00:00
+LEAD-0195,reetha,Arjun,Singh,arjun.singh195@example.com,9632794158,Email,qualified,CRS-006,CRS-009,40.0,2026-04-06T00:00:00,2026-04-08T00:00:00
+LEAD-0196,reetha,Meera,Naidu,meera.naidu196@example.com,9562360908,WhatsApp,contacted,CRS-009,CRS-005,44.09,2026-02-10T00:00:00,2026-02-12T00:00:00
+LEAD-0197,reetha,Sneha,Patel,sneha.patel197@example.com,9578798403,WhatsApp,enrolled,CRS-007,CRS-003,71.73,2026-06-06T00:00:00,2026-06-17T00:00:00
+LEAD-0198,reetha,Kavya,Reddy,kavya.reddy198@example.com,9760191749,Instagram,engaged,CRS-011,CRS-001,25.63,2026-06-30T00:00:00,2026-07-20T00:00:00
+LEAD-0199,reetha,Arjun,Singh,arjun.singh199@example.com,9960170255,Email,enrolled,CRS-003,CRS-001,30.71,2026-09-20T00:00:00,2026-10-09T00:00:00
+LEAD-0200,reetha,Kiran,Verma,kiran.verma200@example.com,9235538456,Google Ads,contacted,CRS-011,CRS-006,47.16,2026-01-18T00:00:00,2026-02-17T00:00:00
+LEAD-0201,reetha,Divya,Reddy,divya.reddy201@example.com,9829137330,Instagram,engaged,CRS-006,CRS-008,77.23,2026-03-20T00:00:00,2026-04-07T00:00:00
+LEAD-0202,reetha,Rahul,Iyer,rahul.iyer202@example.com,9527385805,LinkedIn,enrolled,CRS-005,CRS-004,92.04,2026-07-07T00:00:00,2026-07-07T00:00:00
+LEAD-0203,reetha,Meera,Sharma,meera.sharma203@example.com,9655924752,Instagram,demo,CRS-002,CRS-005,78.12,2026-09-13T00:00:00,2026-10-05T00:00:00
+LEAD-0204,reetha,Kavya,Rao,kavya.rao204@example.com,9845156039,Instagram,contacted,CRS-002,CRS-003,83.96,2026-05-27T00:00:00,2026-06-10T00:00:00
+LEAD-0205,reetha,Rahul,Verma,rahul.verma205@example.com,9970281936,Email,engaged,CRS-011,CRS-006,73.22,2026-02-14T00:00:00,2026-03-03T00:00:00
+LEAD-0206,reetha,Rohan,Patel,rohan.patel206@example.com,9269119969,Email,enrolled,CRS-012,CRS-011,33.06,2026-06-03T00:00:00,2026-06-14T00:00:00
+LEAD-0207,reetha,Rohan,Rao,rohan.rao207@example.com,9315801027,Organic Search,contacted,CRS-004,CRS-008,21.97,2026-03-04T00:00:00,2026-03-21T00:00:00
+LEAD-0208,reetha,Divya,Singh,divya.singh208@example.com,9962925204,WhatsApp,contacted,CRS-010,CRS-002,24.93,2026-08-28T00:00:00,2026-09-09T00:00:00
+LEAD-0209,reetha,Meera,Verma,meera.verma209@example.com,9541087900,Organic Search,qualified,CRS-010,CRS-002,29.4,2026-09-27T00:00:00,2026-10-07T00:00:00
+LEAD-0210,reetha,Kiran,Kumar,kiran.kumar210@example.com,9600184588,Email,demo,CRS-006,CRS-003,85.85,2026-08-19T00:00:00,2026-09-12T00:00:00
+LEAD-0211,reetha,Rohan,Gupta,rohan.gupta211@example.com,9924399252,Meta,qualified,CRS-009,CRS-001,82.35,2026-04-04T00:00:00,2026-04-20T00:00:00
+LEAD-0212,reetha,Rahul,Patel,rahul.patel212@example.com,9273910700,LinkedIn,enrolled,CRS-004,CRS-006,91.06,2026-03-26T00:00:00,2026-04-11T00:00:00
+LEAD-0213,reetha,Nikhil,Patel,nikhil.patel213@example.com,9369085407,Meta,enrolled,CRS-009,CRS-005,29.39,2026-02-10T00:00:00,2026-02-19T00:00:00
+LEAD-0214,reetha,Divya,Iyer,divya.iyer214@example.com,9639633807,Email,contacted,CRS-010,CRS-010,31.56,2026-02-17T00:00:00,2026-03-10T00:00:00
+LEAD-0215,reetha,Divya,Gupta,divya.gupta215@example.com,9705180256,Google Ads,new,CRS-002,CRS-001,91.14,2026-06-22T00:00:00,2026-07-16T00:00:00
+LEAD-0216,reetha,Divya,Patel,divya.patel216@example.com,9923515952,WhatsApp,qualified,CRS-010,CRS-011,22.27,2026-04-18T00:00:00,2026-05-16T00:00:00
+LEAD-0217,reetha,Kiran,Iyer,kiran.iyer217@example.com,9789242701,LinkedIn,qualified,CRS-004,CRS-011,50.46,2026-05-29T00:00:00,2026-06-12T00:00:00
+LEAD-0218,reetha,Ananya,Reddy,ananya.reddy218@example.com,9572022811,Instagram,qualified,CRS-008,CRS-004,45.51,2026-03-22T00:00:00,2026-03-26T00:00:00
+LEAD-0219,reetha,Sneha,Singh,sneha.singh219@example.com,9528118701,Meta,engaged,CRS-009,CRS-009,27.96,2026-06-26T00:00:00,2026-07-03T00:00:00
+LEAD-0220,reetha,Kavya,Kumar,kavya.kumar220@example.com,9582750043,Meta,contacted,CRS-002,CRS-001,41.77,2026-05-17T00:00:00,2026-05-29T00:00:00
+LEAD-0221,reetha,Pooja,Gupta,pooja.gupta221@example.com,9366578178,Organic Search,contacted,CRS-006,CRS-010,74.08,2026-08-03T00:00:00,2026-08-09T00:00:00
+LEAD-0222,reetha,Aditya,Sharma,aditya.sharma222@example.com,9652681586,Instagram,qualified,CRS-005,CRS-008,21.74,2026-09-13T00:00:00,2026-10-13T00:00:00
+LEAD-0223,reetha,Arjun,Iyer,arjun.iyer223@example.com,9358480413,Meta,demo,CRS-006,CRS-001,23.79,2026-08-23T00:00:00,2026-09-07T00:00:00
+LEAD-0224,reetha,Divya,Verma,divya.verma224@example.com,9676267306,Google Ads,new,CRS-007,CRS-003,86.18,2026-05-27T00:00:00,2026-06-19T00:00:00
+LEAD-0225,reetha,Sneha,Naidu,sneha.naidu225@example.com,9148578655,Instagram,new,CRS-010,CRS-009,34.6,2026-07-07T00:00:00,2026-07-24T00:00:00
+LEAD-0226,reetha,Vikram,Kumar,vikram.kumar226@example.com,9641440255,Instagram,demo,CRS-005,CRS-010,71.03,2026-07-17T00:00:00,2026-07-20T00:00:00
+LEAD-0227,reetha,Rahul,Kumar,rahul.kumar227@example.com,9500718660,Organic Search,engaged,CRS-009,CRS-006,76.62,2026-07-21T00:00:00,2026-07-27T00:00:00
+LEAD-0228,reetha,Divya,Iyer,divya.iyer228@example.com,9636954564,Google Ads,new,CRS-001,CRS-003,73.52,2026-07-25T00:00:00,2026-08-19T00:00:00
+LEAD-0229,reetha,Kavya,Iyer,kavya.iyer229@example.com,9259923818,WhatsApp,demo,CRS-003,CRS-006,89.85,2026-08-22T00:00:00,2026-09-01T00:00:00
+LEAD-0230,reetha,Rahul,Naidu,rahul.naidu230@example.com,9737506993,LinkedIn,demo,CRS-009,CRS-009,56.74,2026-06-03T00:00:00,2026-06-21T00:00:00
+LEAD-0231,reetha,Vikram,Verma,vikram.verma231@example.com,9495521185,LinkedIn,enrolled,CRS-002,CRS-007,63.78,2026-01-09T00:00:00,2026-02-03T00:00:00
+LEAD-0232,reetha,Nikhil,Reddy,nikhil.reddy232@example.com,9385111130,Email,demo,CRS-010,CRS-004,74.11,2026-08-31T00:00:00,2026-09-18T00:00:00
+LEAD-0233,reetha,Kavya,Sharma,kavya.sharma233@example.com,9775410705,Email,demo,CRS-007,CRS-003,81.62,2026-09-26T00:00:00,2026-10-03T00:00:00
+LEAD-0234,reetha,Aarav,Gupta,aarav.gupta234@example.com,9304853117,Google Ads,qualified,CRS-006,CRS-007,31.36,2026-02-26T00:00:00,2026-03-20T00:00:00
+LEAD-0235,reetha,Priya,Naidu,priya.naidu235@example.com,9932120169,WhatsApp,qualified,CRS-012,CRS-012,24.67,2026-09-14T00:00:00,2026-09-18T00:00:00
+LEAD-0236,reetha,Rohan,Rao,rohan.rao236@example.com,9811060614,Instagram,demo,CRS-007,CRS-006,91.75,2026-06-16T00:00:00,2026-06-30T00:00:00
+LEAD-0237,reetha,Nikhil,Iyer,nikhil.iyer237@example.com,9686556403,LinkedIn,enrolled,CRS-012,CRS-011,68.25,2026-06-25T00:00:00,2026-07-17T00:00:00
+LEAD-0238,reetha,Vikram,Gupta,vikram.gupta238@example.com,9306442077,Meta,engaged,CRS-009,CRS-005,36.87,2026-09-05T00:00:00,2026-09-14T00:00:00
+LEAD-0239,reetha,Aditya,Patel,aditya.patel239@example.com,9841139461,Email,qualified,CRS-006,CRS-008,46.16,2026-04-17T00:00:00,2026-05-16T00:00:00
+LEAD-0240,reetha,Nikhil,Patel,nikhil.patel240@example.com,9230861323,WhatsApp,enrolled,CRS-009,CRS-007,87.18,2026-05-28T00:00:00,2026-06-09T00:00:00
+LEAD-0241,reetha,Pooja,Singh,pooja.singh241@example.com,9411871167,Google Ads,engaged,CRS-012,CRS-002,45.98,2026-03-16T00:00:00,2026-03-30T00:00:00
+LEAD-0242,reetha,Kiran,Patel,kiran.patel242@example.com,9329766590,Meta,demo,CRS-005,CRS-009,72.21,2026-09-03T00:00:00,2026-09-07T00:00:00
+LEAD-0243,reetha,Ananya,Gupta,ananya.gupta243@example.com,9360337343,Google Ads,enrolled,CRS-009,CRS-004,67.85,2026-05-03T00:00:00,2026-05-04T00:00:00
+LEAD-0244,reetha,Ananya,Naidu,ananya.naidu244@example.com,9870257350,Instagram,new,CRS-011,CRS-003,20.39,2026-06-19T00:00:00,2026-07-06T00:00:00
+LEAD-0245,reetha,Nikhil,Sharma,nikhil.sharma245@example.com,9801038300,Instagram,qualified,CRS-011,CRS-004,76.69,2026-07-28T00:00:00,2026-08-06T00:00:00
+LEAD-0246,reetha,Sneha,Patel,sneha.patel246@example.com,9925412179,Google Ads,enrolled,CRS-010,CRS-004,60.14,2026-01-31T00:00:00,2026-02-23T00:00:00
+LEAD-0247,reetha,Pooja,Reddy,pooja.reddy247@example.com,9548700579,Organic Search,contacted,CRS-001,CRS-007,79.1,2026-03-31T00:00:00,2026-04-05T00:00:00
+LEAD-0248,reetha,Nikhil,Patel,nikhil.patel248@example.com,9109950544,LinkedIn,demo,CRS-010,CRS-002,89.63,2026-01-20T00:00:00,2026-01-30T00:00:00
+LEAD-0249,reetha,Vikram,Verma,vikram.verma249@example.com,9630334421,Meta,demo,CRS-008,CRS-005,34.46,2026-09-26T00:00:00,2026-09-29T00:00:00
+LEAD-0250,reetha,Sneha,Sharma,sneha.sharma250@example.com,9796091085,LinkedIn,enrolled,CRS-003,CRS-001,75.25,2026-08-23T00:00:00,2026-09-17T00:00:00

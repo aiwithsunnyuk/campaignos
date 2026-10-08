@@ -1,0 +1,1501 @@
+engagement_id,tenant_id,lead_id,channel,event_type,campaign_id,course_id,occurred_at,metadata
+ENG-00001,reetha,LEAD-0173,Organic Search,form_started,CMP-006,CRS-010,2026-06-01T18:00:00,{}
+ENG-00002,reetha,LEAD-0132,LinkedIn,landing_page_view,CMP-013,CRS-011,2026-07-27T13:00:00,{}
+ENG-00003,reetha,LEAD-0036,Instagram,email_opened,CMP-008,CRS-001,2026-02-18T05:00:00,{}
+ENG-00004,reetha,LEAD-0061,Instagram,form_submitted,CMP-011,CRS-005,2026-05-14T12:00:00,{}
+ENG-00005,reetha,LEAD-0168,LinkedIn,form_started,CMP-002,CRS-011,2026-01-06T08:00:00,{}
+ENG-00006,reetha,LEAD-0079,Meta,email_clicked,CMP-017,CRS-012,2026-03-02T14:00:00,{}
+ENG-00007,reetha,LEAD-0031,Email,form_submitted,CMP-012,CRS-010,2026-06-09T22:00:00,{}
+ENG-00008,reetha,LEAD-0246,Meta,whatsapp_message,CMP-005,CRS-008,2026-04-24T07:00:00,{}
+ENG-00009,reetha,LEAD-0180,WhatsApp,whatsapp_message,CMP-018,CRS-011,2026-07-11T13:00:00,{}
+ENG-00010,reetha,LEAD-0175,Organic Search,demo_requested,CMP-003,CRS-009,2026-04-22T07:00:00,{}
+ENG-00011,reetha,LEAD-0181,LinkedIn,landing_page_view,CMP-019,CRS-002,2026-08-17T16:00:00,{}
+ENG-00012,reetha,LEAD-0232,WhatsApp,form_started,CMP-019,CRS-009,2026-02-01T17:00:00,{}
+ENG-00013,reetha,LEAD-0084,Organic Search,webinar_registered,CMP-015,CRS-002,2026-03-18T05:00:00,{}
+ENG-00014,reetha,LEAD-0150,Instagram,landing_page_view,CMP-017,CRS-008,2026-04-16T22:00:00,{}
+ENG-00015,reetha,LEAD-0034,WhatsApp,email_clicked,CMP-015,CRS-010,2026-01-29T14:00:00,{}
+ENG-00016,reetha,LEAD-0119,Email,form_submitted,CMP-001,CRS-007,2026-01-30T17:00:00,{}
+ENG-00017,reetha,LEAD-0191,Meta,demo_requested,CMP-003,CRS-001,2026-05-11T00:00:00,{}
+ENG-00018,reetha,LEAD-0180,Google Ads,webinar_registered,CMP-002,CRS-002,2026-08-05T11:00:00,{}
+ENG-00019,reetha,LEAD-0074,Instagram,course_page_view,CMP-005,CRS-011,2026-08-30T01:00:00,{}
+ENG-00020,reetha,LEAD-0229,Instagram,whatsapp_message,CMP-013,CRS-007,2026-08-04T11:00:00,{}
+ENG-00021,reetha,LEAD-0247,Email,webinar_registered,CMP-005,CRS-011,2026-02-11T21:00:00,{}
+ENG-00022,reetha,LEAD-0046,WhatsApp,email_clicked,CMP-017,CRS-003,2026-06-28T03:00:00,{}
+ENG-00023,reetha,LEAD-0194,Google Ads,form_submitted,CMP-015,CRS-011,2026-04-25T00:00:00,{}
+ENG-00024,reetha,LEAD-0098,Organic Search,form_started,CMP-008,CRS-008,2026-08-06T17:00:00,{}
+ENG-00025,reetha,LEAD-0071,Meta,landing_page_view,CMP-002,CRS-011,2026-06-27T04:00:00,{}
+ENG-00026,reetha,LEAD-0197,Google Ads,form_started,CMP-007,CRS-002,2026-08-03T19:00:00,{}
+ENG-00027,reetha,LEAD-0009,Instagram,demo_requested,CMP-002,CRS-004,2026-02-21T19:00:00,{}
+ENG-00028,reetha,LEAD-0113,Meta,webinar_registered,CMP-007,CRS-001,2026-01-23T12:00:00,{}
+ENG-00029,reetha,LEAD-0075,Meta,demo_requested,CMP-011,CRS-010,2026-03-13T16:00:00,{}
+ENG-00030,reetha,LEAD-0078,Meta,webinar_registered,CMP-008,CRS-007,2026-06-14T07:00:00,{}
+ENG-00031,reetha,LEAD-0016,WhatsApp,demo_requested,CMP-006,CRS-011,2026-06-03T08:00:00,{}
+ENG-00032,reetha,LEAD-0127,Google Ads,email_opened,CMP-013,CRS-009,2026-08-07T17:00:00,{}
+ENG-00033,reetha,LEAD-0107,Instagram,course_page_view,CMP-010,CRS-007,2026-06-13T22:00:00,{}
+ENG-00034,reetha,LEAD-0122,Meta,form_started,CMP-010,CRS-012,2026-04-05T17:00:00,{}
+ENG-00035,reetha,LEAD-0235,Google Ads,webinar_registered,CMP-014,CRS-007,2026-03-15T14:00:00,{}
+ENG-00036,reetha,LEAD-0063,LinkedIn,form_started,CMP-011,CRS-011,2026-03-10T12:00:00,{}
+ENG-00037,reetha,LEAD-0217,LinkedIn,landing_page_view,CMP-018,CRS-012,2026-02-10T14:00:00,{}
+ENG-00038,reetha,LEAD-0069,Instagram,demo_requested,CMP-020,CRS-001,2026-04-08T01:00:00,{}
+ENG-00039,reetha,LEAD-0206,Organic Search,demo_requested,CMP-018,CRS-004,2026-02-07T06:00:00,{}
+ENG-00040,reetha,LEAD-0223,LinkedIn,form_submitted,CMP-001,CRS-004,2026-09-03T06:00:00,{}
+ENG-00041,reetha,LEAD-0031,Email,whatsapp_message,CMP-008,CRS-012,2026-04-08T23:00:00,{}
+ENG-00042,reetha,LEAD-0235,Meta,webinar_registered,CMP-011,CRS-005,2026-04-15T12:00:00,{}
+ENG-00043,reetha,LEAD-0137,Email,email_opened,CMP-010,CRS-005,2026-07-14T14:00:00,{}
+ENG-00044,reetha,LEAD-0226,Instagram,whatsapp_message,CMP-004,CRS-012,2026-07-04T16:00:00,{}
+ENG-00045,reetha,LEAD-0235,Meta,email_opened,CMP-011,CRS-007,2026-08-29T10:00:00,{}
+ENG-00046,reetha,LEAD-0222,Meta,course_page_view,CMP-001,CRS-005,2026-01-24T18:00:00,{}
+ENG-00047,reetha,LEAD-0040,Meta,email_opened,CMP-008,CRS-007,2026-08-02T09:00:00,{}
+ENG-00048,reetha,LEAD-0141,Email,email_opened,CMP-009,CRS-008,2026-05-06T15:00:00,{}
+ENG-00049,reetha,LEAD-0044,Email,email_opened,CMP-006,CRS-003,2026-09-09T14:00:00,{}
+ENG-00050,reetha,LEAD-0235,WhatsApp,ad_click,CMP-017,CRS-001,2026-09-08T05:00:00,{}
+ENG-00051,reetha,LEAD-0013,Organic Search,ad_click,CMP-014,CRS-003,2026-02-08T21:00:00,{}
+ENG-00052,reetha,LEAD-0182,Meta,ad_click,CMP-007,CRS-009,2026-04-29T02:00:00,{}
+ENG-00053,reetha,LEAD-0016,WhatsApp,demo_requested,CMP-016,CRS-011,2026-08-22T11:00:00,{}
+ENG-00054,reetha,LEAD-0002,WhatsApp,webinar_registered,CMP-014,CRS-001,2026-09-07T00:00:00,{}
+ENG-00055,reetha,LEAD-0185,LinkedIn,webinar_registered,CMP-010,CRS-001,2026-01-09T16:00:00,{}
+ENG-00056,reetha,LEAD-0173,Instagram,course_page_view,CMP-004,CRS-002,2026-09-15T22:00:00,{}
+ENG-00057,reetha,LEAD-0062,Meta,demo_requested,CMP-017,CRS-005,2026-09-26T04:00:00,{}
+ENG-00058,reetha,LEAD-0204,Instagram,landing_page_view,CMP-012,CRS-007,2026-07-01T08:00:00,{}
+ENG-00059,reetha,LEAD-0063,Email,form_started,CMP-010,CRS-011,2026-08-24T18:00:00,{}
+ENG-00060,reetha,LEAD-0220,Email,ad_click,CMP-003,CRS-007,2026-02-11T20:00:00,{}
+ENG-00061,reetha,LEAD-0142,Instagram,ad_click,CMP-001,CRS-012,2026-07-14T12:00:00,{}
+ENG-00062,reetha,LEAD-0128,Organic Search,email_clicked,CMP-011,CRS-010,2026-03-29T02:00:00,{}
+ENG-00063,reetha,LEAD-0236,Google Ads,form_started,CMP-007,CRS-012,2026-02-18T16:00:00,{}
+ENG-00064,reetha,LEAD-0012,Google Ads,form_submitted,CMP-018,CRS-010,2026-09-01T08:00:00,{}
+ENG-00065,reetha,LEAD-0238,Organic Search,email_opened,CMP-001,CRS-004,2026-01-17T05:00:00,{}
+ENG-00066,reetha,LEAD-0211,Instagram,landing_page_view,CMP-010,CRS-003,2026-03-15T22:00:00,{}
+ENG-00067,reetha,LEAD-0214,Organic Search,email_clicked,CMP-018,CRS-006,2026-05-04T18:00:00,{}
+ENG-00068,reetha,LEAD-0036,Organic Search,landing_page_view,CMP-017,CRS-012,2026-07-16T23:00:00,{}
+ENG-00069,reetha,LEAD-0026,Instagram,form_started,CMP-003,CRS-006,2026-06-27T01:00:00,{}
+ENG-00070,reetha,LEAD-0008,Email,form_submitted,CMP-015,CRS-008,2026-07-23T10:00:00,{}
+ENG-00071,reetha,LEAD-0142,Instagram,email_clicked,CMP-006,CRS-011,2026-04-27T11:00:00,{}
+ENG-00072,reetha,LEAD-0198,WhatsApp,form_submitted,CMP-008,CRS-012,2026-07-14T02:00:00,{}
+ENG-00073,reetha,LEAD-0069,Meta,email_clicked,CMP-005,CRS-012,2026-02-07T02:00:00,{}
+ENG-00074,reetha,LEAD-0093,Google Ads,landing_page_view,CMP-001,CRS-005,2026-07-19T10:00:00,{}
+ENG-00075,reetha,LEAD-0195,LinkedIn,landing_page_view,CMP-005,CRS-002,2026-08-16T11:00:00,{}
+ENG-00076,reetha,LEAD-0115,WhatsApp,webinar_registered,CMP-017,CRS-007,2026-04-06T13:00:00,{}
+ENG-00077,reetha,LEAD-0023,LinkedIn,webinar_registered,CMP-003,CRS-010,2026-02-22T00:00:00,{}
+ENG-00078,reetha,LEAD-0004,LinkedIn,email_clicked,CMP-013,CRS-002,2026-06-16T12:00:00,{}
+ENG-00079,reetha,LEAD-0134,Meta,email_clicked,CMP-006,CRS-003,2026-05-05T18:00:00,{}
+ENG-00080,reetha,LEAD-0069,Instagram,course_page_view,CMP-003,CRS-003,2026-05-18T09:00:00,{}
+ENG-00081,reetha,LEAD-0108,LinkedIn,whatsapp_message,CMP-003,CRS-006,2026-08-11T08:00:00,{}
+ENG-00082,reetha,LEAD-0185,Email,whatsapp_message,CMP-020,CRS-010,2026-05-09T07:00:00,{}
+ENG-00083,reetha,LEAD-0028,Meta,form_submitted,CMP-001,CRS-007,2026-04-11T14:00:00,{}
+ENG-00084,reetha,LEAD-0098,Organic Search,email_opened,CMP-015,CRS-006,2026-06-20T19:00:00,{}
+ENG-00085,reetha,LEAD-0250,WhatsApp,course_page_view,CMP-010,CRS-006,2026-08-09T20:00:00,{}
+ENG-00086,reetha,LEAD-0081,Meta,email_clicked,CMP-011,CRS-005,2026-04-13T15:00:00,{}
+ENG-00087,reetha,LEAD-0201,Meta,email_opened,CMP-013,CRS-005,2026-09-09T18:00:00,{}
+ENG-00088,reetha,LEAD-0030,WhatsApp,form_started,CMP-019,CRS-009,2026-07-21T11:00:00,{}
+ENG-00089,reetha,LEAD-0197,WhatsApp,ad_click,CMP-015,CRS-012,2026-04-03T21:00:00,{}
+ENG-00090,reetha,LEAD-0205,LinkedIn,landing_page_view,CMP-014,CRS-011,2026-04-18T14:00:00,{}
+ENG-00091,reetha,LEAD-0163,LinkedIn,form_started,CMP-009,CRS-011,2026-09-13T04:00:00,{}
+ENG-00092,reetha,LEAD-0109,Organic Search,email_clicked,CMP-003,CRS-008,2026-03-20T22:00:00,{}
+ENG-00093,reetha,LEAD-0103,WhatsApp,webinar_registered,CMP-014,CRS-009,2026-09-03T18:00:00,{}
+ENG-00094,reetha,LEAD-0180,Organic Search,webinar_registered,CMP-020,CRS-011,2026-01-19T11:00:00,{}
+ENG-00095,reetha,LEAD-0197,Meta,email_opened,CMP-006,CRS-011,2026-02-13T03:00:00,{}
+ENG-00096,reetha,LEAD-0166,Email,email_clicked,CMP-011,CRS-007,2026-01-23T18:00:00,{}
+ENG-00097,reetha,LEAD-0026,LinkedIn,form_started,CMP-017,CRS-012,2026-02-24T00:00:00,{}
+ENG-00098,reetha,LEAD-0149,Email,demo_requested,CMP-008,CRS-008,2026-09-23T17:00:00,{}
+ENG-00099,reetha,LEAD-0119,Organic Search,demo_requested,CMP-017,CRS-003,2026-07-11T12:00:00,{}
+ENG-00100,reetha,LEAD-0124,Google Ads,form_submitted,CMP-014,CRS-002,2026-06-26T00:00:00,{}
+ENG-00101,reetha,LEAD-0037,LinkedIn,form_submitted,CMP-011,CRS-008,2026-03-01T23:00:00,{}
+ENG-00102,reetha,LEAD-0124,LinkedIn,whatsapp_message,CMP-004,CRS-008,2026-04-16T16:00:00,{}
+ENG-00103,reetha,LEAD-0018,LinkedIn,ad_click,CMP-004,CRS-001,2026-08-20T10:00:00,{}
+ENG-00104,reetha,LEAD-0028,Email,course_page_view,CMP-008,CRS-009,2026-06-25T20:00:00,{}
+ENG-00105,reetha,LEAD-0041,LinkedIn,webinar_registered,CMP-014,CRS-008,2026-03-31T17:00:00,{}
+ENG-00106,reetha,LEAD-0162,Meta,course_page_view,CMP-014,CRS-007,2026-04-29T12:00:00,{}
+ENG-00107,reetha,LEAD-0158,Meta,whatsapp_message,CMP-019,CRS-007,2026-01-15T23:00:00,{}
+ENG-00108,reetha,LEAD-0181,Meta,form_started,CMP-009,CRS-012,2026-07-19T00:00:00,{}
+ENG-00109,reetha,LEAD-0027,Organic Search,webinar_registered,CMP-006,CRS-006,2026-02-02T18:00:00,{}
+ENG-00110,reetha,LEAD-0118,Google Ads,form_submitted,CMP-016,CRS-009,2026-06-16T06:00:00,{}
+ENG-00111,reetha,LEAD-0100,WhatsApp,email_clicked,CMP-019,CRS-002,2026-06-10T19:00:00,{}
+ENG-00112,reetha,LEAD-0217,Instagram,demo_requested,CMP-006,CRS-011,2026-06-28T11:00:00,{}
+ENG-00113,reetha,LEAD-0152,Google Ads,course_page_view,CMP-011,CRS-002,2026-06-02T19:00:00,{}
+ENG-00114,reetha,LEAD-0030,Meta,email_opened,CMP-005,CRS-009,2026-05-03T09:00:00,{}
+ENG-00115,reetha,LEAD-0153,Meta,demo_requested,CMP-013,CRS-007,2026-07-18T13:00:00,{}
+ENG-00116,reetha,LEAD-0163,WhatsApp,course_page_view,CMP-018,CRS-003,2026-04-06T15:00:00,{}
+ENG-00117,reetha,LEAD-0036,Meta,email_opened,CMP-015,CRS-010,2026-09-08T09:00:00,{}
+ENG-00118,reetha,LEAD-0244,Google Ads,whatsapp_message,CMP-005,CRS-004,2026-01-28T11:00:00,{}
+ENG-00119,reetha,LEAD-0130,Email,whatsapp_message,CMP-014,CRS-011,2026-07-16T17:00:00,{}
+ENG-00120,reetha,LEAD-0182,Organic Search,whatsapp_message,CMP-016,CRS-003,2026-09-09T13:00:00,{}
+ENG-00121,reetha,LEAD-0008,Organic Search,form_started,CMP-010,CRS-001,2026-02-12T18:00:00,{}
+ENG-00122,reetha,LEAD-0138,LinkedIn,course_page_view,CMP-015,CRS-010,2026-05-21T07:00:00,{}
+ENG-00123,reetha,LEAD-0131,Google Ads,demo_requested,CMP-004,CRS-005,2026-09-11T17:00:00,{}
+ENG-00124,reetha,LEAD-0211,Organic Search,ad_click,CMP-015,CRS-009,2026-07-07T17:00:00,{}
+ENG-00125,reetha,LEAD-0027,Email,form_started,CMP-010,CRS-001,2026-04-22T13:00:00,{}
+ENG-00126,reetha,LEAD-0090,Organic Search,landing_page_view,CMP-015,CRS-002,2026-08-19T08:00:00,{}
+ENG-00127,reetha,LEAD-0208,Email,demo_requested,CMP-012,CRS-012,2026-05-02T06:00:00,{}
+ENG-00128,reetha,LEAD-0158,Meta,form_started,CMP-007,CRS-001,2026-08-08T05:00:00,{}
+ENG-00129,reetha,LEAD-0072,WhatsApp,webinar_registered,CMP-006,CRS-006,2026-06-29T17:00:00,{}
+ENG-00130,reetha,LEAD-0147,LinkedIn,webinar_registered,CMP-004,CRS-003,2026-05-30T09:00:00,{}
+ENG-00131,reetha,LEAD-0071,Organic Search,course_page_view,CMP-005,CRS-004,2026-07-30T01:00:00,{}
+ENG-00132,reetha,LEAD-0083,Organic Search,form_started,CMP-013,CRS-008,2026-03-16T22:00:00,{}
+ENG-00133,reetha,LEAD-0162,LinkedIn,email_clicked,CMP-013,CRS-008,2026-03-14T18:00:00,{}
+ENG-00134,reetha,LEAD-0204,Organic Search,landing_page_view,CMP-013,CRS-009,2026-02-08T20:00:00,{}
+ENG-00135,reetha,LEAD-0240,LinkedIn,whatsapp_message,CMP-016,CRS-006,2026-05-23T22:00:00,{}
+ENG-00136,reetha,LEAD-0024,Email,whatsapp_message,CMP-012,CRS-002,2026-01-02T23:00:00,{}
+ENG-00137,reetha,LEAD-0248,Instagram,form_started,CMP-016,CRS-005,2026-07-23T06:00:00,{}
+ENG-00138,reetha,LEAD-0087,WhatsApp,demo_requested,CMP-005,CRS-010,2026-06-15T09:00:00,{}
+ENG-00139,reetha,LEAD-0229,Email,ad_click,CMP-002,CRS-002,2026-09-06T10:00:00,{}
+ENG-00140,reetha,LEAD-0032,Organic Search,course_page_view,CMP-015,CRS-008,2026-08-24T00:00:00,{}
+ENG-00141,reetha,LEAD-0052,Email,course_page_view,CMP-010,CRS-003,2026-01-01T13:00:00,{}
+ENG-00142,reetha,LEAD-0168,LinkedIn,form_submitted,CMP-003,CRS-006,2026-05-21T02:00:00,{}
+ENG-00143,reetha,LEAD-0102,Email,form_submitted,CMP-008,CRS-007,2026-03-26T01:00:00,{}
+ENG-00144,reetha,LEAD-0025,Google Ads,form_started,CMP-016,CRS-002,2026-02-16T22:00:00,{}
+ENG-00145,reetha,LEAD-0058,WhatsApp,whatsapp_message,CMP-001,CRS-001,2026-03-09T18:00:00,{}
+ENG-00146,reetha,LEAD-0221,Instagram,course_page_view,CMP-016,CRS-002,2026-06-25T03:00:00,{}
+ENG-00147,reetha,LEAD-0023,Email,landing_page_view,CMP-004,CRS-006,2026-04-28T12:00:00,{}
+ENG-00148,reetha,LEAD-0036,Instagram,course_page_view,CMP-005,CRS-002,2026-07-08T09:00:00,{}
+ENG-00149,reetha,LEAD-0167,Meta,whatsapp_message,CMP-012,CRS-012,2026-01-05T19:00:00,{}
+ENG-00150,reetha,LEAD-0192,Meta,email_clicked,CMP-020,CRS-011,2026-04-20T20:00:00,{}
+ENG-00151,reetha,LEAD-0023,Google Ads,course_page_view,CMP-004,CRS-010,2026-08-15T06:00:00,{}
+ENG-00152,reetha,LEAD-0247,Instagram,email_opened,CMP-005,CRS-004,2026-07-16T11:00:00,{}
+ENG-00153,reetha,LEAD-0022,Meta,webinar_registered,CMP-020,CRS-010,2026-05-22T20:00:00,{}
+ENG-00154,reetha,LEAD-0007,Organic Search,form_submitted,CMP-007,CRS-009,2026-05-26T22:00:00,{}
+ENG-00155,reetha,LEAD-0192,Instagram,form_submitted,CMP-002,CRS-004,2026-09-18T06:00:00,{}
+ENG-00156,reetha,LEAD-0029,Meta,whatsapp_message,CMP-020,CRS-002,2026-09-11T12:00:00,{}
+ENG-00157,reetha,LEAD-0093,LinkedIn,course_page_view,CMP-013,CRS-010,2026-09-28T00:00:00,{}
+ENG-00158,reetha,LEAD-0140,Email,course_page_view,CMP-016,CRS-002,2026-08-04T11:00:00,{}
+ENG-00159,reetha,LEAD-0018,Google Ads,form_submitted,CMP-007,CRS-001,2026-01-09T18:00:00,{}
+ENG-00160,reetha,LEAD-0130,LinkedIn,webinar_registered,CMP-014,CRS-007,2026-01-31T12:00:00,{}
+ENG-00161,reetha,LEAD-0164,WhatsApp,webinar_registered,CMP-020,CRS-003,2026-07-25T02:00:00,{}
+ENG-00162,reetha,LEAD-0080,Google Ads,webinar_registered,CMP-007,CRS-003,2026-05-23T02:00:00,{}
+ENG-00163,reetha,LEAD-0151,Email,landing_page_view,CMP-010,CRS-012,2026-06-17T12:00:00,{}
+ENG-00164,reetha,LEAD-0245,Organic Search,form_started,CMP-002,CRS-004,2026-08-12T23:00:00,{}
+ENG-00165,reetha,LEAD-0030,Instagram,demo_requested,CMP-020,CRS-001,2026-02-14T13:00:00,{}
+ENG-00166,reetha,LEAD-0190,Email,course_page_view,CMP-004,CRS-001,2026-06-08T21:00:00,{}
+ENG-00167,reetha,LEAD-0003,Meta,whatsapp_message,CMP-012,CRS-009,2026-03-12T22:00:00,{}
+ENG-00168,reetha,LEAD-0067,Meta,email_opened,CMP-005,CRS-012,2026-09-22T23:00:00,{}
+ENG-00169,reetha,LEAD-0227,Google Ads,ad_click,CMP-011,CRS-007,2026-05-18T23:00:00,{}
+ENG-00170,reetha,LEAD-0017,LinkedIn,demo_requested,CMP-003,CRS-008,2026-05-20T16:00:00,{}
+ENG-00171,reetha,LEAD-0093,Google Ads,whatsapp_message,CMP-019,CRS-003,2026-08-22T16:00:00,{}
+ENG-00172,reetha,LEAD-0066,Organic Search,landing_page_view,CMP-019,CRS-011,2026-07-08T05:00:00,{}
+ENG-00173,reetha,LEAD-0190,WhatsApp,ad_click,CMP-002,CRS-001,2026-03-01T07:00:00,{}
+ENG-00174,reetha,LEAD-0121,LinkedIn,email_clicked,CMP-005,CRS-003,2026-05-06T01:00:00,{}
+ENG-00175,reetha,LEAD-0206,Email,email_clicked,CMP-008,CRS-006,2026-01-19T17:00:00,{}
+ENG-00176,reetha,LEAD-0235,Email,email_opened,CMP-009,CRS-002,2026-05-08T13:00:00,{}
+ENG-00177,reetha,LEAD-0129,Email,ad_click,CMP-006,CRS-004,2026-07-10T03:00:00,{}
+ENG-00178,reetha,LEAD-0245,Instagram,landing_page_view,CMP-015,CRS-005,2026-09-22T01:00:00,{}
+ENG-00179,reetha,LEAD-0023,WhatsApp,whatsapp_message,CMP-001,CRS-006,2026-06-09T10:00:00,{}
+ENG-00180,reetha,LEAD-0145,Organic Search,form_submitted,CMP-020,CRS-004,2026-04-13T09:00:00,{}
+ENG-00181,reetha,LEAD-0152,Instagram,form_started,CMP-018,CRS-004,2026-08-26T11:00:00,{}
+ENG-00182,reetha,LEAD-0239,Instagram,ad_click,CMP-008,CRS-009,2026-03-19T00:00:00,{}
+ENG-00183,reetha,LEAD-0215,Email,ad_click,CMP-011,CRS-001,2026-06-27T20:00:00,{}
+ENG-00184,reetha,LEAD-0187,LinkedIn,landing_page_view,CMP-007,CRS-009,2026-07-12T23:00:00,{}
+ENG-00185,reetha,LEAD-0126,Google Ads,course_page_view,CMP-009,CRS-002,2026-05-02T13:00:00,{}
+ENG-00186,reetha,LEAD-0230,Organic Search,webinar_registered,CMP-014,CRS-012,2026-01-23T07:00:00,{}
+ENG-00187,reetha,LEAD-0250,Email,landing_page_view,CMP-019,CRS-002,2026-07-10T14:00:00,{}
+ENG-00188,reetha,LEAD-0164,Organic Search,email_clicked,CMP-003,CRS-010,2026-09-16T04:00:00,{}
+ENG-00189,reetha,LEAD-0170,Meta,form_started,CMP-010,CRS-005,2026-02-01T13:00:00,{}
+ENG-00190,reetha,LEAD-0180,Organic Search,email_opened,CMP-011,CRS-008,2026-06-11T12:00:00,{}
+ENG-00191,reetha,LEAD-0020,Meta,course_page_view,CMP-019,CRS-002,2026-05-20T07:00:00,{}
+ENG-00192,reetha,LEAD-0043,Instagram,whatsapp_message,CMP-011,CRS-007,2026-03-21T03:00:00,{}
+ENG-00193,reetha,LEAD-0092,Organic Search,form_started,CMP-015,CRS-005,2026-03-03T17:00:00,{}
+ENG-00194,reetha,LEAD-0219,Google Ads,landing_page_view,CMP-006,CRS-011,2026-08-26T08:00:00,{}
+ENG-00195,reetha,LEAD-0179,WhatsApp,ad_click,CMP-007,CRS-006,2026-06-05T22:00:00,{}
+ENG-00196,reetha,LEAD-0183,Meta,email_opened,CMP-013,CRS-009,2026-03-17T02:00:00,{}
+ENG-00197,reetha,LEAD-0077,LinkedIn,course_page_view,CMP-001,CRS-007,2026-01-26T21:00:00,{}
+ENG-00198,reetha,LEAD-0192,WhatsApp,form_started,CMP-004,CRS-008,2026-08-20T17:00:00,{}
+ENG-00199,reetha,LEAD-0032,Google Ads,ad_click,CMP-008,CRS-003,2026-02-22T04:00:00,{}
+ENG-00200,reetha,LEAD-0096,Email,landing_page_view,CMP-019,CRS-010,2026-04-12T12:00:00,{}
+ENG-00201,reetha,LEAD-0006,Google Ads,form_started,CMP-015,CRS-003,2026-05-13T02:00:00,{}
+ENG-00202,reetha,LEAD-0032,Google Ads,whatsapp_message,CMP-002,CRS-003,2026-02-17T10:00:00,{}
+ENG-00203,reetha,LEAD-0102,Instagram,ad_click,CMP-013,CRS-011,2026-08-10T23:00:00,{}
+ENG-00204,reetha,LEAD-0091,Meta,course_page_view,CMP-009,CRS-005,2026-08-07T05:00:00,{}
+ENG-00205,reetha,LEAD-0009,WhatsApp,demo_requested,CMP-020,CRS-004,2026-08-17T04:00:00,{}
+ENG-00206,reetha,LEAD-0106,WhatsApp,whatsapp_message,CMP-002,CRS-002,2026-06-01T15:00:00,{}
+ENG-00207,reetha,LEAD-0036,Instagram,form_started,CMP-017,CRS-004,2026-05-24T12:00:00,{}
+ENG-00208,reetha,LEAD-0201,Email,email_opened,CMP-016,CRS-009,2026-01-10T12:00:00,{}
+ENG-00209,reetha,LEAD-0234,WhatsApp,webinar_registered,CMP-011,CRS-007,2026-09-06T11:00:00,{}
+ENG-00210,reetha,LEAD-0007,LinkedIn,demo_requested,CMP-008,CRS-001,2026-05-19T05:00:00,{}
+ENG-00211,reetha,LEAD-0208,Instagram,webinar_registered,CMP-012,CRS-010,2026-05-24T01:00:00,{}
+ENG-00212,reetha,LEAD-0026,Meta,form_started,CMP-009,CRS-009,2026-04-30T05:00:00,{}
+ENG-00213,reetha,LEAD-0148,Organic Search,email_clicked,CMP-012,CRS-003,2026-01-29T07:00:00,{}
+ENG-00214,reetha,LEAD-0152,LinkedIn,email_opened,CMP-019,CRS-001,2026-04-01T07:00:00,{}
+ENG-00215,reetha,LEAD-0145,Meta,demo_requested,CMP-007,CRS-008,2026-06-30T18:00:00,{}
+ENG-00216,reetha,LEAD-0126,Google Ads,landing_page_view,CMP-002,CRS-004,2026-06-08T05:00:00,{}
+ENG-00217,reetha,LEAD-0135,Instagram,ad_click,CMP-011,CRS-010,2026-04-23T00:00:00,{}
+ENG-00218,reetha,LEAD-0088,Email,course_page_view,CMP-011,CRS-001,2026-04-14T04:00:00,{}
+ENG-00219,reetha,LEAD-0151,Email,course_page_view,CMP-004,CRS-009,2026-01-12T04:00:00,{}
+ENG-00220,reetha,LEAD-0096,Email,email_clicked,CMP-019,CRS-002,2026-07-06T02:00:00,{}
+ENG-00221,reetha,LEAD-0083,Meta,course_page_view,CMP-014,CRS-011,2026-06-22T09:00:00,{}
+ENG-00222,reetha,LEAD-0082,Meta,webinar_registered,CMP-020,CRS-006,2026-09-07T20:00:00,{}
+ENG-00223,reetha,LEAD-0151,Organic Search,course_page_view,CMP-013,CRS-005,2026-04-25T21:00:00,{}
+ENG-00224,reetha,LEAD-0046,Email,ad_click,CMP-019,CRS-007,2026-05-31T04:00:00,{}
+ENG-00225,reetha,LEAD-0155,LinkedIn,demo_requested,CMP-008,CRS-011,2026-01-17T05:00:00,{}
+ENG-00226,reetha,LEAD-0037,LinkedIn,landing_page_view,CMP-008,CRS-006,2026-02-23T15:00:00,{}
+ENG-00227,reetha,LEAD-0163,Google Ads,email_opened,CMP-015,CRS-001,2026-06-13T05:00:00,{}
+ENG-00228,reetha,LEAD-0064,Email,landing_page_view,CMP-012,CRS-005,2026-05-16T06:00:00,{}
+ENG-00229,reetha,LEAD-0001,Google Ads,email_clicked,CMP-015,CRS-012,2026-02-25T23:00:00,{}
+ENG-00230,reetha,LEAD-0227,Instagram,whatsapp_message,CMP-013,CRS-006,2026-08-03T05:00:00,{}
+ENG-00231,reetha,LEAD-0213,Instagram,demo_requested,CMP-008,CRS-003,2026-07-12T03:00:00,{}
+ENG-00232,reetha,LEAD-0205,Organic Search,ad_click,CMP-010,CRS-001,2026-08-20T02:00:00,{}
+ENG-00233,reetha,LEAD-0244,Google Ads,landing_page_view,CMP-011,CRS-003,2026-06-13T08:00:00,{}
+ENG-00234,reetha,LEAD-0188,Google Ads,webinar_registered,CMP-003,CRS-006,2026-07-12T05:00:00,{}
+ENG-00235,reetha,LEAD-0008,Instagram,course_page_view,CMP-020,CRS-007,2026-09-05T22:00:00,{}
+ENG-00236,reetha,LEAD-0026,LinkedIn,form_started,CMP-007,CRS-007,2026-03-22T01:00:00,{}
+ENG-00237,reetha,LEAD-0073,LinkedIn,form_started,CMP-004,CRS-001,2026-05-16T21:00:00,{}
+ENG-00238,reetha,LEAD-0141,Organic Search,whatsapp_message,CMP-005,CRS-001,2026-07-21T18:00:00,{}
+ENG-00239,reetha,LEAD-0110,Google Ads,form_submitted,CMP-020,CRS-008,2026-07-04T00:00:00,{}
+ENG-00240,reetha,LEAD-0007,Meta,course_page_view,CMP-010,CRS-002,2026-04-13T03:00:00,{}
+ENG-00241,reetha,LEAD-0079,Organic Search,email_clicked,CMP-016,CRS-008,2026-08-31T03:00:00,{}
+ENG-00242,reetha,LEAD-0165,WhatsApp,email_clicked,CMP-006,CRS-006,2026-05-16T02:00:00,{}
+ENG-00243,reetha,LEAD-0048,Instagram,ad_click,CMP-009,CRS-008,2026-07-15T11:00:00,{}
+ENG-00244,reetha,LEAD-0058,Organic Search,form_submitted,CMP-019,CRS-001,2026-08-27T08:00:00,{}
+ENG-00245,reetha,LEAD-0171,Google Ads,landing_page_view,CMP-012,CRS-009,2026-03-19T22:00:00,{}
+ENG-00246,reetha,LEAD-0059,WhatsApp,ad_click,CMP-013,CRS-009,2026-07-31T18:00:00,{}
+ENG-00247,reetha,LEAD-0176,Organic Search,whatsapp_message,CMP-019,CRS-004,2026-08-03T17:00:00,{}
+ENG-00248,reetha,LEAD-0021,Instagram,ad_click,CMP-017,CRS-010,2026-09-01T09:00:00,{}
+ENG-00249,reetha,LEAD-0174,WhatsApp,course_page_view,CMP-004,CRS-008,2026-09-22T18:00:00,{}
+ENG-00250,reetha,LEAD-0249,Meta,form_started,CMP-005,CRS-001,2026-03-30T05:00:00,{}
+ENG-00251,reetha,LEAD-0175,Instagram,form_started,CMP-005,CRS-010,2026-08-05T02:00:00,{}
+ENG-00252,reetha,LEAD-0234,Email,landing_page_view,CMP-003,CRS-007,2026-05-13T10:00:00,{}
+ENG-00253,reetha,LEAD-0084,Organic Search,form_submitted,CMP-017,CRS-008,2026-07-23T17:00:00,{}
+ENG-00254,reetha,LEAD-0160,WhatsApp,webinar_registered,CMP-014,CRS-002,2026-01-07T22:00:00,{}
+ENG-00255,reetha,LEAD-0038,WhatsApp,demo_requested,CMP-019,CRS-002,2026-08-01T04:00:00,{}
+ENG-00256,reetha,LEAD-0200,Google Ads,form_submitted,CMP-018,CRS-006,2026-02-24T18:00:00,{}
+ENG-00257,reetha,LEAD-0099,Email,whatsapp_message,CMP-019,CRS-010,2026-07-30T08:00:00,{}
+ENG-00258,reetha,LEAD-0045,LinkedIn,email_clicked,CMP-005,CRS-010,2026-08-31T01:00:00,{}
+ENG-00259,reetha,LEAD-0102,LinkedIn,form_started,CMP-002,CRS-012,2026-07-25T01:00:00,{}
+ENG-00260,reetha,LEAD-0230,LinkedIn,ad_click,CMP-011,CRS-005,2026-09-01T08:00:00,{}
+ENG-00261,reetha,LEAD-0216,Instagram,landing_page_view,CMP-008,CRS-003,2026-06-09T08:00:00,{}
+ENG-00262,reetha,LEAD-0114,Organic Search,email_opened,CMP-009,CRS-012,2026-06-03T23:00:00,{}
+ENG-00263,reetha,LEAD-0166,Google Ads,form_started,CMP-015,CRS-004,2026-08-02T19:00:00,{}
+ENG-00264,reetha,LEAD-0125,Organic Search,webinar_registered,CMP-012,CRS-001,2026-07-28T23:00:00,{}
+ENG-00265,reetha,LEAD-0017,LinkedIn,webinar_registered,CMP-013,CRS-003,2026-09-21T05:00:00,{}
+ENG-00266,reetha,LEAD-0008,Meta,form_started,CMP-007,CRS-001,2026-09-26T18:00:00,{}
+ENG-00267,reetha,LEAD-0117,Google Ads,email_opened,CMP-007,CRS-005,2026-05-08T01:00:00,{}
+ENG-00268,reetha,LEAD-0130,Instagram,landing_page_view,CMP-001,CRS-004,2026-07-08T14:00:00,{}
+ENG-00269,reetha,LEAD-0153,Instagram,course_page_view,CMP-016,CRS-010,2026-07-10T15:00:00,{}
+ENG-00270,reetha,LEAD-0042,Organic Search,form_submitted,CMP-003,CRS-005,2026-06-29T11:00:00,{}
+ENG-00271,reetha,LEAD-0013,Meta,demo_requested,CMP-007,CRS-004,2026-01-15T12:00:00,{}
+ENG-00272,reetha,LEAD-0053,LinkedIn,email_clicked,CMP-017,CRS-001,2026-04-26T21:00:00,{}
+ENG-00273,reetha,LEAD-0234,Meta,course_page_view,CMP-020,CRS-001,2026-01-05T15:00:00,{}
+ENG-00274,reetha,LEAD-0156,Organic Search,form_submitted,CMP-009,CRS-007,2026-04-25T08:00:00,{}
+ENG-00275,reetha,LEAD-0118,LinkedIn,form_started,CMP-015,CRS-005,2026-07-12T11:00:00,{}
+ENG-00276,reetha,LEAD-0102,WhatsApp,landing_page_view,CMP-001,CRS-009,2026-09-24T19:00:00,{}
+ENG-00277,reetha,LEAD-0166,WhatsApp,demo_requested,CMP-010,CRS-005,2026-07-11T17:00:00,{}
+ENG-00278,reetha,LEAD-0017,LinkedIn,form_submitted,CMP-011,CRS-005,2026-02-25T15:00:00,{}
+ENG-00279,reetha,LEAD-0183,Email,form_submitted,CMP-007,CRS-003,2026-05-14T20:00:00,{}
+ENG-00280,reetha,LEAD-0231,Google Ads,demo_requested,CMP-013,CRS-011,2026-09-22T07:00:00,{}
+ENG-00281,reetha,LEAD-0036,Email,ad_click,CMP-016,CRS-005,2026-06-13T21:00:00,{}
+ENG-00282,reetha,LEAD-0104,Instagram,ad_click,CMP-019,CRS-012,2026-05-13T13:00:00,{}
+ENG-00283,reetha,LEAD-0186,Email,form_started,CMP-018,CRS-011,2026-04-08T10:00:00,{}
+ENG-00284,reetha,LEAD-0092,WhatsApp,form_submitted,CMP-006,CRS-011,2026-09-01T21:00:00,{}
+ENG-00285,reetha,LEAD-0025,Instagram,course_page_view,CMP-009,CRS-012,2026-04-03T09:00:00,{}
+ENG-00286,reetha,LEAD-0231,LinkedIn,landing_page_view,CMP-008,CRS-006,2026-04-04T21:00:00,{}
+ENG-00287,reetha,LEAD-0224,LinkedIn,email_clicked,CMP-011,CRS-006,2026-04-25T23:00:00,{}
+ENG-00288,reetha,LEAD-0076,Instagram,landing_page_view,CMP-016,CRS-001,2026-05-14T18:00:00,{}
+ENG-00289,reetha,LEAD-0228,Meta,webinar_registered,CMP-004,CRS-011,2026-02-06T15:00:00,{}
+ENG-00290,reetha,LEAD-0077,Instagram,ad_click,CMP-005,CRS-003,2026-07-15T16:00:00,{}
+ENG-00291,reetha,LEAD-0105,WhatsApp,whatsapp_message,CMP-005,CRS-006,2026-04-13T10:00:00,{}
+ENG-00292,reetha,LEAD-0125,LinkedIn,course_page_view,CMP-011,CRS-011,2026-04-03T02:00:00,{}
+ENG-00293,reetha,LEAD-0116,LinkedIn,form_started,CMP-006,CRS-010,2026-01-30T00:00:00,{}
+ENG-00294,reetha,LEAD-0202,Organic Search,landing_page_view,CMP-005,CRS-010,2026-03-23T15:00:00,{}
+ENG-00295,reetha,LEAD-0110,Instagram,email_clicked,CMP-016,CRS-007,2026-08-11T20:00:00,{}
+ENG-00296,reetha,LEAD-0137,Meta,email_opened,CMP-001,CRS-006,2026-01-03T01:00:00,{}
+ENG-00297,reetha,LEAD-0174,Google Ads,form_started,CMP-008,CRS-012,2026-04-08T00:00:00,{}
+ENG-00298,reetha,LEAD-0034,Google Ads,email_clicked,CMP-017,CRS-010,2026-06-26T09:00:00,{}
+ENG-00299,reetha,LEAD-0017,Organic Search,ad_click,CMP-010,CRS-005,2026-06-06T05:00:00,{}
+ENG-00300,reetha,LEAD-0134,WhatsApp,webinar_registered,CMP-011,CRS-007,2026-08-22T23:00:00,{}
+ENG-00301,reetha,LEAD-0231,Instagram,email_opened,CMP-007,CRS-003,2026-03-10T10:00:00,{}
+ENG-00302,reetha,LEAD-0059,Meta,course_page_view,CMP-007,CRS-012,2026-07-26T00:00:00,{}
+ENG-00303,reetha,LEAD-0130,Meta,landing_page_view,CMP-012,CRS-012,2026-01-12T18:00:00,{}
+ENG-00304,reetha,LEAD-0225,Email,form_submitted,CMP-018,CRS-010,2026-01-20T12:00:00,{}
+ENG-00305,reetha,LEAD-0013,Email,landing_page_view,CMP-001,CRS-001,2026-01-25T19:00:00,{}
+ENG-00306,reetha,LEAD-0114,Instagram,landing_page_view,CMP-018,CRS-005,2026-03-01T13:00:00,{}
+ENG-00307,reetha,LEAD-0040,Meta,ad_click,CMP-010,CRS-007,2026-08-31T22:00:00,{}
+ENG-00308,reetha,LEAD-0134,LinkedIn,demo_requested,CMP-020,CRS-012,2026-02-21T21:00:00,{}
+ENG-00309,reetha,LEAD-0213,Google Ads,webinar_registered,CMP-020,CRS-002,2026-03-12T13:00:00,{}
+ENG-00310,reetha,LEAD-0201,Google Ads,whatsapp_message,CMP-007,CRS-010,2026-05-25T03:00:00,{}
+ENG-00311,reetha,LEAD-0213,WhatsApp,form_started,CMP-012,CRS-012,2026-04-13T08:00:00,{}
+ENG-00312,reetha,LEAD-0042,Google Ads,webinar_registered,CMP-016,CRS-004,2026-07-29T09:00:00,{}
+ENG-00313,reetha,LEAD-0061,Google Ads,ad_click,CMP-003,CRS-002,2026-09-04T10:00:00,{}
+ENG-00314,reetha,LEAD-0244,Google Ads,webinar_registered,CMP-003,CRS-012,2026-09-10T04:00:00,{}
+ENG-00315,reetha,LEAD-0165,Meta,whatsapp_message,CMP-010,CRS-005,2026-02-21T08:00:00,{}
+ENG-00316,reetha,LEAD-0026,Organic Search,course_page_view,CMP-002,CRS-005,2026-08-26T01:00:00,{}
+ENG-00317,reetha,LEAD-0081,Instagram,landing_page_view,CMP-004,CRS-001,2026-07-04T21:00:00,{}
+ENG-00318,reetha,LEAD-0170,Email,course_page_view,CMP-011,CRS-006,2026-01-05T04:00:00,{}
+ENG-00319,reetha,LEAD-0069,Email,landing_page_view,CMP-012,CRS-006,2026-08-13T19:00:00,{}
+ENG-00320,reetha,LEAD-0103,Instagram,whatsapp_message,CMP-009,CRS-007,2026-04-04T03:00:00,{}
+ENG-00321,reetha,LEAD-0167,Organic Search,course_page_view,CMP-004,CRS-003,2026-09-02T13:00:00,{}
+ENG-00322,reetha,LEAD-0027,Instagram,demo_requested,CMP-016,CRS-010,2026-01-31T05:00:00,{}
+ENG-00323,reetha,LEAD-0157,Instagram,email_opened,CMP-020,CRS-001,2026-08-13T05:00:00,{}
+ENG-00324,reetha,LEAD-0236,Instagram,landing_page_view,CMP-014,CRS-008,2026-03-08T15:00:00,{}
+ENG-00325,reetha,LEAD-0067,Email,email_opened,CMP-001,CRS-012,2026-01-24T02:00:00,{}
+ENG-00326,reetha,LEAD-0148,Email,demo_requested,CMP-008,CRS-011,2026-09-26T23:00:00,{}
+ENG-00327,reetha,LEAD-0134,Email,demo_requested,CMP-004,CRS-007,2026-06-23T16:00:00,{}
+ENG-00328,reetha,LEAD-0089,Email,email_clicked,CMP-005,CRS-009,2026-05-08T15:00:00,{}
+ENG-00329,reetha,LEAD-0165,Meta,webinar_registered,CMP-016,CRS-008,2026-01-28T00:00:00,{}
+ENG-00330,reetha,LEAD-0193,Instagram,email_opened,CMP-008,CRS-006,2026-03-26T02:00:00,{}
+ENG-00331,reetha,LEAD-0130,Meta,webinar_registered,CMP-013,CRS-007,2026-05-23T01:00:00,{}
+ENG-00332,reetha,LEAD-0118,Instagram,demo_requested,CMP-015,CRS-002,2026-05-01T02:00:00,{}
+ENG-00333,reetha,LEAD-0081,Google Ads,whatsapp_message,CMP-001,CRS-002,2026-09-13T14:00:00,{}
+ENG-00334,reetha,LEAD-0010,WhatsApp,webinar_registered,CMP-001,CRS-002,2026-07-26T13:00:00,{}
+ENG-00335,reetha,LEAD-0144,Meta,whatsapp_message,CMP-011,CRS-006,2026-06-05T16:00:00,{}
+ENG-00336,reetha,LEAD-0217,Instagram,email_opened,CMP-018,CRS-010,2026-01-28T07:00:00,{}
+ENG-00337,reetha,LEAD-0169,LinkedIn,whatsapp_message,CMP-004,CRS-002,2026-08-31T22:00:00,{}
+ENG-00338,reetha,LEAD-0088,LinkedIn,form_submitted,CMP-018,CRS-009,2026-04-24T00:00:00,{}
+ENG-00339,reetha,LEAD-0028,Google Ads,course_page_view,CMP-016,CRS-003,2026-07-11T22:00:00,{}
+ENG-00340,reetha,LEAD-0066,WhatsApp,form_started,CMP-007,CRS-002,2026-07-29T03:00:00,{}
+ENG-00341,reetha,LEAD-0118,Organic Search,form_started,CMP-011,CRS-002,2026-07-21T06:00:00,{}
+ENG-00342,reetha,LEAD-0238,Email,demo_requested,CMP-004,CRS-008,2026-08-01T01:00:00,{}
+ENG-00343,reetha,LEAD-0151,WhatsApp,course_page_view,CMP-016,CRS-001,2026-08-23T21:00:00,{}
+ENG-00344,reetha,LEAD-0240,Instagram,demo_requested,CMP-016,CRS-009,2026-01-25T17:00:00,{}
+ENG-00345,reetha,LEAD-0149,Meta,course_page_view,CMP-004,CRS-007,2026-04-01T22:00:00,{}
+ENG-00346,reetha,LEAD-0226,Instagram,email_clicked,CMP-020,CRS-012,2026-06-14T16:00:00,{}
+ENG-00347,reetha,LEAD-0102,LinkedIn,form_submitted,CMP-015,CRS-003,2026-05-08T08:00:00,{}
+ENG-00348,reetha,LEAD-0155,Email,webinar_registered,CMP-010,CRS-012,2026-03-12T13:00:00,{}
+ENG-00349,reetha,LEAD-0189,WhatsApp,form_started,CMP-007,CRS-004,2026-06-10T22:00:00,{}
+ENG-00350,reetha,LEAD-0089,Email,course_page_view,CMP-006,CRS-009,2026-05-29T21:00:00,{}
+ENG-00351,reetha,LEAD-0030,Organic Search,email_opened,CMP-018,CRS-008,2026-06-15T22:00:00,{}
+ENG-00352,reetha,LEAD-0192,Organic Search,webinar_registered,CMP-010,CRS-007,2026-08-02T21:00:00,{}
+ENG-00353,reetha,LEAD-0028,Google Ads,email_clicked,CMP-005,CRS-001,2026-01-07T16:00:00,{}
+ENG-00354,reetha,LEAD-0069,Organic Search,course_page_view,CMP-010,CRS-011,2026-01-29T06:00:00,{}
+ENG-00355,reetha,LEAD-0215,Google Ads,form_submitted,CMP-007,CRS-009,2026-05-09T04:00:00,{}
+ENG-00356,reetha,LEAD-0209,Instagram,landing_page_view,CMP-020,CRS-011,2026-01-17T11:00:00,{}
+ENG-00357,reetha,LEAD-0166,WhatsApp,email_clicked,CMP-008,CRS-009,2026-04-25T23:00:00,{}
+ENG-00358,reetha,LEAD-0171,Google Ads,email_clicked,CMP-013,CRS-007,2026-05-28T22:00:00,{}
+ENG-00359,reetha,LEAD-0014,Google Ads,form_submitted,CMP-007,CRS-010,2026-06-10T17:00:00,{}
+ENG-00360,reetha,LEAD-0234,Email,email_opened,CMP-019,CRS-009,2026-08-15T07:00:00,{}
+ENG-00361,reetha,LEAD-0247,Meta,form_submitted,CMP-015,CRS-003,2026-04-11T23:00:00,{}
+ENG-00362,reetha,LEAD-0247,Meta,webinar_registered,CMP-004,CRS-007,2026-02-08T05:00:00,{}
+ENG-00363,reetha,LEAD-0072,WhatsApp,form_submitted,CMP-005,CRS-003,2026-01-21T13:00:00,{}
+ENG-00364,reetha,LEAD-0085,Instagram,course_page_view,CMP-002,CRS-003,2026-05-11T00:00:00,{}
+ENG-00365,reetha,LEAD-0014,Organic Search,demo_requested,CMP-010,CRS-008,2026-06-15T19:00:00,{}
+ENG-00366,reetha,LEAD-0201,Email,email_opened,CMP-017,CRS-004,2026-07-03T02:00:00,{}
+ENG-00367,reetha,LEAD-0018,Organic Search,webinar_registered,CMP-006,CRS-007,2026-04-05T16:00:00,{}
+ENG-00368,reetha,LEAD-0090,Meta,form_started,CMP-011,CRS-006,2026-07-26T02:00:00,{}
+ENG-00369,reetha,LEAD-0056,Organic Search,demo_requested,CMP-017,CRS-008,2026-07-04T09:00:00,{}
+ENG-00370,reetha,LEAD-0172,LinkedIn,whatsapp_message,CMP-008,CRS-011,2026-01-05T03:00:00,{}
+ENG-00371,reetha,LEAD-0175,LinkedIn,email_clicked,CMP-004,CRS-007,2026-05-05T01:00:00,{}
+ENG-00372,reetha,LEAD-0186,LinkedIn,ad_click,CMP-017,CRS-006,2026-05-12T17:00:00,{}
+ENG-00373,reetha,LEAD-0115,Instagram,ad_click,CMP-010,CRS-011,2026-09-21T16:00:00,{}
+ENG-00374,reetha,LEAD-0132,Google Ads,landing_page_view,CMP-006,CRS-009,2026-04-09T10:00:00,{}
+ENG-00375,reetha,LEAD-0017,Meta,form_started,CMP-014,CRS-002,2026-01-04T20:00:00,{}
+ENG-00376,reetha,LEAD-0213,Email,email_clicked,CMP-003,CRS-012,2026-04-16T17:00:00,{}
+ENG-00377,reetha,LEAD-0118,Email,email_opened,CMP-002,CRS-002,2026-03-20T00:00:00,{}
+ENG-00378,reetha,LEAD-0046,Organic Search,form_submitted,CMP-018,CRS-002,2026-02-07T01:00:00,{}
+ENG-00379,reetha,LEAD-0105,Instagram,whatsapp_message,CMP-013,CRS-007,2026-04-27T08:00:00,{}
+ENG-00380,reetha,LEAD-0100,Email,landing_page_view,CMP-018,CRS-001,2026-06-11T00:00:00,{}
+ENG-00381,reetha,LEAD-0150,Google Ads,landing_page_view,CMP-012,CRS-009,2026-02-02T23:00:00,{}
+ENG-00382,reetha,LEAD-0202,Email,form_submitted,CMP-020,CRS-002,2026-02-24T09:00:00,{}
+ENG-00383,reetha,LEAD-0098,Instagram,ad_click,CMP-016,CRS-003,2026-05-25T14:00:00,{}
+ENG-00384,reetha,LEAD-0192,Instagram,webinar_registered,CMP-010,CRS-011,2026-04-23T04:00:00,{}
+ENG-00385,reetha,LEAD-0174,Organic Search,email_opened,CMP-001,CRS-009,2026-03-15T09:00:00,{}
+ENG-00386,reetha,LEAD-0011,Google Ads,demo_requested,CMP-020,CRS-007,2026-03-14T03:00:00,{}
+ENG-00387,reetha,LEAD-0054,Email,email_opened,CMP-007,CRS-007,2026-02-13T09:00:00,{}
+ENG-00388,reetha,LEAD-0042,Meta,form_started,CMP-020,CRS-005,2026-09-20T04:00:00,{}
+ENG-00389,reetha,LEAD-0047,Email,demo_requested,CMP-002,CRS-009,2026-04-10T03:00:00,{}
+ENG-00390,reetha,LEAD-0141,Google Ads,form_submitted,CMP-003,CRS-005,2026-08-25T20:00:00,{}
+ENG-00391,reetha,LEAD-0186,WhatsApp,whatsapp_message,CMP-011,CRS-006,2026-02-20T06:00:00,{}
+ENG-00392,reetha,LEAD-0168,Meta,landing_page_view,CMP-010,CRS-010,2026-03-07T21:00:00,{}
+ENG-00393,reetha,LEAD-0082,Instagram,whatsapp_message,CMP-011,CRS-010,2026-02-05T06:00:00,{}
+ENG-00394,reetha,LEAD-0150,Meta,demo_requested,CMP-019,CRS-006,2026-06-06T22:00:00,{}
+ENG-00395,reetha,LEAD-0044,Google Ads,email_opened,CMP-008,CRS-004,2026-06-11T13:00:00,{}
+ENG-00396,reetha,LEAD-0216,LinkedIn,course_page_view,CMP-011,CRS-008,2026-08-12T08:00:00,{}
+ENG-00397,reetha,LEAD-0092,Organic Search,form_submitted,CMP-016,CRS-009,2026-08-25T14:00:00,{}
+ENG-00398,reetha,LEAD-0166,WhatsApp,landing_page_view,CMP-009,CRS-003,2026-02-25T05:00:00,{}
+ENG-00399,reetha,LEAD-0188,Email,landing_page_view,CMP-003,CRS-001,2026-04-11T08:00:00,{}
+ENG-00400,reetha,LEAD-0008,Organic Search,demo_requested,CMP-019,CRS-007,2026-09-17T20:00:00,{}
+ENG-00401,reetha,LEAD-0142,LinkedIn,webinar_registered,CMP-018,CRS-008,2026-04-19T01:00:00,{}
+ENG-00402,reetha,LEAD-0101,Meta,demo_requested,CMP-010,CRS-003,2026-03-18T11:00:00,{}
+ENG-00403,reetha,LEAD-0131,Google Ads,email_clicked,CMP-012,CRS-009,2026-08-26T16:00:00,{}
+ENG-00404,reetha,LEAD-0062,Organic Search,demo_requested,CMP-006,CRS-009,2026-01-06T21:00:00,{}
+ENG-00405,reetha,LEAD-0041,Meta,demo_requested,CMP-019,CRS-011,2026-03-13T14:00:00,{}
+ENG-00406,reetha,LEAD-0188,Instagram,email_opened,CMP-002,CRS-004,2026-03-16T23:00:00,{}
+ENG-00407,reetha,LEAD-0017,LinkedIn,email_opened,CMP-008,CRS-001,2026-09-07T07:00:00,{}
+ENG-00408,reetha,LEAD-0233,Organic Search,email_opened,CMP-013,CRS-008,2026-04-16T16:00:00,{}
+ENG-00409,reetha,LEAD-0011,Email,email_opened,CMP-004,CRS-012,2026-08-21T01:00:00,{}
+ENG-00410,reetha,LEAD-0213,LinkedIn,form_submitted,CMP-019,CRS-009,2026-09-24T20:00:00,{}
+ENG-00411,reetha,LEAD-0168,Instagram,email_opened,CMP-019,CRS-011,2026-03-31T12:00:00,{}
+ENG-00412,reetha,LEAD-0065,Instagram,form_started,CMP-017,CRS-007,2026-02-09T16:00:00,{}
+ENG-00413,reetha,LEAD-0125,Organic Search,whatsapp_message,CMP-020,CRS-001,2026-06-30T11:00:00,{}
+ENG-00414,reetha,LEAD-0113,Meta,form_started,CMP-003,CRS-009,2026-09-14T04:00:00,{}
+ENG-00415,reetha,LEAD-0039,Meta,course_page_view,CMP-012,CRS-010,2026-05-24T06:00:00,{}
+ENG-00416,reetha,LEAD-0059,Instagram,email_opened,CMP-004,CRS-008,2026-03-02T21:00:00,{}
+ENG-00417,reetha,LEAD-0054,WhatsApp,course_page_view,CMP-014,CRS-001,2026-09-03T15:00:00,{}
+ENG-00418,reetha,LEAD-0033,WhatsApp,demo_requested,CMP-006,CRS-003,2026-05-05T01:00:00,{}
+ENG-00419,reetha,LEAD-0229,WhatsApp,course_page_view,CMP-002,CRS-003,2026-09-20T01:00:00,{}
+ENG-00420,reetha,LEAD-0133,Instagram,demo_requested,CMP-019,CRS-011,2026-05-13T05:00:00,{}
+ENG-00421,reetha,LEAD-0187,Email,form_submitted,CMP-003,CRS-004,2026-01-10T23:00:00,{}
+ENG-00422,reetha,LEAD-0121,Organic Search,whatsapp_message,CMP-006,CRS-004,2026-08-18T19:00:00,{}
+ENG-00423,reetha,LEAD-0037,Organic Search,demo_requested,CMP-006,CRS-010,2026-07-30T19:00:00,{}
+ENG-00424,reetha,LEAD-0043,Email,email_opened,CMP-015,CRS-010,2026-09-19T08:00:00,{}
+ENG-00425,reetha,LEAD-0097,Instagram,course_page_view,CMP-004,CRS-001,2026-02-05T07:00:00,{}
+ENG-00426,reetha,LEAD-0221,WhatsApp,email_clicked,CMP-005,CRS-010,2026-04-14T16:00:00,{}
+ENG-00427,reetha,LEAD-0122,WhatsApp,demo_requested,CMP-002,CRS-009,2026-02-19T05:00:00,{}
+ENG-00428,reetha,LEAD-0024,Instagram,course_page_view,CMP-020,CRS-009,2026-09-15T03:00:00,{}
+ENG-00429,reetha,LEAD-0167,Instagram,webinar_registered,CMP-014,CRS-006,2026-01-01T21:00:00,{}
+ENG-00430,reetha,LEAD-0136,Instagram,form_started,CMP-016,CRS-007,2026-01-23T22:00:00,{}
+ENG-00431,reetha,LEAD-0206,Email,demo_requested,CMP-004,CRS-007,2026-06-29T18:00:00,{}
+ENG-00432,reetha,LEAD-0123,Organic Search,form_started,CMP-003,CRS-005,2026-03-10T08:00:00,{}
+ENG-00433,reetha,LEAD-0049,Google Ads,ad_click,CMP-019,CRS-009,2026-07-29T08:00:00,{}
+ENG-00434,reetha,LEAD-0002,Instagram,form_started,CMP-011,CRS-007,2026-03-02T16:00:00,{}
+ENG-00435,reetha,LEAD-0040,Instagram,demo_requested,CMP-009,CRS-005,2026-07-05T03:00:00,{}
+ENG-00436,reetha,LEAD-0094,WhatsApp,form_submitted,CMP-013,CRS-004,2026-08-05T18:00:00,{}
+ENG-00437,reetha,LEAD-0201,WhatsApp,whatsapp_message,CMP-006,CRS-006,2026-07-31T17:00:00,{}
+ENG-00438,reetha,LEAD-0079,WhatsApp,email_opened,CMP-013,CRS-012,2026-09-05T08:00:00,{}
+ENG-00439,reetha,LEAD-0031,Email,form_started,CMP-015,CRS-012,2026-03-12T21:00:00,{}
+ENG-00440,reetha,LEAD-0055,WhatsApp,email_clicked,CMP-011,CRS-009,2026-03-24T03:00:00,{}
+ENG-00441,reetha,LEAD-0100,Email,ad_click,CMP-003,CRS-003,2026-01-27T05:00:00,{}
+ENG-00442,reetha,LEAD-0112,Google Ads,landing_page_view,CMP-009,CRS-004,2026-08-30T19:00:00,{}
+ENG-00443,reetha,LEAD-0156,Google Ads,email_clicked,CMP-013,CRS-010,2026-07-09T02:00:00,{}
+ENG-00444,reetha,LEAD-0183,WhatsApp,ad_click,CMP-006,CRS-011,2026-09-24T09:00:00,{}
+ENG-00445,reetha,LEAD-0003,Meta,webinar_registered,CMP-010,CRS-004,2026-09-11T14:00:00,{}
+ENG-00446,reetha,LEAD-0131,WhatsApp,form_started,CMP-020,CRS-003,2026-01-18T19:00:00,{}
+ENG-00447,reetha,LEAD-0062,Email,ad_click,CMP-006,CRS-002,2026-01-19T11:00:00,{}
+ENG-00448,reetha,LEAD-0091,Email,email_clicked,CMP-013,CRS-010,2026-05-22T12:00:00,{}
+ENG-00449,reetha,LEAD-0004,Email,landing_page_view,CMP-003,CRS-009,2026-04-13T16:00:00,{}
+ENG-00450,reetha,LEAD-0213,WhatsApp,demo_requested,CMP-012,CRS-006,2026-05-26T23:00:00,{}
+ENG-00451,reetha,LEAD-0156,Meta,whatsapp_message,CMP-013,CRS-010,2026-05-22T07:00:00,{}
+ENG-00452,reetha,LEAD-0045,Instagram,webinar_registered,CMP-004,CRS-009,2026-01-03T08:00:00,{}
+ENG-00453,reetha,LEAD-0076,LinkedIn,landing_page_view,CMP-017,CRS-005,2026-02-07T16:00:00,{}
+ENG-00454,reetha,LEAD-0114,Instagram,demo_requested,CMP-016,CRS-004,2026-05-09T22:00:00,{}
+ENG-00455,reetha,LEAD-0175,Instagram,demo_requested,CMP-001,CRS-008,2026-06-23T14:00:00,{}
+ENG-00456,reetha,LEAD-0018,Instagram,form_started,CMP-008,CRS-006,2026-03-01T08:00:00,{}
+ENG-00457,reetha,LEAD-0133,WhatsApp,ad_click,CMP-009,CRS-004,2026-07-31T11:00:00,{}
+ENG-00458,reetha,LEAD-0103,Email,email_opened,CMP-003,CRS-009,2026-05-28T02:00:00,{}
+ENG-00459,reetha,LEAD-0081,LinkedIn,form_started,CMP-019,CRS-005,2026-04-02T15:00:00,{}
+ENG-00460,reetha,LEAD-0175,Meta,whatsapp_message,CMP-007,CRS-004,2026-04-04T23:00:00,{}
+ENG-00461,reetha,LEAD-0053,Meta,form_started,CMP-008,CRS-010,2026-05-04T08:00:00,{}
+ENG-00462,reetha,LEAD-0200,Google Ads,landing_page_view,CMP-003,CRS-011,2026-07-02T04:00:00,{}
+ENG-00463,reetha,LEAD-0002,Organic Search,webinar_registered,CMP-002,CRS-008,2026-09-10T19:00:00,{}
+ENG-00464,reetha,LEAD-0081,Instagram,demo_requested,CMP-009,CRS-008,2026-07-10T19:00:00,{}
+ENG-00465,reetha,LEAD-0072,Instagram,form_started,CMP-019,CRS-003,2026-04-04T16:00:00,{}
+ENG-00466,reetha,LEAD-0205,Instagram,whatsapp_message,CMP-018,CRS-001,2026-01-28T16:00:00,{}
+ENG-00467,reetha,LEAD-0101,Organic Search,course_page_view,CMP-015,CRS-002,2026-09-15T11:00:00,{}
+ENG-00468,reetha,LEAD-0081,Email,ad_click,CMP-001,CRS-011,2026-09-23T14:00:00,{}
+ENG-00469,reetha,LEAD-0149,Google Ads,email_opened,CMP-012,CRS-010,2026-04-18T12:00:00,{}
+ENG-00470,reetha,LEAD-0141,LinkedIn,form_started,CMP-009,CRS-008,2026-05-13T05:00:00,{}
+ENG-00471,reetha,LEAD-0048,Instagram,email_clicked,CMP-007,CRS-007,2026-06-25T11:00:00,{}
+ENG-00472,reetha,LEAD-0219,Instagram,form_submitted,CMP-015,CRS-003,2026-07-10T11:00:00,{}
+ENG-00473,reetha,LEAD-0176,Meta,landing_page_view,CMP-009,CRS-004,2026-03-09T18:00:00,{}
+ENG-00474,reetha,LEAD-0051,Meta,course_page_view,CMP-016,CRS-001,2026-08-10T12:00:00,{}
+ENG-00475,reetha,LEAD-0128,Meta,webinar_registered,CMP-018,CRS-012,2026-04-01T13:00:00,{}
+ENG-00476,reetha,LEAD-0077,LinkedIn,webinar_registered,CMP-019,CRS-001,2026-06-11T15:00:00,{}
+ENG-00477,reetha,LEAD-0177,Meta,ad_click,CMP-007,CRS-005,2026-07-23T03:00:00,{}
+ENG-00478,reetha,LEAD-0025,Instagram,email_opened,CMP-009,CRS-006,2026-09-01T20:00:00,{}
+ENG-00479,reetha,LEAD-0143,Organic Search,form_submitted,CMP-012,CRS-001,2026-07-04T17:00:00,{}
+ENG-00480,reetha,LEAD-0090,Organic Search,demo_requested,CMP-007,CRS-010,2026-07-30T03:00:00,{}
+ENG-00481,reetha,LEAD-0091,LinkedIn,webinar_registered,CMP-016,CRS-012,2026-03-31T09:00:00,{}
+ENG-00482,reetha,LEAD-0098,WhatsApp,form_submitted,CMP-015,CRS-011,2026-08-17T02:00:00,{}
+ENG-00483,reetha,LEAD-0164,Organic Search,email_opened,CMP-014,CRS-011,2026-03-16T05:00:00,{}
+ENG-00484,reetha,LEAD-0021,Meta,email_opened,CMP-008,CRS-006,2026-07-27T02:00:00,{}
+ENG-00485,reetha,LEAD-0075,Email,form_submitted,CMP-020,CRS-011,2026-06-12T20:00:00,{}
+ENG-00486,reetha,LEAD-0228,Instagram,email_opened,CMP-019,CRS-009,2026-07-22T08:00:00,{}
+ENG-00487,reetha,LEAD-0043,Meta,ad_click,CMP-005,CRS-012,2026-08-19T13:00:00,{}
+ENG-00488,reetha,LEAD-0065,Email,landing_page_view,CMP-007,CRS-003,2026-05-01T21:00:00,{}
+ENG-00489,reetha,LEAD-0025,Google Ads,whatsapp_message,CMP-018,CRS-001,2026-07-23T03:00:00,{}
+ENG-00490,reetha,LEAD-0135,Organic Search,landing_page_view,CMP-004,CRS-005,2026-01-14T12:00:00,{}
+ENG-00491,reetha,LEAD-0168,Instagram,form_submitted,CMP-008,CRS-004,2026-03-21T02:00:00,{}
+ENG-00492,reetha,LEAD-0161,Meta,course_page_view,CMP-017,CRS-003,2026-05-26T14:00:00,{}
+ENG-00493,reetha,LEAD-0170,LinkedIn,email_opened,CMP-016,CRS-008,2026-01-15T01:00:00,{}
+ENG-00494,reetha,LEAD-0114,Meta,webinar_registered,CMP-006,CRS-010,2026-05-20T17:00:00,{}
+ENG-00495,reetha,LEAD-0192,Email,demo_requested,CMP-014,CRS-009,2026-08-22T20:00:00,{}
+ENG-00496,reetha,LEAD-0124,WhatsApp,form_started,CMP-003,CRS-008,2026-06-08T11:00:00,{}
+ENG-00497,reetha,LEAD-0106,LinkedIn,course_page_view,CMP-010,CRS-001,2026-06-07T11:00:00,{}
+ENG-00498,reetha,LEAD-0209,Organic Search,course_page_view,CMP-012,CRS-005,2026-01-01T16:00:00,{}
+ENG-00499,reetha,LEAD-0003,Email,whatsapp_message,CMP-016,CRS-005,2026-08-29T17:00:00,{}
+ENG-00500,reetha,LEAD-0205,LinkedIn,demo_requested,CMP-008,CRS-001,2026-01-05T13:00:00,{}
+ENG-00501,reetha,LEAD-0106,WhatsApp,email_clicked,CMP-013,CRS-004,2026-07-11T06:00:00,{}
+ENG-00502,reetha,LEAD-0189,Email,email_clicked,CMP-013,CRS-004,2026-03-25T22:00:00,{}
+ENG-00503,reetha,LEAD-0109,Email,form_started,CMP-017,CRS-010,2026-05-15T02:00:00,{}
+ENG-00504,reetha,LEAD-0167,Email,webinar_registered,CMP-009,CRS-007,2026-05-20T09:00:00,{}
+ENG-00505,reetha,LEAD-0047,Meta,form_submitted,CMP-004,CRS-011,2026-04-07T02:00:00,{}
+ENG-00506,reetha,LEAD-0116,LinkedIn,demo_requested,CMP-016,CRS-004,2026-08-22T19:00:00,{}
+ENG-00507,reetha,LEAD-0039,Google Ads,webinar_registered,CMP-001,CRS-003,2026-06-14T00:00:00,{}
+ENG-00508,reetha,LEAD-0069,Meta,whatsapp_message,CMP-001,CRS-004,2026-02-22T09:00:00,{}
+ENG-00509,reetha,LEAD-0004,Instagram,form_started,CMP-011,CRS-007,2026-02-16T04:00:00,{}
+ENG-00510,reetha,LEAD-0096,Instagram,ad_click,CMP-011,CRS-002,2026-06-09T15:00:00,{}
+ENG-00511,reetha,LEAD-0069,Organic Search,email_clicked,CMP-003,CRS-009,2026-03-16T01:00:00,{}
+ENG-00512,reetha,LEAD-0050,Organic Search,form_submitted,CMP-013,CRS-001,2026-08-29T05:00:00,{}
+ENG-00513,reetha,LEAD-0064,Instagram,whatsapp_message,CMP-008,CRS-012,2026-03-04T22:00:00,{}
+ENG-00514,reetha,LEAD-0118,Email,landing_page_view,CMP-017,CRS-011,2026-01-18T06:00:00,{}
+ENG-00515,reetha,LEAD-0100,Email,form_submitted,CMP-011,CRS-003,2026-04-17T15:00:00,{}
+ENG-00516,reetha,LEAD-0240,WhatsApp,webinar_registered,CMP-004,CRS-005,2026-01-22T23:00:00,{}
+ENG-00517,reetha,LEAD-0077,Meta,email_opened,CMP-002,CRS-011,2026-09-04T20:00:00,{}
+ENG-00518,reetha,LEAD-0061,Email,email_clicked,CMP-011,CRS-001,2026-04-22T03:00:00,{}
+ENG-00519,reetha,LEAD-0150,Google Ads,email_clicked,CMP-008,CRS-001,2026-03-27T08:00:00,{}
+ENG-00520,reetha,LEAD-0201,Email,whatsapp_message,CMP-020,CRS-003,2026-01-22T18:00:00,{}
+ENG-00521,reetha,LEAD-0064,Meta,whatsapp_message,CMP-003,CRS-011,2026-07-10T02:00:00,{}
+ENG-00522,reetha,LEAD-0016,Google Ads,email_opened,CMP-005,CRS-012,2026-06-23T20:00:00,{}
+ENG-00523,reetha,LEAD-0125,Meta,email_opened,CMP-018,CRS-011,2026-02-24T04:00:00,{}
+ENG-00524,reetha,LEAD-0188,Meta,ad_click,CMP-013,CRS-006,2026-06-27T14:00:00,{}
+ENG-00525,reetha,LEAD-0231,Google Ads,whatsapp_message,CMP-015,CRS-009,2026-03-10T08:00:00,{}
+ENG-00526,reetha,LEAD-0179,Instagram,form_started,CMP-019,CRS-003,2026-05-31T17:00:00,{}
+ENG-00527,reetha,LEAD-0188,Instagram,form_submitted,CMP-020,CRS-009,2026-06-28T10:00:00,{}
+ENG-00528,reetha,LEAD-0136,Meta,whatsapp_message,CMP-010,CRS-005,2026-03-24T02:00:00,{}
+ENG-00529,reetha,LEAD-0001,Organic Search,webinar_registered,CMP-013,CRS-012,2026-07-07T14:00:00,{}
+ENG-00530,reetha,LEAD-0159,Organic Search,email_opened,CMP-020,CRS-004,2026-04-05T00:00:00,{}
+ENG-00531,reetha,LEAD-0017,Email,webinar_registered,CMP-013,CRS-004,2026-06-14T23:00:00,{}
+ENG-00532,reetha,LEAD-0128,Organic Search,webinar_registered,CMP-005,CRS-010,2026-09-26T21:00:00,{}
+ENG-00533,reetha,LEAD-0105,Email,email_opened,CMP-004,CRS-002,2026-05-25T10:00:00,{}
+ENG-00534,reetha,LEAD-0018,Google Ads,course_page_view,CMP-006,CRS-001,2026-09-25T21:00:00,{}
+ENG-00535,reetha,LEAD-0125,Meta,landing_page_view,CMP-002,CRS-010,2026-04-14T03:00:00,{}
+ENG-00536,reetha,LEAD-0126,WhatsApp,demo_requested,CMP-019,CRS-005,2026-07-18T21:00:00,{}
+ENG-00537,reetha,LEAD-0057,WhatsApp,landing_page_view,CMP-001,CRS-004,2026-01-26T11:00:00,{}
+ENG-00538,reetha,LEAD-0120,Organic Search,ad_click,CMP-012,CRS-009,2026-09-09T02:00:00,{}
+ENG-00539,reetha,LEAD-0204,Email,ad_click,CMP-020,CRS-005,2026-08-01T11:00:00,{}
+ENG-00540,reetha,LEAD-0188,Google Ads,form_submitted,CMP-003,CRS-004,2026-09-28T01:00:00,{}
+ENG-00541,reetha,LEAD-0026,Email,form_started,CMP-018,CRS-007,2026-09-23T03:00:00,{}
+ENG-00542,reetha,LEAD-0135,Email,form_started,CMP-019,CRS-011,2026-04-08T06:00:00,{}
+ENG-00543,reetha,LEAD-0192,WhatsApp,email_clicked,CMP-004,CRS-011,2026-04-02T17:00:00,{}
+ENG-00544,reetha,LEAD-0118,Email,email_clicked,CMP-004,CRS-003,2026-07-03T21:00:00,{}
+ENG-00545,reetha,LEAD-0103,WhatsApp,email_opened,CMP-006,CRS-009,2026-04-03T17:00:00,{}
+ENG-00546,reetha,LEAD-0232,LinkedIn,webinar_registered,CMP-011,CRS-006,2026-08-15T11:00:00,{}
+ENG-00547,reetha,LEAD-0111,Organic Search,email_opened,CMP-020,CRS-004,2026-07-31T20:00:00,{}
+ENG-00548,reetha,LEAD-0197,WhatsApp,form_submitted,CMP-012,CRS-008,2026-04-20T12:00:00,{}
+ENG-00549,reetha,LEAD-0001,Email,ad_click,CMP-010,CRS-010,2026-08-18T12:00:00,{}
+ENG-00550,reetha,LEAD-0035,LinkedIn,ad_click,CMP-010,CRS-004,2026-01-09T16:00:00,{}
+ENG-00551,reetha,LEAD-0006,Organic Search,form_submitted,CMP-018,CRS-009,2026-04-20T10:00:00,{}
+ENG-00552,reetha,LEAD-0010,Instagram,email_opened,CMP-005,CRS-003,2026-03-21T03:00:00,{}
+ENG-00553,reetha,LEAD-0228,WhatsApp,form_started,CMP-008,CRS-005,2026-05-16T11:00:00,{}
+ENG-00554,reetha,LEAD-0147,Instagram,demo_requested,CMP-007,CRS-012,2026-06-03T02:00:00,{}
+ENG-00555,reetha,LEAD-0084,Organic Search,whatsapp_message,CMP-006,CRS-008,2026-02-09T23:00:00,{}
+ENG-00556,reetha,LEAD-0165,LinkedIn,ad_click,CMP-019,CRS-007,2026-02-18T19:00:00,{}
+ENG-00557,reetha,LEAD-0236,Organic Search,email_opened,CMP-012,CRS-007,2026-02-10T01:00:00,{}
+ENG-00558,reetha,LEAD-0223,Organic Search,form_started,CMP-020,CRS-001,2026-08-02T03:00:00,{}
+ENG-00559,reetha,LEAD-0079,WhatsApp,ad_click,CMP-011,CRS-009,2026-07-15T01:00:00,{}
+ENG-00560,reetha,LEAD-0129,Email,form_started,CMP-005,CRS-001,2026-03-18T10:00:00,{}
+ENG-00561,reetha,LEAD-0193,WhatsApp,demo_requested,CMP-017,CRS-002,2026-07-21T14:00:00,{}
+ENG-00562,reetha,LEAD-0075,Organic Search,email_clicked,CMP-005,CRS-003,2026-04-24T13:00:00,{}
+ENG-00563,reetha,LEAD-0122,WhatsApp,ad_click,CMP-018,CRS-007,2026-06-22T02:00:00,{}
+ENG-00564,reetha,LEAD-0103,WhatsApp,email_clicked,CMP-005,CRS-003,2026-05-15T02:00:00,{}
+ENG-00565,reetha,LEAD-0051,Instagram,email_clicked,CMP-019,CRS-004,2026-09-04T17:00:00,{}
+ENG-00566,reetha,LEAD-0063,Google Ads,form_submitted,CMP-014,CRS-006,2026-09-26T07:00:00,{}
+ENG-00567,reetha,LEAD-0172,Instagram,email_clicked,CMP-012,CRS-006,2026-02-15T03:00:00,{}
+ENG-00568,reetha,LEAD-0089,WhatsApp,ad_click,CMP-010,CRS-003,2026-04-08T10:00:00,{}
+ENG-00569,reetha,LEAD-0211,Organic Search,whatsapp_message,CMP-020,CRS-003,2026-06-29T19:00:00,{}
+ENG-00570,reetha,LEAD-0237,Organic Search,form_started,CMP-007,CRS-011,2026-08-14T01:00:00,{}
+ENG-00571,reetha,LEAD-0194,Email,landing_page_view,CMP-004,CRS-012,2026-07-11T04:00:00,{}
+ENG-00572,reetha,LEAD-0243,WhatsApp,course_page_view,CMP-010,CRS-001,2026-01-28T07:00:00,{}
+ENG-00573,reetha,LEAD-0206,Google Ads,form_submitted,CMP-015,CRS-008,2026-06-25T22:00:00,{}
+ENG-00574,reetha,LEAD-0054,Email,webinar_registered,CMP-007,CRS-004,2026-01-12T10:00:00,{}
+ENG-00575,reetha,LEAD-0141,Instagram,demo_requested,CMP-005,CRS-012,2026-09-25T08:00:00,{}
+ENG-00576,reetha,LEAD-0150,Email,webinar_registered,CMP-002,CRS-005,2026-01-10T12:00:00,{}
+ENG-00577,reetha,LEAD-0073,Meta,demo_requested,CMP-009,CRS-001,2026-03-29T01:00:00,{}
+ENG-00578,reetha,LEAD-0242,Google Ads,landing_page_view,CMP-013,CRS-011,2026-08-27T20:00:00,{}
+ENG-00579,reetha,LEAD-0219,Email,email_opened,CMP-004,CRS-001,2026-05-19T21:00:00,{}
+ENG-00580,reetha,LEAD-0099,Meta,email_clicked,CMP-017,CRS-012,2026-05-30T20:00:00,{}
+ENG-00581,reetha,LEAD-0125,Organic Search,demo_requested,CMP-018,CRS-002,2026-02-20T10:00:00,{}
+ENG-00582,reetha,LEAD-0129,Instagram,webinar_registered,CMP-001,CRS-001,2026-04-06T06:00:00,{}
+ENG-00583,reetha,LEAD-0079,LinkedIn,whatsapp_message,CMP-013,CRS-012,2026-05-07T16:00:00,{}
+ENG-00584,reetha,LEAD-0089,Email,email_opened,CMP-012,CRS-011,2026-03-22T00:00:00,{}
+ENG-00585,reetha,LEAD-0129,LinkedIn,ad_click,CMP-009,CRS-007,2026-06-04T07:00:00,{}
+ENG-00586,reetha,LEAD-0243,LinkedIn,form_started,CMP-005,CRS-006,2026-01-16T17:00:00,{}
+ENG-00587,reetha,LEAD-0036,Google Ads,email_clicked,CMP-017,CRS-011,2026-07-21T21:00:00,{}
+ENG-00588,reetha,LEAD-0062,WhatsApp,course_page_view,CMP-014,CRS-005,2026-04-27T13:00:00,{}
+ENG-00589,reetha,LEAD-0139,Meta,form_started,CMP-005,CRS-010,2026-06-18T14:00:00,{}
+ENG-00590,reetha,LEAD-0080,Email,webinar_registered,CMP-005,CRS-007,2026-04-14T04:00:00,{}
+ENG-00591,reetha,LEAD-0239,WhatsApp,course_page_view,CMP-011,CRS-002,2026-03-16T20:00:00,{}
+ENG-00592,reetha,LEAD-0082,Organic Search,course_page_view,CMP-001,CRS-006,2026-03-02T05:00:00,{}
+ENG-00593,reetha,LEAD-0078,Instagram,form_submitted,CMP-005,CRS-004,2026-07-31T13:00:00,{}
+ENG-00594,reetha,LEAD-0048,Google Ads,demo_requested,CMP-020,CRS-005,2026-02-24T04:00:00,{}
+ENG-00595,reetha,LEAD-0060,Meta,ad_click,CMP-012,CRS-002,2026-04-29T19:00:00,{}
+ENG-00596,reetha,LEAD-0129,Organic Search,demo_requested,CMP-016,CRS-012,2026-09-02T04:00:00,{}
+ENG-00597,reetha,LEAD-0219,Instagram,whatsapp_message,CMP-016,CRS-003,2026-07-11T05:00:00,{}
+ENG-00598,reetha,LEAD-0058,Google Ads,email_clicked,CMP-001,CRS-005,2026-03-25T06:00:00,{}
+ENG-00599,reetha,LEAD-0191,Email,form_started,CMP-007,CRS-002,2026-07-31T07:00:00,{}
+ENG-00600,reetha,LEAD-0222,WhatsApp,whatsapp_message,CMP-011,CRS-008,2026-04-01T14:00:00,{}
+ENG-00601,reetha,LEAD-0104,Organic Search,ad_click,CMP-020,CRS-012,2026-05-07T13:00:00,{}
+ENG-00602,reetha,LEAD-0081,Instagram,demo_requested,CMP-019,CRS-010,2026-07-14T23:00:00,{}
+ENG-00603,reetha,LEAD-0225,Email,ad_click,CMP-017,CRS-002,2026-09-26T20:00:00,{}
+ENG-00604,reetha,LEAD-0212,Google Ads,form_started,CMP-017,CRS-009,2026-08-20T14:00:00,{}
+ENG-00605,reetha,LEAD-0011,WhatsApp,email_clicked,CMP-017,CRS-011,2026-07-22T23:00:00,{}
+ENG-00606,reetha,LEAD-0075,Instagram,email_clicked,CMP-010,CRS-005,2026-01-26T06:00:00,{}
+ENG-00607,reetha,LEAD-0109,LinkedIn,demo_requested,CMP-002,CRS-012,2026-08-25T05:00:00,{}
+ENG-00608,reetha,LEAD-0119,Organic Search,whatsapp_message,CMP-003,CRS-012,2026-09-22T04:00:00,{}
+ENG-00609,reetha,LEAD-0047,Organic Search,demo_requested,CMP-018,CRS-003,2026-09-14T03:00:00,{}
+ENG-00610,reetha,LEAD-0083,Instagram,ad_click,CMP-006,CRS-008,2026-07-21T13:00:00,{}
+ENG-00611,reetha,LEAD-0024,LinkedIn,email_opened,CMP-006,CRS-012,2026-04-14T14:00:00,{}
+ENG-00612,reetha,LEAD-0030,Email,whatsapp_message,CMP-012,CRS-002,2026-03-05T02:00:00,{}
+ENG-00613,reetha,LEAD-0099,Email,webinar_registered,CMP-020,CRS-003,2026-09-26T22:00:00,{}
+ENG-00614,reetha,LEAD-0098,Google Ads,course_page_view,CMP-011,CRS-010,2026-07-13T17:00:00,{}
+ENG-00615,reetha,LEAD-0223,Meta,course_page_view,CMP-002,CRS-007,2026-03-18T05:00:00,{}
+ENG-00616,reetha,LEAD-0187,Organic Search,whatsapp_message,CMP-010,CRS-011,2026-06-07T09:00:00,{}
+ENG-00617,reetha,LEAD-0231,Meta,form_started,CMP-001,CRS-010,2026-04-03T03:00:00,{}
+ENG-00618,reetha,LEAD-0118,Instagram,whatsapp_message,CMP-018,CRS-001,2026-05-10T00:00:00,{}
+ENG-00619,reetha,LEAD-0056,WhatsApp,whatsapp_message,CMP-015,CRS-007,2026-09-10T07:00:00,{}
+ENG-00620,reetha,LEAD-0154,WhatsApp,ad_click,CMP-008,CRS-009,2026-08-15T02:00:00,{}
+ENG-00621,reetha,LEAD-0161,WhatsApp,form_started,CMP-002,CRS-003,2026-05-23T19:00:00,{}
+ENG-00622,reetha,LEAD-0168,LinkedIn,ad_click,CMP-005,CRS-001,2026-03-17T01:00:00,{}
+ENG-00623,reetha,LEAD-0236,Google Ads,ad_click,CMP-004,CRS-007,2026-06-02T10:00:00,{}
+ENG-00624,reetha,LEAD-0173,LinkedIn,demo_requested,CMP-020,CRS-010,2026-04-02T05:00:00,{}
+ENG-00625,reetha,LEAD-0192,WhatsApp,email_opened,CMP-002,CRS-002,2026-04-01T14:00:00,{}
+ENG-00626,reetha,LEAD-0095,Instagram,landing_page_view,CMP-014,CRS-009,2026-06-03T10:00:00,{}
+ENG-00627,reetha,LEAD-0121,Meta,landing_page_view,CMP-009,CRS-006,2026-02-03T09:00:00,{}
+ENG-00628,reetha,LEAD-0135,Meta,form_started,CMP-020,CRS-001,2026-09-27T13:00:00,{}
+ENG-00629,reetha,LEAD-0187,Email,webinar_registered,CMP-003,CRS-008,2026-02-25T18:00:00,{}
+ENG-00630,reetha,LEAD-0156,Organic Search,email_opened,CMP-009,CRS-009,2026-05-28T13:00:00,{}
+ENG-00631,reetha,LEAD-0158,WhatsApp,whatsapp_message,CMP-017,CRS-012,2026-07-01T04:00:00,{}
+ENG-00632,reetha,LEAD-0207,Meta,demo_requested,CMP-008,CRS-012,2026-09-12T15:00:00,{}
+ENG-00633,reetha,LEAD-0001,Google Ads,ad_click,CMP-015,CRS-011,2026-05-29T06:00:00,{}
+ENG-00634,reetha,LEAD-0218,Meta,demo_requested,CMP-014,CRS-007,2026-03-02T23:00:00,{}
+ENG-00635,reetha,LEAD-0090,WhatsApp,form_started,CMP-001,CRS-011,2026-01-24T10:00:00,{}
+ENG-00636,reetha,LEAD-0073,LinkedIn,landing_page_view,CMP-010,CRS-005,2026-04-14T22:00:00,{}
+ENG-00637,reetha,LEAD-0083,Organic Search,ad_click,CMP-004,CRS-011,2026-09-17T17:00:00,{}
+ENG-00638,reetha,LEAD-0102,Email,demo_requested,CMP-020,CRS-001,2026-06-20T10:00:00,{}
+ENG-00639,reetha,LEAD-0085,Organic Search,email_opened,CMP-016,CRS-008,2026-03-31T06:00:00,{}
+ENG-00640,reetha,LEAD-0035,Instagram,course_page_view,CMP-015,CRS-009,2026-01-19T20:00:00,{}
+ENG-00641,reetha,LEAD-0201,Organic Search,email_clicked,CMP-002,CRS-009,2026-06-21T14:00:00,{}
+ENG-00642,reetha,LEAD-0186,Email,email_opened,CMP-018,CRS-009,2026-06-03T18:00:00,{}
+ENG-00643,reetha,LEAD-0148,Email,email_opened,CMP-012,CRS-002,2026-01-10T06:00:00,{}
+ENG-00644,reetha,LEAD-0216,Google Ads,email_opened,CMP-013,CRS-011,2026-03-18T08:00:00,{}
+ENG-00645,reetha,LEAD-0156,Instagram,course_page_view,CMP-020,CRS-002,2026-03-26T18:00:00,{}
+ENG-00646,reetha,LEAD-0220,LinkedIn,ad_click,CMP-009,CRS-007,2026-06-07T22:00:00,{}
+ENG-00647,reetha,LEAD-0225,Meta,email_opened,CMP-015,CRS-005,2026-02-14T15:00:00,{}
+ENG-00648,reetha,LEAD-0078,Meta,landing_page_view,CMP-012,CRS-001,2026-04-21T16:00:00,{}
+ENG-00649,reetha,LEAD-0114,WhatsApp,ad_click,CMP-016,CRS-009,2026-04-14T02:00:00,{}
+ENG-00650,reetha,LEAD-0088,Instagram,webinar_registered,CMP-010,CRS-006,2026-03-20T06:00:00,{}
+ENG-00651,reetha,LEAD-0211,WhatsApp,course_page_view,CMP-007,CRS-012,2026-03-15T03:00:00,{}
+ENG-00652,reetha,LEAD-0100,Email,webinar_registered,CMP-004,CRS-001,2026-01-19T14:00:00,{}
+ENG-00653,reetha,LEAD-0176,Organic Search,demo_requested,CMP-003,CRS-006,2026-06-09T01:00:00,{}
+ENG-00654,reetha,LEAD-0027,WhatsApp,form_submitted,CMP-001,CRS-010,2026-08-28T01:00:00,{}
+ENG-00655,reetha,LEAD-0229,Meta,email_opened,CMP-007,CRS-004,2026-06-09T20:00:00,{}
+ENG-00656,reetha,LEAD-0137,LinkedIn,whatsapp_message,CMP-004,CRS-005,2026-05-27T08:00:00,{}
+ENG-00657,reetha,LEAD-0071,Google Ads,ad_click,CMP-020,CRS-009,2026-03-18T05:00:00,{}
+ENG-00658,reetha,LEAD-0053,WhatsApp,email_opened,CMP-018,CRS-006,2026-09-21T03:00:00,{}
+ENG-00659,reetha,LEAD-0242,Email,form_submitted,CMP-019,CRS-004,2026-05-19T04:00:00,{}
+ENG-00660,reetha,LEAD-0080,WhatsApp,email_opened,CMP-018,CRS-008,2026-03-29T02:00:00,{}
+ENG-00661,reetha,LEAD-0008,Instagram,ad_click,CMP-004,CRS-007,2026-01-26T04:00:00,{}
+ENG-00662,reetha,LEAD-0110,Instagram,course_page_view,CMP-020,CRS-010,2026-01-28T02:00:00,{}
+ENG-00663,reetha,LEAD-0092,LinkedIn,email_opened,CMP-007,CRS-012,2026-08-17T19:00:00,{}
+ENG-00664,reetha,LEAD-0146,Meta,landing_page_view,CMP-015,CRS-002,2026-02-10T14:00:00,{}
+ENG-00665,reetha,LEAD-0176,Email,whatsapp_message,CMP-016,CRS-004,2026-08-22T09:00:00,{}
+ENG-00666,reetha,LEAD-0221,WhatsApp,form_submitted,CMP-012,CRS-007,2026-04-25T04:00:00,{}
+ENG-00667,reetha,LEAD-0235,Email,email_opened,CMP-011,CRS-008,2026-04-04T22:00:00,{}
+ENG-00668,reetha,LEAD-0017,Instagram,landing_page_view,CMP-012,CRS-008,2026-09-07T00:00:00,{}
+ENG-00669,reetha,LEAD-0073,Organic Search,email_opened,CMP-020,CRS-010,2026-08-25T05:00:00,{}
+ENG-00670,reetha,LEAD-0027,Instagram,landing_page_view,CMP-011,CRS-009,2026-03-07T16:00:00,{}
+ENG-00671,reetha,LEAD-0137,Instagram,email_clicked,CMP-019,CRS-007,2026-02-06T09:00:00,{}
+ENG-00672,reetha,LEAD-0063,WhatsApp,course_page_view,CMP-016,CRS-007,2026-05-03T19:00:00,{}
+ENG-00673,reetha,LEAD-0054,Organic Search,demo_requested,CMP-014,CRS-007,2026-02-03T10:00:00,{}
+ENG-00674,reetha,LEAD-0178,Meta,course_page_view,CMP-003,CRS-012,2026-06-25T17:00:00,{}
+ENG-00675,reetha,LEAD-0152,WhatsApp,whatsapp_message,CMP-011,CRS-009,2026-09-07T03:00:00,{}
+ENG-00676,reetha,LEAD-0046,LinkedIn,email_clicked,CMP-003,CRS-010,2026-02-19T14:00:00,{}
+ENG-00677,reetha,LEAD-0209,WhatsApp,email_clicked,CMP-011,CRS-008,2026-02-25T21:00:00,{}
+ENG-00678,reetha,LEAD-0056,Organic Search,course_page_view,CMP-019,CRS-011,2026-02-01T02:00:00,{}
+ENG-00679,reetha,LEAD-0170,Meta,whatsapp_message,CMP-018,CRS-005,2026-01-01T04:00:00,{}
+ENG-00680,reetha,LEAD-0148,Instagram,form_started,CMP-007,CRS-011,2026-07-19T19:00:00,{}
+ENG-00681,reetha,LEAD-0146,Organic Search,form_submitted,CMP-014,CRS-012,2026-06-12T09:00:00,{}
+ENG-00682,reetha,LEAD-0150,Google Ads,demo_requested,CMP-017,CRS-007,2026-06-26T02:00:00,{}
+ENG-00683,reetha,LEAD-0016,LinkedIn,webinar_registered,CMP-002,CRS-001,2026-03-07T09:00:00,{}
+ENG-00684,reetha,LEAD-0221,LinkedIn,ad_click,CMP-008,CRS-007,2026-07-03T03:00:00,{}
+ENG-00685,reetha,LEAD-0082,Email,email_clicked,CMP-013,CRS-007,2026-07-21T20:00:00,{}
+ENG-00686,reetha,LEAD-0055,Email,course_page_view,CMP-016,CRS-003,2026-08-11T17:00:00,{}
+ENG-00687,reetha,LEAD-0099,Organic Search,email_opened,CMP-014,CRS-003,2026-04-07T17:00:00,{}
+ENG-00688,reetha,LEAD-0033,Meta,ad_click,CMP-003,CRS-011,2026-05-28T21:00:00,{}
+ENG-00689,reetha,LEAD-0185,Instagram,email_clicked,CMP-005,CRS-002,2026-01-09T04:00:00,{}
+ENG-00690,reetha,LEAD-0207,Instagram,whatsapp_message,CMP-020,CRS-007,2026-03-12T20:00:00,{}
+ENG-00691,reetha,LEAD-0131,Instagram,webinar_registered,CMP-015,CRS-007,2026-04-03T14:00:00,{}
+ENG-00692,reetha,LEAD-0048,Instagram,demo_requested,CMP-001,CRS-010,2026-07-01T07:00:00,{}
+ENG-00693,reetha,LEAD-0061,Email,webinar_registered,CMP-009,CRS-007,2026-09-13T23:00:00,{}
+ENG-00694,reetha,LEAD-0010,WhatsApp,whatsapp_message,CMP-012,CRS-002,2026-07-07T01:00:00,{}
+ENG-00695,reetha,LEAD-0021,Meta,webinar_registered,CMP-009,CRS-008,2026-09-04T22:00:00,{}
+ENG-00696,reetha,LEAD-0134,WhatsApp,landing_page_view,CMP-008,CRS-008,2026-09-22T02:00:00,{}
+ENG-00697,reetha,LEAD-0163,WhatsApp,demo_requested,CMP-010,CRS-010,2026-02-09T21:00:00,{}
+ENG-00698,reetha,LEAD-0137,Organic Search,ad_click,CMP-016,CRS-008,2026-01-28T10:00:00,{}
+ENG-00699,reetha,LEAD-0147,Email,email_opened,CMP-014,CRS-006,2026-09-20T15:00:00,{}
+ENG-00700,reetha,LEAD-0043,Google Ads,demo_requested,CMP-010,CRS-012,2026-05-31T09:00:00,{}
+ENG-00701,reetha,LEAD-0162,Instagram,demo_requested,CMP-006,CRS-010,2026-05-14T01:00:00,{}
+ENG-00702,reetha,LEAD-0075,Organic Search,demo_requested,CMP-001,CRS-005,2026-01-27T21:00:00,{}
+ENG-00703,reetha,LEAD-0033,WhatsApp,landing_page_view,CMP-009,CRS-005,2026-09-06T02:00:00,{}
+ENG-00704,reetha,LEAD-0072,LinkedIn,form_submitted,CMP-001,CRS-012,2026-03-09T19:00:00,{}
+ENG-00705,reetha,LEAD-0045,WhatsApp,course_page_view,CMP-015,CRS-006,2026-02-27T19:00:00,{}
+ENG-00706,reetha,LEAD-0201,Email,form_started,CMP-016,CRS-003,2026-03-31T08:00:00,{}
+ENG-00707,reetha,LEAD-0088,Google Ads,course_page_view,CMP-020,CRS-003,2026-09-28T01:00:00,{}
+ENG-00708,reetha,LEAD-0198,Instagram,form_started,CMP-015,CRS-012,2026-09-11T13:00:00,{}
+ENG-00709,reetha,LEAD-0148,Email,email_opened,CMP-002,CRS-011,2026-03-27T06:00:00,{}
+ENG-00710,reetha,LEAD-0014,Meta,whatsapp_message,CMP-013,CRS-008,2026-05-16T03:00:00,{}
+ENG-00711,reetha,LEAD-0192,Organic Search,webinar_registered,CMP-008,CRS-007,2026-06-04T15:00:00,{}
+ENG-00712,reetha,LEAD-0068,Meta,webinar_registered,CMP-014,CRS-001,2026-07-19T15:00:00,{}
+ENG-00713,reetha,LEAD-0098,Email,email_opened,CMP-017,CRS-011,2026-05-28T14:00:00,{}
+ENG-00714,reetha,LEAD-0235,WhatsApp,email_opened,CMP-014,CRS-010,2026-01-22T03:00:00,{}
+ENG-00715,reetha,LEAD-0070,LinkedIn,landing_page_view,CMP-009,CRS-011,2026-05-20T10:00:00,{}
+ENG-00716,reetha,LEAD-0198,Email,form_started,CMP-019,CRS-004,2026-07-20T14:00:00,{}
+ENG-00717,reetha,LEAD-0174,Email,course_page_view,CMP-011,CRS-009,2026-09-24T10:00:00,{}
+ENG-00718,reetha,LEAD-0003,Organic Search,landing_page_view,CMP-001,CRS-007,2026-01-06T21:00:00,{}
+ENG-00719,reetha,LEAD-0027,Email,whatsapp_message,CMP-012,CRS-004,2026-02-20T16:00:00,{}
+ENG-00720,reetha,LEAD-0050,Google Ads,ad_click,CMP-020,CRS-002,2026-05-26T08:00:00,{}
+ENG-00721,reetha,LEAD-0169,Organic Search,form_started,CMP-020,CRS-011,2026-01-30T19:00:00,{}
+ENG-00722,reetha,LEAD-0246,Google Ads,landing_page_view,CMP-020,CRS-003,2026-03-04T22:00:00,{}
+ENG-00723,reetha,LEAD-0196,Email,demo_requested,CMP-006,CRS-002,2026-07-12T21:00:00,{}
+ENG-00724,reetha,LEAD-0076,Instagram,landing_page_view,CMP-015,CRS-005,2026-04-05T08:00:00,{}
+ENG-00725,reetha,LEAD-0232,Email,email_opened,CMP-009,CRS-003,2026-08-07T22:00:00,{}
+ENG-00726,reetha,LEAD-0199,Google Ads,email_clicked,CMP-013,CRS-006,2026-02-07T08:00:00,{}
+ENG-00727,reetha,LEAD-0245,Organic Search,form_submitted,CMP-006,CRS-008,2026-01-31T08:00:00,{}
+ENG-00728,reetha,LEAD-0238,Meta,demo_requested,CMP-013,CRS-003,2026-02-05T15:00:00,{}
+ENG-00729,reetha,LEAD-0037,WhatsApp,email_clicked,CMP-007,CRS-010,2026-09-09T03:00:00,{}
+ENG-00730,reetha,LEAD-0184,LinkedIn,landing_page_view,CMP-002,CRS-002,2026-02-24T14:00:00,{}
+ENG-00731,reetha,LEAD-0187,LinkedIn,whatsapp_message,CMP-001,CRS-008,2026-02-06T18:00:00,{}
+ENG-00732,reetha,LEAD-0164,Google Ads,ad_click,CMP-013,CRS-005,2026-03-18T20:00:00,{}
+ENG-00733,reetha,LEAD-0085,Instagram,demo_requested,CMP-001,CRS-009,2026-03-19T22:00:00,{}
+ENG-00734,reetha,LEAD-0112,Instagram,landing_page_view,CMP-018,CRS-004,2026-09-09T15:00:00,{}
+ENG-00735,reetha,LEAD-0245,Email,whatsapp_message,CMP-004,CRS-010,2026-01-02T12:00:00,{}
+ENG-00736,reetha,LEAD-0175,LinkedIn,email_clicked,CMP-002,CRS-011,2026-07-03T10:00:00,{}
+ENG-00737,reetha,LEAD-0137,Organic Search,email_opened,CMP-003,CRS-008,2026-02-16T11:00:00,{}
+ENG-00738,reetha,LEAD-0052,Meta,webinar_registered,CMP-002,CRS-007,2026-05-29T20:00:00,{}
+ENG-00739,reetha,LEAD-0179,Instagram,landing_page_view,CMP-012,CRS-008,2026-04-08T09:00:00,{}
+ENG-00740,reetha,LEAD-0113,Email,form_started,CMP-005,CRS-001,2026-02-13T20:00:00,{}
+ENG-00741,reetha,LEAD-0185,WhatsApp,form_started,CMP-016,CRS-007,2026-04-09T00:00:00,{}
+ENG-00742,reetha,LEAD-0165,LinkedIn,whatsapp_message,CMP-018,CRS-008,2026-02-02T17:00:00,{}
+ENG-00743,reetha,LEAD-0087,Google Ads,email_opened,CMP-002,CRS-007,2026-01-09T01:00:00,{}
+ENG-00744,reetha,LEAD-0207,Email,webinar_registered,CMP-015,CRS-011,2026-03-02T06:00:00,{}
+ENG-00745,reetha,LEAD-0149,Meta,landing_page_view,CMP-002,CRS-012,2026-03-18T23:00:00,{}
+ENG-00746,reetha,LEAD-0168,Google Ads,whatsapp_message,CMP-020,CRS-001,2026-03-14T15:00:00,{}
+ENG-00747,reetha,LEAD-0167,Meta,ad_click,CMP-006,CRS-011,2026-05-05T22:00:00,{}
+ENG-00748,reetha,LEAD-0211,Organic Search,landing_page_view,CMP-015,CRS-010,2026-01-26T09:00:00,{}
+ENG-00749,reetha,LEAD-0017,Organic Search,landing_page_view,CMP-004,CRS-008,2026-03-29T18:00:00,{}
+ENG-00750,reetha,LEAD-0206,Meta,email_clicked,CMP-011,CRS-012,2026-04-23T02:00:00,{}
+ENG-00751,reetha,LEAD-0031,Email,demo_requested,CMP-018,CRS-003,2026-07-25T10:00:00,{}
+ENG-00752,reetha,LEAD-0196,Google Ads,demo_requested,CMP-006,CRS-006,2026-06-14T06:00:00,{}
+ENG-00753,reetha,LEAD-0071,Meta,email_clicked,CMP-006,CRS-012,2026-02-02T03:00:00,{}
+ENG-00754,reetha,LEAD-0043,Instagram,form_started,CMP-019,CRS-001,2026-07-09T17:00:00,{}
+ENG-00755,reetha,LEAD-0203,Organic Search,demo_requested,CMP-013,CRS-003,2026-03-10T03:00:00,{}
+ENG-00756,reetha,LEAD-0021,Google Ads,ad_click,CMP-006,CRS-002,2026-01-09T15:00:00,{}
+ENG-00757,reetha,LEAD-0178,Organic Search,whatsapp_message,CMP-005,CRS-004,2026-05-26T13:00:00,{}
+ENG-00758,reetha,LEAD-0070,WhatsApp,whatsapp_message,CMP-014,CRS-004,2026-03-15T20:00:00,{}
+ENG-00759,reetha,LEAD-0178,Google Ads,demo_requested,CMP-006,CRS-012,2026-03-31T19:00:00,{}
+ENG-00760,reetha,LEAD-0244,Google Ads,form_submitted,CMP-012,CRS-007,2026-09-13T19:00:00,{}
+ENG-00761,reetha,LEAD-0061,Meta,landing_page_view,CMP-017,CRS-002,2026-01-03T17:00:00,{}
+ENG-00762,reetha,LEAD-0130,Meta,whatsapp_message,CMP-007,CRS-005,2026-07-05T17:00:00,{}
+ENG-00763,reetha,LEAD-0029,Organic Search,course_page_view,CMP-016,CRS-008,2026-01-28T06:00:00,{}
+ENG-00764,reetha,LEAD-0172,Google Ads,ad_click,CMP-012,CRS-005,2026-04-01T05:00:00,{}
+ENG-00765,reetha,LEAD-0065,LinkedIn,demo_requested,CMP-015,CRS-001,2026-04-18T13:00:00,{}
+ENG-00766,reetha,LEAD-0014,WhatsApp,course_page_view,CMP-006,CRS-001,2026-02-23T23:00:00,{}
+ENG-00767,reetha,LEAD-0030,Google Ads,form_started,CMP-015,CRS-010,2026-09-06T16:00:00,{}
+ENG-00768,reetha,LEAD-0051,Email,email_opened,CMP-008,CRS-002,2026-06-16T13:00:00,{}
+ENG-00769,reetha,LEAD-0026,Meta,email_clicked,CMP-007,CRS-007,2026-06-16T07:00:00,{}
+ENG-00770,reetha,LEAD-0121,WhatsApp,whatsapp_message,CMP-002,CRS-007,2026-04-23T02:00:00,{}
+ENG-00771,reetha,LEAD-0238,WhatsApp,whatsapp_message,CMP-006,CRS-007,2026-03-16T06:00:00,{}
+ENG-00772,reetha,LEAD-0118,Email,form_started,CMP-012,CRS-005,2026-07-11T04:00:00,{}
+ENG-00773,reetha,LEAD-0033,Google Ads,demo_requested,CMP-002,CRS-005,2026-04-14T10:00:00,{}
+ENG-00774,reetha,LEAD-0219,Instagram,whatsapp_message,CMP-014,CRS-003,2026-03-11T03:00:00,{}
+ENG-00775,reetha,LEAD-0227,LinkedIn,demo_requested,CMP-006,CRS-011,2026-06-25T07:00:00,{}
+ENG-00776,reetha,LEAD-0249,WhatsApp,form_started,CMP-003,CRS-007,2026-03-29T18:00:00,{}
+ENG-00777,reetha,LEAD-0221,Meta,demo_requested,CMP-016,CRS-008,2026-09-25T15:00:00,{}
+ENG-00778,reetha,LEAD-0187,Instagram,form_started,CMP-008,CRS-006,2026-05-23T00:00:00,{}
+ENG-00779,reetha,LEAD-0057,WhatsApp,course_page_view,CMP-019,CRS-001,2026-08-11T18:00:00,{}
+ENG-00780,reetha,LEAD-0011,Instagram,webinar_registered,CMP-002,CRS-007,2026-08-02T01:00:00,{}
+ENG-00781,reetha,LEAD-0208,Organic Search,landing_page_view,CMP-015,CRS-008,2026-07-21T15:00:00,{}
+ENG-00782,reetha,LEAD-0143,Organic Search,ad_click,CMP-014,CRS-004,2026-05-04T02:00:00,{}
+ENG-00783,reetha,LEAD-0076,Meta,landing_page_view,CMP-001,CRS-008,2026-03-09T11:00:00,{}
+ENG-00784,reetha,LEAD-0181,Instagram,demo_requested,CMP-019,CRS-001,2026-06-06T05:00:00,{}
+ENG-00785,reetha,LEAD-0198,Meta,email_clicked,CMP-006,CRS-006,2026-08-21T14:00:00,{}
+ENG-00786,reetha,LEAD-0163,Google Ads,landing_page_view,CMP-013,CRS-012,2026-08-26T22:00:00,{}
+ENG-00787,reetha,LEAD-0009,LinkedIn,email_clicked,CMP-009,CRS-012,2026-06-20T16:00:00,{}
+ENG-00788,reetha,LEAD-0021,WhatsApp,email_opened,CMP-002,CRS-009,2026-04-17T21:00:00,{}
+ENG-00789,reetha,LEAD-0029,Instagram,email_opened,CMP-015,CRS-010,2026-07-06T01:00:00,{}
+ENG-00790,reetha,LEAD-0094,Meta,webinar_registered,CMP-003,CRS-009,2026-01-21T11:00:00,{}
+ENG-00791,reetha,LEAD-0086,Meta,webinar_registered,CMP-004,CRS-011,2026-04-15T04:00:00,{}
+ENG-00792,reetha,LEAD-0241,Organic Search,demo_requested,CMP-007,CRS-012,2026-09-02T23:00:00,{}
+ENG-00793,reetha,LEAD-0091,LinkedIn,webinar_registered,CMP-014,CRS-005,2026-04-26T10:00:00,{}
+ENG-00794,reetha,LEAD-0096,LinkedIn,whatsapp_message,CMP-016,CRS-009,2026-01-28T02:00:00,{}
+ENG-00795,reetha,LEAD-0121,Email,webinar_registered,CMP-018,CRS-005,2026-09-27T03:00:00,{}
+ENG-00796,reetha,LEAD-0095,Organic Search,landing_page_view,CMP-007,CRS-008,2026-08-20T19:00:00,{}
+ENG-00797,reetha,LEAD-0101,Meta,form_submitted,CMP-003,CRS-002,2026-02-14T02:00:00,{}
+ENG-00798,reetha,LEAD-0029,Email,course_page_view,CMP-016,CRS-003,2026-03-26T08:00:00,{}
+ENG-00799,reetha,LEAD-0244,Email,ad_click,CMP-010,CRS-007,2026-04-15T16:00:00,{}
+ENG-00800,reetha,LEAD-0089,Instagram,whatsapp_message,CMP-001,CRS-005,2026-03-09T15:00:00,{}
+ENG-00801,reetha,LEAD-0006,Organic Search,form_started,CMP-017,CRS-011,2026-04-07T02:00:00,{}
+ENG-00802,reetha,LEAD-0149,LinkedIn,email_opened,CMP-016,CRS-010,2026-06-21T13:00:00,{}
+ENG-00803,reetha,LEAD-0078,WhatsApp,course_page_view,CMP-010,CRS-003,2026-08-16T14:00:00,{}
+ENG-00804,reetha,LEAD-0124,LinkedIn,form_submitted,CMP-002,CRS-003,2026-05-14T07:00:00,{}
+ENG-00805,reetha,LEAD-0117,Meta,demo_requested,CMP-006,CRS-012,2026-06-30T09:00:00,{}
+ENG-00806,reetha,LEAD-0250,Meta,course_page_view,CMP-006,CRS-004,2026-05-27T05:00:00,{}
+ENG-00807,reetha,LEAD-0082,WhatsApp,course_page_view,CMP-015,CRS-005,2026-03-01T01:00:00,{}
+ENG-00808,reetha,LEAD-0053,WhatsApp,ad_click,CMP-011,CRS-006,2026-07-09T05:00:00,{}
+ENG-00809,reetha,LEAD-0115,WhatsApp,course_page_view,CMP-018,CRS-005,2026-03-17T11:00:00,{}
+ENG-00810,reetha,LEAD-0104,Instagram,course_page_view,CMP-015,CRS-006,2026-03-04T00:00:00,{}
+ENG-00811,reetha,LEAD-0249,Email,webinar_registered,CMP-017,CRS-006,2026-03-21T00:00:00,{}
+ENG-00812,reetha,LEAD-0230,LinkedIn,demo_requested,CMP-005,CRS-010,2026-06-01T15:00:00,{}
+ENG-00813,reetha,LEAD-0177,Google Ads,whatsapp_message,CMP-002,CRS-003,2026-08-15T10:00:00,{}
+ENG-00814,reetha,LEAD-0007,Instagram,demo_requested,CMP-008,CRS-008,2026-03-01T09:00:00,{}
+ENG-00815,reetha,LEAD-0084,Google Ads,demo_requested,CMP-007,CRS-010,2026-07-02T02:00:00,{}
+ENG-00816,reetha,LEAD-0201,Organic Search,form_submitted,CMP-007,CRS-001,2026-09-27T07:00:00,{}
+ENG-00817,reetha,LEAD-0218,Instagram,landing_page_view,CMP-017,CRS-007,2026-02-12T17:00:00,{}
+ENG-00818,reetha,LEAD-0082,WhatsApp,demo_requested,CMP-017,CRS-001,2026-04-10T15:00:00,{}
+ENG-00819,reetha,LEAD-0038,Email,email_clicked,CMP-012,CRS-007,2026-07-04T12:00:00,{}
+ENG-00820,reetha,LEAD-0073,LinkedIn,email_opened,CMP-010,CRS-008,2026-07-10T00:00:00,{}
+ENG-00821,reetha,LEAD-0187,Instagram,email_clicked,CMP-015,CRS-005,2026-02-14T06:00:00,{}
+ENG-00822,reetha,LEAD-0249,Instagram,email_clicked,CMP-005,CRS-010,2026-03-25T23:00:00,{}
+ENG-00823,reetha,LEAD-0054,LinkedIn,whatsapp_message,CMP-017,CRS-006,2026-02-14T04:00:00,{}
+ENG-00824,reetha,LEAD-0194,Instagram,landing_page_view,CMP-001,CRS-007,2026-02-03T18:00:00,{}
+ENG-00825,reetha,LEAD-0045,WhatsApp,whatsapp_message,CMP-019,CRS-003,2026-05-20T13:00:00,{}
+ENG-00826,reetha,LEAD-0214,Instagram,form_submitted,CMP-018,CRS-008,2026-04-13T05:00:00,{}
+ENG-00827,reetha,LEAD-0214,WhatsApp,form_submitted,CMP-016,CRS-009,2026-01-22T09:00:00,{}
+ENG-00828,reetha,LEAD-0007,Organic Search,ad_click,CMP-005,CRS-005,2026-08-26T07:00:00,{}
+ENG-00829,reetha,LEAD-0214,Email,whatsapp_message,CMP-004,CRS-011,2026-06-03T20:00:00,{}
+ENG-00830,reetha,LEAD-0046,Instagram,form_started,CMP-001,CRS-002,2026-05-28T13:00:00,{}
+ENG-00831,reetha,LEAD-0249,Google Ads,demo_requested,CMP-012,CRS-010,2026-05-22T15:00:00,{}
+ENG-00832,reetha,LEAD-0112,Organic Search,form_submitted,CMP-016,CRS-012,2026-09-04T18:00:00,{}
+ENG-00833,reetha,LEAD-0132,Email,demo_requested,CMP-001,CRS-005,2026-03-03T11:00:00,{}
+ENG-00834,reetha,LEAD-0015,Meta,email_opened,CMP-015,CRS-012,2026-03-25T18:00:00,{}
+ENG-00835,reetha,LEAD-0042,Google Ads,form_submitted,CMP-012,CRS-007,2026-03-11T11:00:00,{}
+ENG-00836,reetha,LEAD-0075,LinkedIn,webinar_registered,CMP-003,CRS-009,2026-07-02T01:00:00,{}
+ENG-00837,reetha,LEAD-0047,Organic Search,landing_page_view,CMP-020,CRS-003,2026-04-10T20:00:00,{}
+ENG-00838,reetha,LEAD-0212,Organic Search,form_submitted,CMP-009,CRS-011,2026-06-15T10:00:00,{}
+ENG-00839,reetha,LEAD-0137,WhatsApp,email_opened,CMP-005,CRS-001,2026-07-05T03:00:00,{}
+ENG-00840,reetha,LEAD-0073,LinkedIn,whatsapp_message,CMP-014,CRS-006,2026-03-12T16:00:00,{}
+ENG-00841,reetha,LEAD-0056,Meta,webinar_registered,CMP-008,CRS-004,2026-03-25T03:00:00,{}
+ENG-00842,reetha,LEAD-0183,WhatsApp,landing_page_view,CMP-014,CRS-008,2026-09-27T17:00:00,{}
+ENG-00843,reetha,LEAD-0210,Meta,ad_click,CMP-016,CRS-006,2026-02-09T03:00:00,{}
+ENG-00844,reetha,LEAD-0093,Meta,whatsapp_message,CMP-020,CRS-009,2026-06-09T22:00:00,{}
+ENG-00845,reetha,LEAD-0182,LinkedIn,ad_click,CMP-004,CRS-004,2026-06-25T05:00:00,{}
+ENG-00846,reetha,LEAD-0037,Email,form_started,CMP-010,CRS-003,2026-03-07T22:00:00,{}
+ENG-00847,reetha,LEAD-0021,Instagram,landing_page_view,CMP-003,CRS-001,2026-04-18T04:00:00,{}
+ENG-00848,reetha,LEAD-0011,Meta,landing_page_view,CMP-002,CRS-011,2026-09-05T13:00:00,{}
+ENG-00849,reetha,LEAD-0016,Instagram,landing_page_view,CMP-009,CRS-001,2026-09-20T18:00:00,{}
+ENG-00850,reetha,LEAD-0171,Google Ads,landing_page_view,CMP-004,CRS-010,2026-02-03T09:00:00,{}
+ENG-00851,reetha,LEAD-0231,Meta,course_page_view,CMP-012,CRS-001,2026-04-16T18:00:00,{}
+ENG-00852,reetha,LEAD-0217,Email,form_submitted,CMP-019,CRS-006,2026-02-16T04:00:00,{}
+ENG-00853,reetha,LEAD-0219,WhatsApp,demo_requested,CMP-008,CRS-009,2026-06-30T05:00:00,{}
+ENG-00854,reetha,LEAD-0210,WhatsApp,ad_click,CMP-017,CRS-004,2026-02-04T03:00:00,{}
+ENG-00855,reetha,LEAD-0044,Organic Search,webinar_registered,CMP-001,CRS-012,2026-04-09T09:00:00,{}
+ENG-00856,reetha,LEAD-0236,WhatsApp,whatsapp_message,CMP-012,CRS-012,2026-02-20T06:00:00,{}
+ENG-00857,reetha,LEAD-0173,Google Ads,course_page_view,CMP-012,CRS-007,2026-04-05T14:00:00,{}
+ENG-00858,reetha,LEAD-0132,Meta,email_clicked,CMP-004,CRS-006,2026-08-06T06:00:00,{}
+ENG-00859,reetha,LEAD-0029,WhatsApp,course_page_view,CMP-016,CRS-006,2026-03-05T14:00:00,{}
+ENG-00860,reetha,LEAD-0185,Google Ads,landing_page_view,CMP-011,CRS-008,2026-05-28T17:00:00,{}
+ENG-00861,reetha,LEAD-0073,Instagram,demo_requested,CMP-010,CRS-011,2026-03-01T12:00:00,{}
+ENG-00862,reetha,LEAD-0142,Instagram,form_submitted,CMP-014,CRS-004,2026-08-16T07:00:00,{}
+ENG-00863,reetha,LEAD-0241,Email,email_opened,CMP-006,CRS-001,2026-02-05T15:00:00,{}
+ENG-00864,reetha,LEAD-0027,Instagram,whatsapp_message,CMP-017,CRS-011,2026-09-09T21:00:00,{}
+ENG-00865,reetha,LEAD-0037,Instagram,email_clicked,CMP-019,CRS-002,2026-02-13T03:00:00,{}
+ENG-00866,reetha,LEAD-0094,Meta,email_opened,CMP-007,CRS-010,2026-03-28T02:00:00,{}
+ENG-00867,reetha,LEAD-0060,Organic Search,email_clicked,CMP-016,CRS-005,2026-07-26T03:00:00,{}
+ENG-00868,reetha,LEAD-0242,Instagram,email_opened,CMP-016,CRS-011,2026-05-20T20:00:00,{}
+ENG-00869,reetha,LEAD-0131,LinkedIn,course_page_view,CMP-015,CRS-002,2026-07-27T15:00:00,{}
+ENG-00870,reetha,LEAD-0126,Instagram,form_started,CMP-005,CRS-001,2026-03-04T08:00:00,{}
+ENG-00871,reetha,LEAD-0014,Organic Search,landing_page_view,CMP-016,CRS-011,2026-02-20T23:00:00,{}
+ENG-00872,reetha,LEAD-0098,WhatsApp,email_opened,CMP-005,CRS-005,2026-01-14T05:00:00,{}
+ENG-00873,reetha,LEAD-0170,Organic Search,webinar_registered,CMP-016,CRS-008,2026-02-19T02:00:00,{}
+ENG-00874,reetha,LEAD-0170,Instagram,whatsapp_message,CMP-017,CRS-005,2026-04-14T09:00:00,{}
+ENG-00875,reetha,LEAD-0140,Google Ads,ad_click,CMP-014,CRS-002,2026-06-25T17:00:00,{}
+ENG-00876,reetha,LEAD-0081,Organic Search,email_clicked,CMP-015,CRS-008,2026-07-16T14:00:00,{}
+ENG-00877,reetha,LEAD-0046,WhatsApp,form_submitted,CMP-006,CRS-008,2026-01-19T01:00:00,{}
+ENG-00878,reetha,LEAD-0080,Email,email_clicked,CMP-016,CRS-002,2026-08-09T04:00:00,{}
+ENG-00879,reetha,LEAD-0142,Email,webinar_registered,CMP-019,CRS-008,2026-09-09T21:00:00,{}
+ENG-00880,reetha,LEAD-0219,Meta,webinar_registered,CMP-002,CRS-007,2026-09-01T17:00:00,{}
+ENG-00881,reetha,LEAD-0152,Instagram,demo_requested,CMP-012,CRS-005,2026-05-15T15:00:00,{}
+ENG-00882,reetha,LEAD-0008,WhatsApp,ad_click,CMP-005,CRS-006,2026-06-14T01:00:00,{}
+ENG-00883,reetha,LEAD-0150,Google Ads,email_opened,CMP-013,CRS-002,2026-06-28T23:00:00,{}
+ENG-00884,reetha,LEAD-0092,Instagram,email_opened,CMP-002,CRS-011,2026-08-08T11:00:00,{}
+ENG-00885,reetha,LEAD-0061,Email,form_submitted,CMP-019,CRS-002,2026-05-06T07:00:00,{}
+ENG-00886,reetha,LEAD-0030,LinkedIn,course_page_view,CMP-001,CRS-009,2026-02-03T09:00:00,{}
+ENG-00887,reetha,LEAD-0118,Email,email_clicked,CMP-019,CRS-009,2026-06-16T01:00:00,{}
+ENG-00888,reetha,LEAD-0006,Email,whatsapp_message,CMP-019,CRS-001,2026-08-04T08:00:00,{}
+ENG-00889,reetha,LEAD-0147,Instagram,email_opened,CMP-019,CRS-002,2026-06-12T12:00:00,{}
+ENG-00890,reetha,LEAD-0177,Email,form_started,CMP-011,CRS-008,2026-09-08T03:00:00,{}
+ENG-00891,reetha,LEAD-0087,Meta,demo_requested,CMP-010,CRS-006,2026-09-15T21:00:00,{}
+ENG-00892,reetha,LEAD-0128,Email,landing_page_view,CMP-018,CRS-004,2026-08-12T06:00:00,{}
+ENG-00893,reetha,LEAD-0013,LinkedIn,demo_requested,CMP-013,CRS-004,2026-05-28T08:00:00,{}
+ENG-00894,reetha,LEAD-0217,WhatsApp,landing_page_view,CMP-019,CRS-006,2026-02-17T22:00:00,{}
+ENG-00895,reetha,LEAD-0146,Organic Search,webinar_registered,CMP-016,CRS-007,2026-05-20T02:00:00,{}
+ENG-00896,reetha,LEAD-0204,Google Ads,form_submitted,CMP-017,CRS-005,2026-04-18T11:00:00,{}
+ENG-00897,reetha,LEAD-0139,LinkedIn,form_started,CMP-014,CRS-007,2026-08-10T21:00:00,{}
+ENG-00898,reetha,LEAD-0132,Instagram,webinar_registered,CMP-006,CRS-001,2026-05-09T19:00:00,{}
+ENG-00899,reetha,LEAD-0148,Instagram,form_started,CMP-015,CRS-005,2026-09-22T05:00:00,{}
+ENG-00900,reetha,LEAD-0187,Email,ad_click,CMP-017,CRS-004,2026-08-11T18:00:00,{}
+ENG-00901,reetha,LEAD-0038,Meta,course_page_view,CMP-010,CRS-007,2026-07-06T14:00:00,{}
+ENG-00902,reetha,LEAD-0221,Organic Search,landing_page_view,CMP-007,CRS-007,2026-07-30T10:00:00,{}
+ENG-00903,reetha,LEAD-0166,Meta,form_submitted,CMP-020,CRS-004,2026-05-17T09:00:00,{}
+ENG-00904,reetha,LEAD-0030,Meta,form_started,CMP-001,CRS-004,2026-07-27T07:00:00,{}
+ENG-00905,reetha,LEAD-0125,WhatsApp,email_clicked,CMP-014,CRS-011,2026-06-08T14:00:00,{}
+ENG-00906,reetha,LEAD-0041,LinkedIn,course_page_view,CMP-001,CRS-005,2026-01-19T06:00:00,{}
+ENG-00907,reetha,LEAD-0141,Meta,ad_click,CMP-016,CRS-001,2026-05-23T21:00:00,{}
+ENG-00908,reetha,LEAD-0081,WhatsApp,form_submitted,CMP-003,CRS-007,2026-01-29T02:00:00,{}
+ENG-00909,reetha,LEAD-0169,Google Ads,email_clicked,CMP-005,CRS-004,2026-07-06T21:00:00,{}
+ENG-00910,reetha,LEAD-0189,WhatsApp,landing_page_view,CMP-017,CRS-011,2026-02-27T18:00:00,{}
+ENG-00911,reetha,LEAD-0128,Google Ads,form_started,CMP-020,CRS-002,2026-09-26T08:00:00,{}
+ENG-00912,reetha,LEAD-0214,WhatsApp,email_clicked,CMP-008,CRS-007,2026-06-10T10:00:00,{}
+ENG-00913,reetha,LEAD-0028,Meta,form_started,CMP-009,CRS-008,2026-04-22T04:00:00,{}
+ENG-00914,reetha,LEAD-0221,WhatsApp,ad_click,CMP-016,CRS-009,2026-07-29T08:00:00,{}
+ENG-00915,reetha,LEAD-0243,Google Ads,email_opened,CMP-018,CRS-007,2026-07-11T22:00:00,{}
+ENG-00916,reetha,LEAD-0064,LinkedIn,course_page_view,CMP-012,CRS-008,2026-09-01T21:00:00,{}
+ENG-00917,reetha,LEAD-0006,Email,demo_requested,CMP-002,CRS-012,2026-07-08T09:00:00,{}
+ENG-00918,reetha,LEAD-0235,Organic Search,form_started,CMP-009,CRS-009,2026-01-28T22:00:00,{}
+ENG-00919,reetha,LEAD-0164,Email,email_opened,CMP-004,CRS-009,2026-07-16T09:00:00,{}
+ENG-00920,reetha,LEAD-0100,Google Ads,email_clicked,CMP-009,CRS-005,2026-05-02T14:00:00,{}
+ENG-00921,reetha,LEAD-0077,Meta,course_page_view,CMP-015,CRS-011,2026-02-16T07:00:00,{}
+ENG-00922,reetha,LEAD-0105,Organic Search,ad_click,CMP-009,CRS-002,2026-06-12T20:00:00,{}
+ENG-00923,reetha,LEAD-0189,Instagram,email_opened,CMP-014,CRS-002,2026-09-09T15:00:00,{}
+ENG-00924,reetha,LEAD-0067,WhatsApp,landing_page_view,CMP-012,CRS-007,2026-03-24T22:00:00,{}
+ENG-00925,reetha,LEAD-0178,Google Ads,ad_click,CMP-006,CRS-011,2026-06-17T14:00:00,{}
+ENG-00926,reetha,LEAD-0035,Google Ads,email_clicked,CMP-007,CRS-011,2026-08-16T20:00:00,{}
+ENG-00927,reetha,LEAD-0148,Google Ads,landing_page_view,CMP-006,CRS-004,2026-06-06T10:00:00,{}
+ENG-00928,reetha,LEAD-0249,Organic Search,course_page_view,CMP-020,CRS-011,2026-09-22T22:00:00,{}
+ENG-00929,reetha,LEAD-0116,Instagram,course_page_view,CMP-009,CRS-003,2026-07-30T10:00:00,{}
+ENG-00930,reetha,LEAD-0051,Google Ads,email_clicked,CMP-012,CRS-003,2026-06-17T09:00:00,{}
+ENG-00931,reetha,LEAD-0242,Organic Search,demo_requested,CMP-008,CRS-001,2026-07-21T12:00:00,{}
+ENG-00932,reetha,LEAD-0166,WhatsApp,form_started,CMP-003,CRS-008,2026-01-12T17:00:00,{}
+ENG-00933,reetha,LEAD-0180,Organic Search,course_page_view,CMP-002,CRS-007,2026-04-12T08:00:00,{}
+ENG-00934,reetha,LEAD-0067,Meta,landing_page_view,CMP-012,CRS-003,2026-08-08T19:00:00,{}
+ENG-00935,reetha,LEAD-0184,WhatsApp,email_clicked,CMP-015,CRS-011,2026-03-02T00:00:00,{}
+ENG-00936,reetha,LEAD-0058,Email,form_started,CMP-007,CRS-005,2026-09-11T03:00:00,{}
+ENG-00937,reetha,LEAD-0127,Instagram,course_page_view,CMP-014,CRS-004,2026-05-28T23:00:00,{}
+ENG-00938,reetha,LEAD-0187,Email,form_started,CMP-014,CRS-003,2026-04-21T09:00:00,{}
+ENG-00939,reetha,LEAD-0008,LinkedIn,form_submitted,CMP-008,CRS-010,2026-07-29T04:00:00,{}
+ENG-00940,reetha,LEAD-0095,WhatsApp,whatsapp_message,CMP-003,CRS-001,2026-08-19T07:00:00,{}
+ENG-00941,reetha,LEAD-0224,LinkedIn,email_clicked,CMP-007,CRS-012,2026-08-29T04:00:00,{}
+ENG-00942,reetha,LEAD-0109,Email,demo_requested,CMP-009,CRS-002,2026-07-16T22:00:00,{}
+ENG-00943,reetha,LEAD-0016,Google Ads,email_opened,CMP-008,CRS-008,2026-02-18T17:00:00,{}
+ENG-00944,reetha,LEAD-0241,Email,demo_requested,CMP-002,CRS-001,2026-07-01T19:00:00,{}
+ENG-00945,reetha,LEAD-0159,Instagram,form_submitted,CMP-013,CRS-011,2026-05-10T16:00:00,{}
+ENG-00946,reetha,LEAD-0248,WhatsApp,ad_click,CMP-019,CRS-003,2026-07-09T04:00:00,{}
+ENG-00947,reetha,LEAD-0129,Instagram,email_opened,CMP-015,CRS-003,2026-05-14T05:00:00,{}
+ENG-00948,reetha,LEAD-0182,WhatsApp,email_clicked,CMP-005,CRS-005,2026-02-15T10:00:00,{}
+ENG-00949,reetha,LEAD-0012,Meta,whatsapp_message,CMP-009,CRS-012,2026-03-01T10:00:00,{}
+ENG-00950,reetha,LEAD-0073,LinkedIn,demo_requested,CMP-009,CRS-009,2026-07-04T13:00:00,{}
+ENG-00951,reetha,LEAD-0229,Meta,email_opened,CMP-016,CRS-003,2026-06-10T13:00:00,{}
+ENG-00952,reetha,LEAD-0049,Meta,ad_click,CMP-008,CRS-003,2026-08-14T01:00:00,{}
+ENG-00953,reetha,LEAD-0067,Meta,whatsapp_message,CMP-014,CRS-002,2026-01-19T15:00:00,{}
+ENG-00954,reetha,LEAD-0114,LinkedIn,webinar_registered,CMP-016,CRS-008,2026-09-11T01:00:00,{}
+ENG-00955,reetha,LEAD-0217,Email,course_page_view,CMP-004,CRS-006,2026-09-10T03:00:00,{}
+ENG-00956,reetha,LEAD-0223,LinkedIn,course_page_view,CMP-006,CRS-012,2026-02-17T06:00:00,{}
+ENG-00957,reetha,LEAD-0145,Email,demo_requested,CMP-007,CRS-010,2026-09-18T08:00:00,{}
+ENG-00958,reetha,LEAD-0197,WhatsApp,course_page_view,CMP-014,CRS-002,2026-01-03T16:00:00,{}
+ENG-00959,reetha,LEAD-0174,Google Ads,email_opened,CMP-001,CRS-005,2026-05-07T15:00:00,{}
+ENG-00960,reetha,LEAD-0096,WhatsApp,landing_page_view,CMP-011,CRS-003,2026-03-04T12:00:00,{}
+ENG-00961,reetha,LEAD-0118,Organic Search,whatsapp_message,CMP-015,CRS-011,2026-01-15T02:00:00,{}
+ENG-00962,reetha,LEAD-0169,Google Ads,email_opened,CMP-002,CRS-011,2026-05-18T19:00:00,{}
+ENG-00963,reetha,LEAD-0243,Email,demo_requested,CMP-005,CRS-004,2026-08-20T10:00:00,{}
+ENG-00964,reetha,LEAD-0073,LinkedIn,ad_click,CMP-003,CRS-009,2026-01-25T20:00:00,{}
+ENG-00965,reetha,LEAD-0103,LinkedIn,course_page_view,CMP-008,CRS-007,2026-07-15T02:00:00,{}
+ENG-00966,reetha,LEAD-0219,Meta,course_page_view,CMP-013,CRS-007,2026-02-15T00:00:00,{}
+ENG-00967,reetha,LEAD-0193,Email,course_page_view,CMP-004,CRS-005,2026-05-26T20:00:00,{}
+ENG-00968,reetha,LEAD-0189,Organic Search,form_submitted,CMP-020,CRS-003,2026-09-09T13:00:00,{}
+ENG-00969,reetha,LEAD-0025,Organic Search,email_opened,CMP-017,CRS-004,2026-07-03T21:00:00,{}
+ENG-00970,reetha,LEAD-0227,Instagram,whatsapp_message,CMP-009,CRS-010,2026-09-08T14:00:00,{}
+ENG-00971,reetha,LEAD-0194,Instagram,email_opened,CMP-020,CRS-003,2026-08-05T02:00:00,{}
+ENG-00972,reetha,LEAD-0110,Google Ads,ad_click,CMP-017,CRS-006,2026-08-11T20:00:00,{}
+ENG-00973,reetha,LEAD-0058,Email,course_page_view,CMP-016,CRS-009,2026-08-26T21:00:00,{}
+ENG-00974,reetha,LEAD-0075,Instagram,email_clicked,CMP-003,CRS-008,2026-09-26T02:00:00,{}
+ENG-00975,reetha,LEAD-0033,Email,form_submitted,CMP-008,CRS-009,2026-06-03T04:00:00,{}
+ENG-00976,reetha,LEAD-0146,Google Ads,webinar_registered,CMP-003,CRS-001,2026-08-07T09:00:00,{}
+ENG-00977,reetha,LEAD-0131,Instagram,email_clicked,CMP-004,CRS-008,2026-09-20T03:00:00,{}
+ENG-00978,reetha,LEAD-0066,WhatsApp,landing_page_view,CMP-017,CRS-001,2026-05-10T11:00:00,{}
+ENG-00979,reetha,LEAD-0170,Instagram,course_page_view,CMP-006,CRS-007,2026-02-28T23:00:00,{}
+ENG-00980,reetha,LEAD-0107,Email,form_submitted,CMP-011,CRS-010,2026-01-24T02:00:00,{}
+ENG-00981,reetha,LEAD-0116,WhatsApp,form_submitted,CMP-011,CRS-003,2026-08-21T21:00:00,{}
+ENG-00982,reetha,LEAD-0021,Email,demo_requested,CMP-009,CRS-011,2026-04-19T05:00:00,{}
+ENG-00983,reetha,LEAD-0137,Google Ads,ad_click,CMP-013,CRS-002,2026-02-24T13:00:00,{}
+ENG-00984,reetha,LEAD-0168,Instagram,whatsapp_message,CMP-013,CRS-011,2026-01-07T05:00:00,{}
+ENG-00985,reetha,LEAD-0159,Organic Search,demo_requested,CMP-012,CRS-012,2026-09-07T09:00:00,{}
+ENG-00986,reetha,LEAD-0023,Meta,course_page_view,CMP-001,CRS-004,2026-07-22T09:00:00,{}
+ENG-00987,reetha,LEAD-0179,Meta,ad_click,CMP-007,CRS-008,2026-02-27T00:00:00,{}
+ENG-00988,reetha,LEAD-0062,Instagram,webinar_registered,CMP-007,CRS-002,2026-03-16T20:00:00,{}
+ENG-00989,reetha,LEAD-0038,Instagram,email_clicked,CMP-001,CRS-002,2026-06-04T14:00:00,{}
+ENG-00990,reetha,LEAD-0190,Email,whatsapp_message,CMP-016,CRS-008,2026-03-27T04:00:00,{}
+ENG-00991,reetha,LEAD-0150,Meta,form_started,CMP-010,CRS-010,2026-01-11T14:00:00,{}
+ENG-00992,reetha,LEAD-0086,Google Ads,landing_page_view,CMP-014,CRS-007,2026-07-20T01:00:00,{}
+ENG-00993,reetha,LEAD-0149,WhatsApp,webinar_registered,CMP-010,CRS-001,2026-09-11T23:00:00,{}
+ENG-00994,reetha,LEAD-0125,WhatsApp,demo_requested,CMP-020,CRS-011,2026-09-07T12:00:00,{}
+ENG-00995,reetha,LEAD-0183,Google Ads,webinar_registered,CMP-001,CRS-007,2026-09-07T07:00:00,{}
+ENG-00996,reetha,LEAD-0017,LinkedIn,email_clicked,CMP-016,CRS-002,2026-06-11T17:00:00,{}
+ENG-00997,reetha,LEAD-0241,Email,email_opened,CMP-015,CRS-012,2026-09-11T19:00:00,{}
+ENG-00998,reetha,LEAD-0042,LinkedIn,form_started,CMP-016,CRS-006,2026-08-12T00:00:00,{}
+ENG-00999,reetha,LEAD-0130,Meta,demo_requested,CMP-011,CRS-010,2026-08-13T07:00:00,{}
+ENG-01000,reetha,LEAD-0227,LinkedIn,email_clicked,CMP-014,CRS-011,2026-08-28T04:00:00,{}
+ENG-01001,reetha,LEAD-0205,Organic Search,course_page_view,CMP-020,CRS-004,2026-07-04T15:00:00,{}
+ENG-01002,reetha,LEAD-0192,Google Ads,whatsapp_message,CMP-005,CRS-003,2026-05-25T22:00:00,{}
+ENG-01003,reetha,LEAD-0156,Instagram,landing_page_view,CMP-014,CRS-008,2026-04-13T05:00:00,{}
+ENG-01004,reetha,LEAD-0054,WhatsApp,ad_click,CMP-001,CRS-006,2026-06-05T07:00:00,{}
+ENG-01005,reetha,LEAD-0174,Meta,course_page_view,CMP-017,CRS-001,2026-05-14T11:00:00,{}
+ENG-01006,reetha,LEAD-0111,Google Ads,demo_requested,CMP-008,CRS-002,2026-02-02T10:00:00,{}
+ENG-01007,reetha,LEAD-0067,LinkedIn,email_opened,CMP-002,CRS-009,2026-04-25T15:00:00,{}
+ENG-01008,reetha,LEAD-0219,Email,webinar_registered,CMP-020,CRS-011,2026-05-17T04:00:00,{}
+ENG-01009,reetha,LEAD-0013,Instagram,whatsapp_message,CMP-004,CRS-002,2026-02-23T22:00:00,{}
+ENG-01010,reetha,LEAD-0011,WhatsApp,landing_page_view,CMP-006,CRS-011,2026-02-22T17:00:00,{}
+ENG-01011,reetha,LEAD-0234,LinkedIn,course_page_view,CMP-010,CRS-012,2026-03-02T06:00:00,{}
+ENG-01012,reetha,LEAD-0128,Email,landing_page_view,CMP-005,CRS-011,2026-08-15T16:00:00,{}
+ENG-01013,reetha,LEAD-0210,Meta,landing_page_view,CMP-007,CRS-008,2026-07-06T10:00:00,{}
+ENG-01014,reetha,LEAD-0063,Organic Search,whatsapp_message,CMP-011,CRS-005,2026-08-01T00:00:00,{}
+ENG-01015,reetha,LEAD-0022,LinkedIn,email_opened,CMP-014,CRS-006,2026-09-16T05:00:00,{}
+ENG-01016,reetha,LEAD-0193,Organic Search,webinar_registered,CMP-014,CRS-004,2026-05-06T04:00:00,{}
+ENG-01017,reetha,LEAD-0106,Instagram,whatsapp_message,CMP-017,CRS-011,2026-03-12T13:00:00,{}
+ENG-01018,reetha,LEAD-0114,Meta,ad_click,CMP-017,CRS-002,2026-07-05T00:00:00,{}
+ENG-01019,reetha,LEAD-0081,Instagram,course_page_view,CMP-014,CRS-001,2026-02-13T10:00:00,{}
+ENG-01020,reetha,LEAD-0170,Email,course_page_view,CMP-019,CRS-001,2026-07-21T01:00:00,{}
+ENG-01021,reetha,LEAD-0108,Instagram,webinar_registered,CMP-010,CRS-012,2026-09-24T09:00:00,{}
+ENG-01022,reetha,LEAD-0003,Organic Search,form_submitted,CMP-017,CRS-010,2026-06-10T11:00:00,{}
+ENG-01023,reetha,LEAD-0104,Instagram,form_started,CMP-018,CRS-010,2026-03-17T22:00:00,{}
+ENG-01024,reetha,LEAD-0089,Organic Search,email_clicked,CMP-007,CRS-005,2026-08-15T22:00:00,{}
+ENG-01025,reetha,LEAD-0138,LinkedIn,email_clicked,CMP-005,CRS-009,2026-02-13T01:00:00,{}
+ENG-01026,reetha,LEAD-0024,WhatsApp,webinar_registered,CMP-010,CRS-009,2026-05-26T06:00:00,{}
+ENG-01027,reetha,LEAD-0041,Google Ads,ad_click,CMP-018,CRS-010,2026-06-24T20:00:00,{}
+ENG-01028,reetha,LEAD-0214,Organic Search,form_submitted,CMP-014,CRS-009,2026-05-13T07:00:00,{}
+ENG-01029,reetha,LEAD-0016,Organic Search,email_opened,CMP-009,CRS-011,2026-02-26T23:00:00,{}
+ENG-01030,reetha,LEAD-0032,Google Ads,landing_page_view,CMP-015,CRS-005,2026-09-17T11:00:00,{}
+ENG-01031,reetha,LEAD-0087,Meta,demo_requested,CMP-019,CRS-012,2026-01-03T14:00:00,{}
+ENG-01032,reetha,LEAD-0077,LinkedIn,demo_requested,CMP-005,CRS-012,2026-04-30T11:00:00,{}
+ENG-01033,reetha,LEAD-0189,Meta,landing_page_view,CMP-011,CRS-009,2026-07-13T16:00:00,{}
+ENG-01034,reetha,LEAD-0117,Google Ads,course_page_view,CMP-014,CRS-007,2026-04-09T11:00:00,{}
+ENG-01035,reetha,LEAD-0016,Instagram,course_page_view,CMP-016,CRS-004,2026-02-11T02:00:00,{}
+ENG-01036,reetha,LEAD-0095,Email,webinar_registered,CMP-013,CRS-010,2026-08-17T02:00:00,{}
+ENG-01037,reetha,LEAD-0224,LinkedIn,demo_requested,CMP-016,CRS-011,2026-09-23T12:00:00,{}
+ENG-01038,reetha,LEAD-0177,Instagram,email_clicked,CMP-006,CRS-003,2026-08-05T14:00:00,{}
+ENG-01039,reetha,LEAD-0125,Email,whatsapp_message,CMP-005,CRS-012,2026-09-16T04:00:00,{}
+ENG-01040,reetha,LEAD-0031,Email,form_started,CMP-015,CRS-008,2026-09-20T16:00:00,{}
+ENG-01041,reetha,LEAD-0041,WhatsApp,email_opened,CMP-004,CRS-010,2026-01-17T23:00:00,{}
+ENG-01042,reetha,LEAD-0031,LinkedIn,demo_requested,CMP-010,CRS-001,2026-07-29T03:00:00,{}
+ENG-01043,reetha,LEAD-0031,LinkedIn,form_submitted,CMP-012,CRS-005,2026-09-25T04:00:00,{}
+ENG-01044,reetha,LEAD-0008,Organic Search,course_page_view,CMP-005,CRS-010,2026-05-31T15:00:00,{}
+ENG-01045,reetha,LEAD-0240,LinkedIn,form_submitted,CMP-007,CRS-003,2026-08-04T01:00:00,{}
+ENG-01046,reetha,LEAD-0032,WhatsApp,email_opened,CMP-003,CRS-001,2026-09-08T00:00:00,{}
+ENG-01047,reetha,LEAD-0147,LinkedIn,demo_requested,CMP-015,CRS-006,2026-08-02T15:00:00,{}
+ENG-01048,reetha,LEAD-0214,Email,demo_requested,CMP-005,CRS-003,2026-07-13T15:00:00,{}
+ENG-01049,reetha,LEAD-0118,Organic Search,whatsapp_message,CMP-015,CRS-003,2026-09-16T20:00:00,{}
+ENG-01050,reetha,LEAD-0205,WhatsApp,demo_requested,CMP-014,CRS-007,2026-06-16T02:00:00,{}
+ENG-01051,reetha,LEAD-0087,WhatsApp,ad_click,CMP-015,CRS-012,2026-04-30T12:00:00,{}
+ENG-01052,reetha,LEAD-0023,Organic Search,course_page_view,CMP-001,CRS-010,2026-05-23T20:00:00,{}
+ENG-01053,reetha,LEAD-0166,Google Ads,webinar_registered,CMP-003,CRS-004,2026-06-08T17:00:00,{}
+ENG-01054,reetha,LEAD-0134,Meta,whatsapp_message,CMP-017,CRS-001,2026-01-28T18:00:00,{}
+ENG-01055,reetha,LEAD-0240,WhatsApp,course_page_view,CMP-001,CRS-005,2026-03-03T21:00:00,{}
+ENG-01056,reetha,LEAD-0213,Email,demo_requested,CMP-015,CRS-002,2026-04-16T07:00:00,{}
+ENG-01057,reetha,LEAD-0151,Google Ads,whatsapp_message,CMP-001,CRS-006,2026-06-14T12:00:00,{}
+ENG-01058,reetha,LEAD-0107,Google Ads,webinar_registered,CMP-011,CRS-007,2026-08-12T05:00:00,{}
+ENG-01059,reetha,LEAD-0030,Google Ads,webinar_registered,CMP-006,CRS-005,2026-05-12T02:00:00,{}
+ENG-01060,reetha,LEAD-0066,Organic Search,landing_page_view,CMP-005,CRS-005,2026-03-15T05:00:00,{}
+ENG-01061,reetha,LEAD-0044,Google Ads,demo_requested,CMP-011,CRS-003,2026-07-28T21:00:00,{}
+ENG-01062,reetha,LEAD-0015,LinkedIn,email_clicked,CMP-004,CRS-006,2026-01-14T22:00:00,{}
+ENG-01063,reetha,LEAD-0229,LinkedIn,form_submitted,CMP-013,CRS-002,2026-03-14T13:00:00,{}
+ENG-01064,reetha,LEAD-0062,Organic Search,demo_requested,CMP-019,CRS-004,2026-01-27T06:00:00,{}
+ENG-01065,reetha,LEAD-0193,WhatsApp,email_clicked,CMP-004,CRS-005,2026-09-10T16:00:00,{}
+ENG-01066,reetha,LEAD-0119,WhatsApp,email_clicked,CMP-003,CRS-008,2026-02-01T10:00:00,{}
+ENG-01067,reetha,LEAD-0163,Meta,ad_click,CMP-009,CRS-009,2026-01-15T13:00:00,{}
+ENG-01068,reetha,LEAD-0196,WhatsApp,course_page_view,CMP-010,CRS-010,2026-02-21T07:00:00,{}
+ENG-01069,reetha,LEAD-0022,Organic Search,webinar_registered,CMP-007,CRS-003,2026-07-28T14:00:00,{}
+ENG-01070,reetha,LEAD-0044,Organic Search,form_started,CMP-018,CRS-007,2026-07-11T17:00:00,{}
+ENG-01071,reetha,LEAD-0001,Organic Search,whatsapp_message,CMP-020,CRS-005,2026-08-20T01:00:00,{}
+ENG-01072,reetha,LEAD-0016,Instagram,form_submitted,CMP-020,CRS-005,2026-03-27T00:00:00,{}
+ENG-01073,reetha,LEAD-0216,Email,form_started,CMP-019,CRS-009,2026-07-14T11:00:00,{}
+ENG-01074,reetha,LEAD-0042,Email,webinar_registered,CMP-019,CRS-002,2026-05-25T01:00:00,{}
+ENG-01075,reetha,LEAD-0102,Email,landing_page_view,CMP-005,CRS-012,2026-06-03T02:00:00,{}
+ENG-01076,reetha,LEAD-0054,WhatsApp,webinar_registered,CMP-011,CRS-011,2026-05-24T13:00:00,{}
+ENG-01077,reetha,LEAD-0067,Organic Search,whatsapp_message,CMP-009,CRS-004,2026-06-25T20:00:00,{}
+ENG-01078,reetha,LEAD-0054,Instagram,demo_requested,CMP-011,CRS-001,2026-06-14T10:00:00,{}
+ENG-01079,reetha,LEAD-0237,Google Ads,demo_requested,CMP-016,CRS-001,2026-03-10T20:00:00,{}
+ENG-01080,reetha,LEAD-0045,Instagram,webinar_registered,CMP-016,CRS-007,2026-01-05T21:00:00,{}
+ENG-01081,reetha,LEAD-0167,Google Ads,webinar_registered,CMP-001,CRS-011,2026-02-11T20:00:00,{}
+ENG-01082,reetha,LEAD-0032,LinkedIn,email_clicked,CMP-020,CRS-006,2026-08-16T21:00:00,{}
+ENG-01083,reetha,LEAD-0215,Organic Search,ad_click,CMP-004,CRS-008,2026-07-18T05:00:00,{}
+ENG-01084,reetha,LEAD-0114,Google Ads,form_started,CMP-001,CRS-005,2026-07-09T06:00:00,{}
+ENG-01085,reetha,LEAD-0024,Organic Search,demo_requested,CMP-010,CRS-012,2026-07-03T06:00:00,{}
+ENG-01086,reetha,LEAD-0127,LinkedIn,ad_click,CMP-009,CRS-008,2026-04-24T07:00:00,{}
+ENG-01087,reetha,LEAD-0051,Organic Search,email_clicked,CMP-004,CRS-005,2026-04-18T00:00:00,{}
+ENG-01088,reetha,LEAD-0044,WhatsApp,form_started,CMP-019,CRS-011,2026-09-14T15:00:00,{}
+ENG-01089,reetha,LEAD-0151,Meta,landing_page_view,CMP-005,CRS-005,2026-03-31T02:00:00,{}
+ENG-01090,reetha,LEAD-0187,Organic Search,form_submitted,CMP-007,CRS-011,2026-04-27T16:00:00,{}
+ENG-01091,reetha,LEAD-0174,WhatsApp,demo_requested,CMP-009,CRS-011,2026-01-12T22:00:00,{}
+ENG-01092,reetha,LEAD-0241,Instagram,ad_click,CMP-011,CRS-007,2026-08-21T00:00:00,{}
+ENG-01093,reetha,LEAD-0032,Email,webinar_registered,CMP-015,CRS-008,2026-07-28T08:00:00,{}
+ENG-01094,reetha,LEAD-0195,Google Ads,form_started,CMP-002,CRS-005,2026-07-05T16:00:00,{}
+ENG-01095,reetha,LEAD-0115,LinkedIn,ad_click,CMP-013,CRS-004,2026-08-04T17:00:00,{}
+ENG-01096,reetha,LEAD-0226,WhatsApp,ad_click,CMP-008,CRS-012,2026-06-21T02:00:00,{}
+ENG-01097,reetha,LEAD-0235,Meta,form_started,CMP-006,CRS-006,2026-08-05T02:00:00,{}
+ENG-01098,reetha,LEAD-0161,Email,landing_page_view,CMP-001,CRS-008,2026-06-09T02:00:00,{}
+ENG-01099,reetha,LEAD-0152,Organic Search,email_opened,CMP-009,CRS-004,2026-08-10T00:00:00,{}
+ENG-01100,reetha,LEAD-0062,LinkedIn,ad_click,CMP-011,CRS-009,2026-02-25T15:00:00,{}
+ENG-01101,reetha,LEAD-0199,WhatsApp,demo_requested,CMP-015,CRS-002,2026-05-02T02:00:00,{}
+ENG-01102,reetha,LEAD-0032,Google Ads,ad_click,CMP-002,CRS-007,2026-08-17T18:00:00,{}
+ENG-01103,reetha,LEAD-0017,Organic Search,course_page_view,CMP-002,CRS-008,2026-06-10T22:00:00,{}
+ENG-01104,reetha,LEAD-0157,Email,email_clicked,CMP-003,CRS-002,2026-01-29T09:00:00,{}
+ENG-01105,reetha,LEAD-0014,LinkedIn,email_clicked,CMP-013,CRS-002,2026-01-29T17:00:00,{}
+ENG-01106,reetha,LEAD-0222,WhatsApp,demo_requested,CMP-001,CRS-008,2026-07-30T07:00:00,{}
+ENG-01107,reetha,LEAD-0204,Instagram,demo_requested,CMP-020,CRS-002,2026-07-16T14:00:00,{}
+ENG-01108,reetha,LEAD-0241,Email,ad_click,CMP-015,CRS-009,2026-06-23T20:00:00,{}
+ENG-01109,reetha,LEAD-0050,Google Ads,landing_page_view,CMP-001,CRS-010,2026-06-18T18:00:00,{}
+ENG-01110,reetha,LEAD-0203,Organic Search,form_started,CMP-019,CRS-003,2026-02-04T18:00:00,{}
+ENG-01111,reetha,LEAD-0091,Instagram,whatsapp_message,CMP-020,CRS-008,2026-09-18T08:00:00,{}
+ENG-01112,reetha,LEAD-0036,Organic Search,ad_click,CMP-002,CRS-003,2026-04-06T07:00:00,{}
+ENG-01113,reetha,LEAD-0112,WhatsApp,email_opened,CMP-010,CRS-010,2026-06-09T18:00:00,{}
+ENG-01114,reetha,LEAD-0121,LinkedIn,demo_requested,CMP-011,CRS-005,2026-03-16T04:00:00,{}
+ENG-01115,reetha,LEAD-0133,WhatsApp,course_page_view,CMP-002,CRS-004,2026-07-08T00:00:00,{}
+ENG-01116,reetha,LEAD-0220,Google Ads,email_clicked,CMP-012,CRS-004,2026-09-17T17:00:00,{}
+ENG-01117,reetha,LEAD-0233,Meta,landing_page_view,CMP-011,CRS-004,2026-04-13T20:00:00,{}
+ENG-01118,reetha,LEAD-0178,Instagram,demo_requested,CMP-011,CRS-010,2026-09-01T22:00:00,{}
+ENG-01119,reetha,LEAD-0077,Instagram,email_opened,CMP-006,CRS-002,2026-06-21T19:00:00,{}
+ENG-01120,reetha,LEAD-0127,Meta,ad_click,CMP-008,CRS-012,2026-08-21T01:00:00,{}
+ENG-01121,reetha,LEAD-0160,Meta,form_started,CMP-016,CRS-012,2026-04-28T14:00:00,{}
+ENG-01122,reetha,LEAD-0097,Meta,email_clicked,CMP-006,CRS-001,2026-06-19T23:00:00,{}
+ENG-01123,reetha,LEAD-0019,LinkedIn,ad_click,CMP-018,CRS-002,2026-07-05T00:00:00,{}
+ENG-01124,reetha,LEAD-0113,Meta,demo_requested,CMP-012,CRS-001,2026-03-14T09:00:00,{}
+ENG-01125,reetha,LEAD-0051,LinkedIn,course_page_view,CMP-008,CRS-005,2026-01-16T06:00:00,{}
+ENG-01126,reetha,LEAD-0217,WhatsApp,form_started,CMP-006,CRS-004,2026-03-31T10:00:00,{}
+ENG-01127,reetha,LEAD-0216,LinkedIn,landing_page_view,CMP-001,CRS-011,2026-01-12T05:00:00,{}
+ENG-01128,reetha,LEAD-0168,Organic Search,landing_page_view,CMP-011,CRS-004,2026-03-12T12:00:00,{}
+ENG-01129,reetha,LEAD-0062,LinkedIn,email_opened,CMP-006,CRS-009,2026-06-06T14:00:00,{}
+ENG-01130,reetha,LEAD-0017,Google Ads,course_page_view,CMP-005,CRS-004,2026-08-11T22:00:00,{}
+ENG-01131,reetha,LEAD-0097,Email,email_opened,CMP-011,CRS-010,2026-04-09T17:00:00,{}
+ENG-01132,reetha,LEAD-0063,Google Ads,demo_requested,CMP-019,CRS-004,2026-08-08T20:00:00,{}
+ENG-01133,reetha,LEAD-0084,Meta,ad_click,CMP-009,CRS-003,2026-05-31T04:00:00,{}
+ENG-01134,reetha,LEAD-0227,Instagram,form_started,CMP-003,CRS-008,2026-09-18T18:00:00,{}
+ENG-01135,reetha,LEAD-0131,Instagram,webinar_registered,CMP-012,CRS-008,2026-02-03T05:00:00,{}
+ENG-01136,reetha,LEAD-0046,LinkedIn,email_opened,CMP-017,CRS-012,2026-09-23T14:00:00,{}
+ENG-01137,reetha,LEAD-0245,Instagram,whatsapp_message,CMP-009,CRS-010,2026-09-05T22:00:00,{}
+ENG-01138,reetha,LEAD-0236,Organic Search,demo_requested,CMP-002,CRS-004,2026-07-25T20:00:00,{}
+ENG-01139,reetha,LEAD-0116,Organic Search,form_started,CMP-013,CRS-004,2026-04-23T06:00:00,{}
+ENG-01140,reetha,LEAD-0228,Instagram,demo_requested,CMP-006,CRS-006,2026-06-06T13:00:00,{}
+ENG-01141,reetha,LEAD-0022,Meta,landing_page_view,CMP-010,CRS-008,2026-05-11T17:00:00,{}
+ENG-01142,reetha,LEAD-0059,WhatsApp,ad_click,CMP-015,CRS-009,2026-09-23T11:00:00,{}
+ENG-01143,reetha,LEAD-0116,Instagram,email_clicked,CMP-014,CRS-006,2026-06-22T13:00:00,{}
+ENG-01144,reetha,LEAD-0070,Instagram,ad_click,CMP-006,CRS-008,2026-09-12T10:00:00,{}
+ENG-01145,reetha,LEAD-0166,Google Ads,email_opened,CMP-003,CRS-005,2026-04-30T08:00:00,{}
+ENG-01146,reetha,LEAD-0140,Email,landing_page_view,CMP-009,CRS-004,2026-09-14T16:00:00,{}
+ENG-01147,reetha,LEAD-0019,LinkedIn,ad_click,CMP-018,CRS-004,2026-02-20T03:00:00,{}
+ENG-01148,reetha,LEAD-0173,LinkedIn,form_submitted,CMP-010,CRS-012,2026-06-20T06:00:00,{}
+ENG-01149,reetha,LEAD-0181,WhatsApp,course_page_view,CMP-018,CRS-005,2026-05-21T06:00:00,{}
+ENG-01150,reetha,LEAD-0073,Organic Search,email_opened,CMP-013,CRS-007,2026-01-05T09:00:00,{}
+ENG-01151,reetha,LEAD-0168,WhatsApp,course_page_view,CMP-013,CRS-004,2026-01-07T15:00:00,{}
+ENG-01152,reetha,LEAD-0192,Meta,whatsapp_message,CMP-008,CRS-009,2026-04-27T23:00:00,{}
+ENG-01153,reetha,LEAD-0209,Instagram,email_opened,CMP-003,CRS-006,2026-08-28T23:00:00,{}
+ENG-01154,reetha,LEAD-0198,Email,email_clicked,CMP-007,CRS-008,2026-04-07T13:00:00,{}
+ENG-01155,reetha,LEAD-0008,LinkedIn,course_page_view,CMP-019,CRS-003,2026-08-19T17:00:00,{}
+ENG-01156,reetha,LEAD-0003,Instagram,email_opened,CMP-011,CRS-004,2026-06-06T23:00:00,{}
+ENG-01157,reetha,LEAD-0176,Organic Search,email_clicked,CMP-018,CRS-005,2026-08-03T13:00:00,{}
+ENG-01158,reetha,LEAD-0006,WhatsApp,ad_click,CMP-005,CRS-003,2026-06-16T18:00:00,{}
+ENG-01159,reetha,LEAD-0162,Organic Search,demo_requested,CMP-020,CRS-010,2026-06-19T18:00:00,{}
+ENG-01160,reetha,LEAD-0053,Instagram,landing_page_view,CMP-018,CRS-007,2026-07-20T12:00:00,{}
+ENG-01161,reetha,LEAD-0028,LinkedIn,demo_requested,CMP-015,CRS-011,2026-04-07T15:00:00,{}
+ENG-01162,reetha,LEAD-0044,Google Ads,webinar_registered,CMP-006,CRS-001,2026-06-05T02:00:00,{}
+ENG-01163,reetha,LEAD-0048,Meta,landing_page_view,CMP-013,CRS-005,2026-09-08T00:00:00,{}
+ENG-01164,reetha,LEAD-0075,Email,webinar_registered,CMP-003,CRS-008,2026-04-16T07:00:00,{}
+ENG-01165,reetha,LEAD-0133,Google Ads,course_page_view,CMP-011,CRS-007,2026-01-30T11:00:00,{}
+ENG-01166,reetha,LEAD-0029,Meta,webinar_registered,CMP-014,CRS-008,2026-07-20T05:00:00,{}
+ENG-01167,reetha,LEAD-0245,Organic Search,form_started,CMP-005,CRS-004,2026-02-05T12:00:00,{}
+ENG-01168,reetha,LEAD-0210,Email,whatsapp_message,CMP-006,CRS-010,2026-06-08T13:00:00,{}
+ENG-01169,reetha,LEAD-0052,WhatsApp,whatsapp_message,CMP-009,CRS-004,2026-06-08T18:00:00,{}
+ENG-01170,reetha,LEAD-0115,Google Ads,email_clicked,CMP-020,CRS-004,2026-01-04T04:00:00,{}
+ENG-01171,reetha,LEAD-0234,WhatsApp,whatsapp_message,CMP-015,CRS-008,2026-09-27T10:00:00,{}
+ENG-01172,reetha,LEAD-0024,LinkedIn,whatsapp_message,CMP-012,CRS-012,2026-01-21T23:00:00,{}
+ENG-01173,reetha,LEAD-0157,Organic Search,course_page_view,CMP-014,CRS-004,2026-06-02T12:00:00,{}
+ENG-01174,reetha,LEAD-0188,Instagram,whatsapp_message,CMP-013,CRS-011,2026-04-02T19:00:00,{}
+ENG-01175,reetha,LEAD-0146,Google Ads,email_clicked,CMP-002,CRS-004,2026-04-04T22:00:00,{}
+ENG-01176,reetha,LEAD-0226,Email,webinar_registered,CMP-010,CRS-011,2026-03-22T08:00:00,{}
+ENG-01177,reetha,LEAD-0186,Email,form_started,CMP-016,CRS-007,2026-02-04T22:00:00,{}
+ENG-01178,reetha,LEAD-0020,Organic Search,landing_page_view,CMP-017,CRS-006,2026-03-04T11:00:00,{}
+ENG-01179,reetha,LEAD-0043,LinkedIn,form_started,CMP-017,CRS-001,2026-07-29T14:00:00,{}
+ENG-01180,reetha,LEAD-0019,Email,whatsapp_message,CMP-013,CRS-006,2026-08-25T00:00:00,{}
+ENG-01181,reetha,LEAD-0102,Google Ads,ad_click,CMP-009,CRS-002,2026-07-24T06:00:00,{}
+ENG-01182,reetha,LEAD-0172,Email,whatsapp_message,CMP-016,CRS-008,2026-03-11T10:00:00,{}
+ENG-01183,reetha,LEAD-0141,Email,form_started,CMP-015,CRS-003,2026-02-04T02:00:00,{}
+ENG-01184,reetha,LEAD-0216,Meta,course_page_view,CMP-001,CRS-010,2026-08-30T08:00:00,{}
+ENG-01185,reetha,LEAD-0076,Google Ads,webinar_registered,CMP-013,CRS-003,2026-02-21T05:00:00,{}
+ENG-01186,reetha,LEAD-0196,Google Ads,form_submitted,CMP-005,CRS-008,2026-02-09T21:00:00,{}
+ENG-01187,reetha,LEAD-0056,Email,ad_click,CMP-018,CRS-004,2026-07-03T05:00:00,{}
+ENG-01188,reetha,LEAD-0013,Organic Search,webinar_registered,CMP-004,CRS-007,2026-08-15T22:00:00,{}
+ENG-01189,reetha,LEAD-0014,WhatsApp,ad_click,CMP-002,CRS-007,2026-06-07T14:00:00,{}
+ENG-01190,reetha,LEAD-0096,Meta,form_started,CMP-003,CRS-001,2026-04-14T07:00:00,{}
+ENG-01191,reetha,LEAD-0004,LinkedIn,form_started,CMP-003,CRS-004,2026-08-04T00:00:00,{}
+ENG-01192,reetha,LEAD-0043,Email,course_page_view,CMP-002,CRS-007,2026-02-19T21:00:00,{}
+ENG-01193,reetha,LEAD-0209,LinkedIn,email_opened,CMP-018,CRS-011,2026-09-20T03:00:00,{}
+ENG-01194,reetha,LEAD-0054,WhatsApp,email_clicked,CMP-014,CRS-002,2026-04-08T19:00:00,{}
+ENG-01195,reetha,LEAD-0028,LinkedIn,email_opened,CMP-006,CRS-001,2026-04-29T06:00:00,{}
+ENG-01196,reetha,LEAD-0081,Google Ads,email_clicked,CMP-007,CRS-008,2026-07-25T20:00:00,{}
+ENG-01197,reetha,LEAD-0169,Organic Search,form_submitted,CMP-020,CRS-006,2026-04-23T02:00:00,{}
+ENG-01198,reetha,LEAD-0227,Meta,email_clicked,CMP-010,CRS-010,2026-01-23T02:00:00,{}
+ENG-01199,reetha,LEAD-0183,WhatsApp,demo_requested,CMP-006,CRS-005,2026-09-13T03:00:00,{}
+ENG-01200,reetha,LEAD-0084,Email,email_clicked,CMP-005,CRS-006,2026-02-18T19:00:00,{}
+ENG-01201,reetha,LEAD-0195,Email,email_opened,CMP-016,CRS-002,2026-03-31T20:00:00,{}
+ENG-01202,reetha,LEAD-0156,WhatsApp,whatsapp_message,CMP-013,CRS-009,2026-06-21T00:00:00,{}
+ENG-01203,reetha,LEAD-0151,Email,ad_click,CMP-008,CRS-001,2026-04-30T16:00:00,{}
+ENG-01204,reetha,LEAD-0061,Email,email_clicked,CMP-008,CRS-010,2026-03-05T09:00:00,{}
+ENG-01205,reetha,LEAD-0036,LinkedIn,whatsapp_message,CMP-010,CRS-004,2026-02-10T01:00:00,{}
+ENG-01206,reetha,LEAD-0053,Email,ad_click,CMP-008,CRS-012,2026-03-19T12:00:00,{}
+ENG-01207,reetha,LEAD-0225,LinkedIn,course_page_view,CMP-009,CRS-006,2026-08-16T23:00:00,{}
+ENG-01208,reetha,LEAD-0203,Instagram,form_submitted,CMP-001,CRS-004,2026-01-21T16:00:00,{}
+ENG-01209,reetha,LEAD-0063,Meta,webinar_registered,CMP-002,CRS-011,2026-06-19T10:00:00,{}
+ENG-01210,reetha,LEAD-0179,Email,form_started,CMP-020,CRS-007,2026-05-08T21:00:00,{}
+ENG-01211,reetha,LEAD-0047,Instagram,ad_click,CMP-003,CRS-008,2026-09-24T10:00:00,{}
+ENG-01212,reetha,LEAD-0014,Email,course_page_view,CMP-007,CRS-003,2026-02-05T06:00:00,{}
+ENG-01213,reetha,LEAD-0152,WhatsApp,form_started,CMP-008,CRS-009,2026-02-16T05:00:00,{}
+ENG-01214,reetha,LEAD-0186,Instagram,form_submitted,CMP-006,CRS-012,2026-02-10T13:00:00,{}
+ENG-01215,reetha,LEAD-0109,Meta,demo_requested,CMP-008,CRS-005,2026-04-12T07:00:00,{}
+ENG-01216,reetha,LEAD-0115,Email,form_started,CMP-009,CRS-008,2026-05-27T18:00:00,{}
+ENG-01217,reetha,LEAD-0102,Instagram,course_page_view,CMP-016,CRS-008,2026-02-10T11:00:00,{}
+ENG-01218,reetha,LEAD-0157,Email,email_clicked,CMP-005,CRS-008,2026-08-05T16:00:00,{}
+ENG-01219,reetha,LEAD-0110,Organic Search,landing_page_view,CMP-010,CRS-010,2026-01-11T12:00:00,{}
+ENG-01220,reetha,LEAD-0187,Meta,form_submitted,CMP-013,CRS-008,2026-03-20T17:00:00,{}
+ENG-01221,reetha,LEAD-0073,Instagram,webinar_registered,CMP-020,CRS-008,2026-06-06T14:00:00,{}
+ENG-01222,reetha,LEAD-0035,Email,whatsapp_message,CMP-007,CRS-003,2026-02-06T10:00:00,{}
+ENG-01223,reetha,LEAD-0004,Organic Search,webinar_registered,CMP-012,CRS-008,2026-04-08T00:00:00,{}
+ENG-01224,reetha,LEAD-0241,Instagram,email_opened,CMP-013,CRS-008,2026-07-27T13:00:00,{}
+ENG-01225,reetha,LEAD-0151,Google Ads,email_clicked,CMP-002,CRS-002,2026-06-07T20:00:00,{}
+ENG-01226,reetha,LEAD-0042,Meta,email_clicked,CMP-009,CRS-012,2026-07-17T18:00:00,{}
+ENG-01227,reetha,LEAD-0182,Instagram,email_opened,CMP-002,CRS-011,2026-06-28T16:00:00,{}
+ENG-01228,reetha,LEAD-0189,Meta,form_started,CMP-016,CRS-001,2026-07-17T13:00:00,{}
+ENG-01229,reetha,LEAD-0181,Email,ad_click,CMP-005,CRS-005,2026-07-05T20:00:00,{}
+ENG-01230,reetha,LEAD-0038,LinkedIn,form_started,CMP-020,CRS-010,2026-08-22T21:00:00,{}
+ENG-01231,reetha,LEAD-0030,Organic Search,landing_page_view,CMP-013,CRS-007,2026-03-24T00:00:00,{}
+ENG-01232,reetha,LEAD-0233,Meta,email_clicked,CMP-006,CRS-007,2026-02-11T16:00:00,{}
+ENG-01233,reetha,LEAD-0078,WhatsApp,webinar_registered,CMP-013,CRS-010,2026-05-10T22:00:00,{}
+ENG-01234,reetha,LEAD-0106,Organic Search,landing_page_view,CMP-004,CRS-011,2026-06-07T23:00:00,{}
+ENG-01235,reetha,LEAD-0069,Email,form_started,CMP-013,CRS-012,2026-06-26T04:00:00,{}
+ENG-01236,reetha,LEAD-0044,Organic Search,whatsapp_message,CMP-001,CRS-002,2026-06-07T00:00:00,{}
+ENG-01237,reetha,LEAD-0107,WhatsApp,email_clicked,CMP-010,CRS-012,2026-02-05T22:00:00,{}
+ENG-01238,reetha,LEAD-0046,LinkedIn,course_page_view,CMP-005,CRS-004,2026-08-09T05:00:00,{}
+ENG-01239,reetha,LEAD-0129,Google Ads,whatsapp_message,CMP-019,CRS-004,2026-09-07T05:00:00,{}
+ENG-01240,reetha,LEAD-0016,Email,course_page_view,CMP-007,CRS-005,2026-04-06T06:00:00,{}
+ENG-01241,reetha,LEAD-0161,WhatsApp,landing_page_view,CMP-006,CRS-002,2026-07-29T14:00:00,{}
+ENG-01242,reetha,LEAD-0097,Google Ads,form_submitted,CMP-003,CRS-006,2026-05-31T02:00:00,{}
+ENG-01243,reetha,LEAD-0061,Instagram,whatsapp_message,CMP-004,CRS-001,2026-01-16T18:00:00,{}
+ENG-01244,reetha,LEAD-0193,Google Ads,demo_requested,CMP-002,CRS-002,2026-02-01T08:00:00,{}
+ENG-01245,reetha,LEAD-0203,Google Ads,email_clicked,CMP-020,CRS-009,2026-04-19T16:00:00,{}
+ENG-01246,reetha,LEAD-0122,Organic Search,email_opened,CMP-020,CRS-007,2026-05-17T15:00:00,{}
+ENG-01247,reetha,LEAD-0175,LinkedIn,email_opened,CMP-008,CRS-006,2026-06-22T11:00:00,{}
+ENG-01248,reetha,LEAD-0157,Google Ads,email_opened,CMP-011,CRS-002,2026-07-24T12:00:00,{}
+ENG-01249,reetha,LEAD-0223,Email,email_clicked,CMP-005,CRS-001,2026-01-02T14:00:00,{}
+ENG-01250,reetha,LEAD-0072,Email,form_started,CMP-012,CRS-008,2026-03-04T16:00:00,{}
+ENG-01251,reetha,LEAD-0106,Email,form_started,CMP-001,CRS-011,2026-09-01T16:00:00,{}
+ENG-01252,reetha,LEAD-0163,LinkedIn,ad_click,CMP-011,CRS-011,2026-06-14T00:00:00,{}
+ENG-01253,reetha,LEAD-0156,Instagram,email_clicked,CMP-020,CRS-002,2026-08-16T07:00:00,{}
+ENG-01254,reetha,LEAD-0241,Instagram,landing_page_view,CMP-013,CRS-005,2026-06-28T13:00:00,{}
+ENG-01255,reetha,LEAD-0037,Organic Search,webinar_registered,CMP-019,CRS-012,2026-04-10T22:00:00,{}
+ENG-01256,reetha,LEAD-0033,Instagram,landing_page_view,CMP-010,CRS-011,2026-09-16T01:00:00,{}
+ENG-01257,reetha,LEAD-0230,Instagram,landing_page_view,CMP-016,CRS-011,2026-08-28T05:00:00,{}
+ENG-01258,reetha,LEAD-0055,Meta,landing_page_view,CMP-004,CRS-007,2026-05-04T07:00:00,{}
+ENG-01259,reetha,LEAD-0238,LinkedIn,email_clicked,CMP-009,CRS-004,2026-01-15T05:00:00,{}
+ENG-01260,reetha,LEAD-0122,Email,landing_page_view,CMP-005,CRS-009,2026-05-12T21:00:00,{}
+ENG-01261,reetha,LEAD-0204,Email,email_opened,CMP-008,CRS-010,2026-09-09T02:00:00,{}
+ENG-01262,reetha,LEAD-0088,Instagram,email_clicked,CMP-018,CRS-007,2026-02-03T20:00:00,{}
+ENG-01263,reetha,LEAD-0067,Google Ads,form_submitted,CMP-003,CRS-002,2026-04-30T07:00:00,{}
+ENG-01264,reetha,LEAD-0190,WhatsApp,form_started,CMP-004,CRS-010,2026-02-15T10:00:00,{}
+ENG-01265,reetha,LEAD-0219,LinkedIn,email_clicked,CMP-019,CRS-012,2026-07-08T04:00:00,{}
+ENG-01266,reetha,LEAD-0016,WhatsApp,webinar_registered,CMP-007,CRS-007,2026-01-01T09:00:00,{}
+ENG-01267,reetha,LEAD-0198,LinkedIn,course_page_view,CMP-017,CRS-011,2026-08-05T10:00:00,{}
+ENG-01268,reetha,LEAD-0102,Google Ads,webinar_registered,CMP-015,CRS-006,2026-04-24T03:00:00,{}
+ENG-01269,reetha,LEAD-0215,Meta,whatsapp_message,CMP-015,CRS-003,2026-03-16T09:00:00,{}
+ENG-01270,reetha,LEAD-0192,Email,ad_click,CMP-020,CRS-006,2026-05-26T04:00:00,{}
+ENG-01271,reetha,LEAD-0177,Google Ads,form_submitted,CMP-019,CRS-008,2026-06-08T16:00:00,{}
+ENG-01272,reetha,LEAD-0075,Email,email_clicked,CMP-002,CRS-006,2026-04-21T15:00:00,{}
+ENG-01273,reetha,LEAD-0054,Organic Search,form_started,CMP-002,CRS-003,2026-03-20T22:00:00,{}
+ENG-01274,reetha,LEAD-0101,LinkedIn,course_page_view,CMP-001,CRS-009,2026-09-07T23:00:00,{}
+ENG-01275,reetha,LEAD-0109,Email,whatsapp_message,CMP-012,CRS-007,2026-07-20T10:00:00,{}
+ENG-01276,reetha,LEAD-0136,Email,form_submitted,CMP-010,CRS-012,2026-07-20T02:00:00,{}
+ENG-01277,reetha,LEAD-0220,WhatsApp,email_clicked,CMP-004,CRS-003,2026-04-10T22:00:00,{}
+ENG-01278,reetha,LEAD-0222,Organic Search,ad_click,CMP-010,CRS-008,2026-06-15T18:00:00,{}
+ENG-01279,reetha,LEAD-0036,Instagram,whatsapp_message,CMP-010,CRS-003,2026-03-25T18:00:00,{}
+ENG-01280,reetha,LEAD-0206,Email,form_started,CMP-001,CRS-006,2026-04-18T06:00:00,{}
+ENG-01281,reetha,LEAD-0202,Organic Search,course_page_view,CMP-013,CRS-007,2026-02-22T21:00:00,{}
+ENG-01282,reetha,LEAD-0025,LinkedIn,whatsapp_message,CMP-006,CRS-001,2026-03-28T01:00:00,{}
+ENG-01283,reetha,LEAD-0167,LinkedIn,demo_requested,CMP-014,CRS-003,2026-03-02T16:00:00,{}
+ENG-01284,reetha,LEAD-0009,Google Ads,form_started,CMP-013,CRS-008,2026-07-26T07:00:00,{}
+ENG-01285,reetha,LEAD-0153,Meta,email_clicked,CMP-003,CRS-008,2026-06-04T22:00:00,{}
+ENG-01286,reetha,LEAD-0162,Email,whatsapp_message,CMP-012,CRS-001,2026-07-15T08:00:00,{}
+ENG-01287,reetha,LEAD-0022,Google Ads,whatsapp_message,CMP-017,CRS-004,2026-03-03T03:00:00,{}
+ENG-01288,reetha,LEAD-0147,WhatsApp,whatsapp_message,CMP-009,CRS-012,2026-01-12T18:00:00,{}
+ENG-01289,reetha,LEAD-0047,Instagram,whatsapp_message,CMP-014,CRS-005,2026-02-18T18:00:00,{}
+ENG-01290,reetha,LEAD-0084,Google Ads,webinar_registered,CMP-006,CRS-007,2026-03-06T03:00:00,{}
+ENG-01291,reetha,LEAD-0143,Organic Search,webinar_registered,CMP-017,CRS-008,2026-01-11T12:00:00,{}
+ENG-01292,reetha,LEAD-0215,WhatsApp,webinar_registered,CMP-004,CRS-004,2026-02-02T16:00:00,{}
+ENG-01293,reetha,LEAD-0221,WhatsApp,course_page_view,CMP-001,CRS-009,2026-03-02T05:00:00,{}
+ENG-01294,reetha,LEAD-0032,Google Ads,course_page_view,CMP-019,CRS-004,2026-08-17T10:00:00,{}
+ENG-01295,reetha,LEAD-0144,LinkedIn,ad_click,CMP-003,CRS-002,2026-03-24T02:00:00,{}
+ENG-01296,reetha,LEAD-0094,WhatsApp,course_page_view,CMP-014,CRS-011,2026-09-17T09:00:00,{}
+ENG-01297,reetha,LEAD-0077,Google Ads,webinar_registered,CMP-010,CRS-011,2026-01-01T07:00:00,{}
+ENG-01298,reetha,LEAD-0148,Instagram,email_opened,CMP-017,CRS-006,2026-08-16T04:00:00,{}
+ENG-01299,reetha,LEAD-0177,Google Ads,ad_click,CMP-008,CRS-001,2026-09-19T06:00:00,{}
+ENG-01300,reetha,LEAD-0077,Organic Search,form_started,CMP-005,CRS-010,2026-04-07T04:00:00,{}
+ENG-01301,reetha,LEAD-0092,LinkedIn,course_page_view,CMP-020,CRS-007,2026-04-21T18:00:00,{}
+ENG-01302,reetha,LEAD-0066,LinkedIn,email_clicked,CMP-006,CRS-007,2026-02-08T17:00:00,{}
+ENG-01303,reetha,LEAD-0242,LinkedIn,email_clicked,CMP-005,CRS-009,2026-08-22T02:00:00,{}
+ENG-01304,reetha,LEAD-0162,Email,form_submitted,CMP-007,CRS-012,2026-04-15T02:00:00,{}
+ENG-01305,reetha,LEAD-0169,Email,webinar_registered,CMP-020,CRS-003,2026-07-10T18:00:00,{}
+ENG-01306,reetha,LEAD-0081,Organic Search,email_clicked,CMP-013,CRS-001,2026-08-03T04:00:00,{}
+ENG-01307,reetha,LEAD-0070,Google Ads,webinar_registered,CMP-004,CRS-011,2026-05-07T02:00:00,{}
+ENG-01308,reetha,LEAD-0085,Email,landing_page_view,CMP-012,CRS-006,2026-07-28T02:00:00,{}
+ENG-01309,reetha,LEAD-0223,Organic Search,form_started,CMP-009,CRS-001,2026-05-20T04:00:00,{}
+ENG-01310,reetha,LEAD-0249,Meta,email_clicked,CMP-004,CRS-002,2026-02-20T12:00:00,{}
+ENG-01311,reetha,LEAD-0187,LinkedIn,demo_requested,CMP-016,CRS-002,2026-03-31T16:00:00,{}
+ENG-01312,reetha,LEAD-0180,WhatsApp,form_submitted,CMP-018,CRS-005,2026-09-28T11:00:00,{}
+ENG-01313,reetha,LEAD-0044,LinkedIn,email_clicked,CMP-006,CRS-006,2026-02-20T01:00:00,{}
+ENG-01314,reetha,LEAD-0152,Meta,form_submitted,CMP-001,CRS-011,2026-07-26T15:00:00,{}
+ENG-01315,reetha,LEAD-0040,Email,course_page_view,CMP-005,CRS-007,2026-09-20T22:00:00,{}
+ENG-01316,reetha,LEAD-0236,Email,email_opened,CMP-008,CRS-011,2026-05-17T01:00:00,{}
+ENG-01317,reetha,LEAD-0118,Meta,whatsapp_message,CMP-012,CRS-008,2026-08-03T22:00:00,{}
+ENG-01318,reetha,LEAD-0071,Instagram,webinar_registered,CMP-008,CRS-005,2026-09-15T09:00:00,{}
+ENG-01319,reetha,LEAD-0105,Organic Search,email_opened,CMP-003,CRS-011,2026-02-14T09:00:00,{}
+ENG-01320,reetha,LEAD-0187,Meta,landing_page_view,CMP-006,CRS-010,2026-02-10T02:00:00,{}
+ENG-01321,reetha,LEAD-0191,LinkedIn,webinar_registered,CMP-016,CRS-001,2026-01-30T02:00:00,{}
+ENG-01322,reetha,LEAD-0131,Email,course_page_view,CMP-016,CRS-008,2026-08-06T21:00:00,{}
+ENG-01323,reetha,LEAD-0174,WhatsApp,landing_page_view,CMP-013,CRS-001,2026-09-21T21:00:00,{}
+ENG-01324,reetha,LEAD-0002,Email,email_clicked,CMP-018,CRS-012,2026-04-08T23:00:00,{}
+ENG-01325,reetha,LEAD-0190,Email,webinar_registered,CMP-020,CRS-001,2026-06-26T07:00:00,{}
+ENG-01326,reetha,LEAD-0173,Organic Search,webinar_registered,CMP-008,CRS-003,2026-08-18T05:00:00,{}
+ENG-01327,reetha,LEAD-0215,Meta,webinar_registered,CMP-012,CRS-001,2026-02-08T11:00:00,{}
+ENG-01328,reetha,LEAD-0098,Meta,email_opened,CMP-004,CRS-006,2026-08-05T15:00:00,{}
+ENG-01329,reetha,LEAD-0218,Organic Search,landing_page_view,CMP-010,CRS-005,2026-05-08T17:00:00,{}
+ENG-01330,reetha,LEAD-0068,Meta,ad_click,CMP-019,CRS-007,2026-09-05T09:00:00,{}
+ENG-01331,reetha,LEAD-0238,Email,webinar_registered,CMP-002,CRS-008,2026-04-22T09:00:00,{}
+ENG-01332,reetha,LEAD-0092,Google Ads,demo_requested,CMP-015,CRS-006,2026-09-07T01:00:00,{}
+ENG-01333,reetha,LEAD-0028,Google Ads,email_opened,CMP-006,CRS-007,2026-06-02T11:00:00,{}
+ENG-01334,reetha,LEAD-0026,Instagram,whatsapp_message,CMP-007,CRS-002,2026-07-01T00:00:00,{}
+ENG-01335,reetha,LEAD-0231,Meta,email_clicked,CMP-004,CRS-008,2026-09-28T16:00:00,{}
+ENG-01336,reetha,LEAD-0197,Email,form_submitted,CMP-008,CRS-008,2026-01-04T04:00:00,{}
+ENG-01337,reetha,LEAD-0077,LinkedIn,email_clicked,CMP-006,CRS-009,2026-07-22T11:00:00,{}
+ENG-01338,reetha,LEAD-0113,Email,whatsapp_message,CMP-006,CRS-003,2026-05-18T03:00:00,{}
+ENG-01339,reetha,LEAD-0112,Google Ads,email_opened,CMP-007,CRS-002,2026-07-01T23:00:00,{}
+ENG-01340,reetha,LEAD-0011,Meta,email_clicked,CMP-014,CRS-012,2026-04-08T09:00:00,{}
+ENG-01341,reetha,LEAD-0042,Email,form_started,CMP-016,CRS-011,2026-06-19T01:00:00,{}
+ENG-01342,reetha,LEAD-0108,Instagram,webinar_registered,CMP-016,CRS-011,2026-05-17T03:00:00,{}
+ENG-01343,reetha,LEAD-0193,Organic Search,email_clicked,CMP-017,CRS-012,2026-03-07T10:00:00,{}
+ENG-01344,reetha,LEAD-0029,Google Ads,ad_click,CMP-005,CRS-003,2026-07-19T04:00:00,{}
+ENG-01345,reetha,LEAD-0004,Organic Search,form_started,CMP-002,CRS-011,2026-06-26T16:00:00,{}
+ENG-01346,reetha,LEAD-0250,WhatsApp,ad_click,CMP-014,CRS-008,2026-06-25T13:00:00,{}
+ENG-01347,reetha,LEAD-0125,Google Ads,email_clicked,CMP-008,CRS-010,2026-05-29T09:00:00,{}
+ENG-01348,reetha,LEAD-0131,Meta,form_started,CMP-009,CRS-002,2026-03-20T23:00:00,{}
+ENG-01349,reetha,LEAD-0064,Email,email_clicked,CMP-007,CRS-008,2026-05-15T22:00:00,{}
+ENG-01350,reetha,LEAD-0187,WhatsApp,demo_requested,CMP-006,CRS-004,2026-02-22T22:00:00,{}
+ENG-01351,reetha,LEAD-0031,Meta,email_clicked,CMP-002,CRS-005,2026-03-18T07:00:00,{}
+ENG-01352,reetha,LEAD-0110,Google Ads,demo_requested,CMP-007,CRS-002,2026-04-09T04:00:00,{}
+ENG-01353,reetha,LEAD-0105,WhatsApp,form_submitted,CMP-008,CRS-004,2026-01-27T12:00:00,{}
+ENG-01354,reetha,LEAD-0123,Google Ads,webinar_registered,CMP-014,CRS-011,2026-06-22T13:00:00,{}
+ENG-01355,reetha,LEAD-0029,LinkedIn,email_opened,CMP-009,CRS-006,2026-01-27T09:00:00,{}
+ENG-01356,reetha,LEAD-0082,Google Ads,course_page_view,CMP-002,CRS-001,2026-08-03T07:00:00,{}
+ENG-01357,reetha,LEAD-0191,LinkedIn,form_started,CMP-010,CRS-008,2026-01-27T21:00:00,{}
+ENG-01358,reetha,LEAD-0026,Instagram,course_page_view,CMP-009,CRS-008,2026-05-24T19:00:00,{}
+ENG-01359,reetha,LEAD-0078,Google Ads,landing_page_view,CMP-001,CRS-011,2026-07-06T10:00:00,{}
+ENG-01360,reetha,LEAD-0093,Email,email_opened,CMP-019,CRS-009,2026-03-08T10:00:00,{}
+ENG-01361,reetha,LEAD-0167,LinkedIn,form_started,CMP-019,CRS-007,2026-07-10T07:00:00,{}
+ENG-01362,reetha,LEAD-0034,Email,demo_requested,CMP-004,CRS-001,2026-02-14T03:00:00,{}
+ENG-01363,reetha,LEAD-0181,Instagram,landing_page_view,CMP-003,CRS-009,2026-04-08T06:00:00,{}
+ENG-01364,reetha,LEAD-0186,Instagram,form_started,CMP-018,CRS-012,2026-06-25T09:00:00,{}
+ENG-01365,reetha,LEAD-0033,Meta,email_clicked,CMP-018,CRS-012,2026-03-20T01:00:00,{}
+ENG-01366,reetha,LEAD-0250,LinkedIn,email_opened,CMP-015,CRS-011,2026-05-10T17:00:00,{}
+ENG-01367,reetha,LEAD-0018,Instagram,email_clicked,CMP-017,CRS-009,2026-03-02T13:00:00,{}
+ENG-01368,reetha,LEAD-0154,LinkedIn,course_page_view,CMP-010,CRS-001,2026-01-12T05:00:00,{}
+ENG-01369,reetha,LEAD-0049,Email,email_clicked,CMP-016,CRS-011,2026-02-01T22:00:00,{}
+ENG-01370,reetha,LEAD-0043,Instagram,webinar_registered,CMP-013,CRS-009,2026-09-20T02:00:00,{}
+ENG-01371,reetha,LEAD-0156,LinkedIn,form_started,CMP-006,CRS-001,2026-07-19T12:00:00,{}
+ENG-01372,reetha,LEAD-0056,WhatsApp,ad_click,CMP-017,CRS-008,2026-03-23T18:00:00,{}
+ENG-01373,reetha,LEAD-0185,WhatsApp,form_submitted,CMP-010,CRS-004,2026-09-15T22:00:00,{}
+ENG-01374,reetha,LEAD-0069,WhatsApp,landing_page_view,CMP-006,CRS-004,2026-06-01T22:00:00,{}
+ENG-01375,reetha,LEAD-0061,LinkedIn,ad_click,CMP-005,CRS-005,2026-01-24T17:00:00,{}
+ENG-01376,reetha,LEAD-0224,Organic Search,ad_click,CMP-008,CRS-004,2026-03-10T08:00:00,{}
+ENG-01377,reetha,LEAD-0167,LinkedIn,demo_requested,CMP-012,CRS-006,2026-03-01T00:00:00,{}
+ENG-01378,reetha,LEAD-0227,WhatsApp,form_submitted,CMP-005,CRS-007,2026-02-12T22:00:00,{}
+ENG-01379,reetha,LEAD-0015,Email,ad_click,CMP-012,CRS-004,2026-05-31T10:00:00,{}
+ENG-01380,reetha,LEAD-0066,Google Ads,webinar_registered,CMP-019,CRS-002,2026-05-24T05:00:00,{}
+ENG-01381,reetha,LEAD-0066,Organic Search,demo_requested,CMP-018,CRS-004,2026-07-15T20:00:00,{}
+ENG-01382,reetha,LEAD-0084,LinkedIn,form_started,CMP-019,CRS-011,2026-08-15T07:00:00,{}
+ENG-01383,reetha,LEAD-0115,Meta,email_clicked,CMP-012,CRS-003,2026-07-22T04:00:00,{}
+ENG-01384,reetha,LEAD-0127,Meta,whatsapp_message,CMP-006,CRS-003,2026-09-03T02:00:00,{}
+ENG-01385,reetha,LEAD-0126,Email,course_page_view,CMP-010,CRS-001,2026-04-07T18:00:00,{}
+ENG-01386,reetha,LEAD-0227,Meta,email_clicked,CMP-020,CRS-004,2026-06-08T05:00:00,{}
+ENG-01387,reetha,LEAD-0019,Instagram,form_started,CMP-015,CRS-011,2026-02-05T04:00:00,{}
+ENG-01388,reetha,LEAD-0186,WhatsApp,course_page_view,CMP-001,CRS-010,2026-07-26T03:00:00,{}
+ENG-01389,reetha,LEAD-0099,Google Ads,landing_page_view,CMP-001,CRS-011,2026-02-21T12:00:00,{}
+ENG-01390,reetha,LEAD-0064,Organic Search,landing_page_view,CMP-009,CRS-003,2026-01-23T04:00:00,{}
+ENG-01391,reetha,LEAD-0246,Organic Search,landing_page_view,CMP-018,CRS-012,2026-01-07T00:00:00,{}
+ENG-01392,reetha,LEAD-0022,Meta,course_page_view,CMP-016,CRS-010,2026-06-23T22:00:00,{}
+ENG-01393,reetha,LEAD-0079,LinkedIn,whatsapp_message,CMP-005,CRS-004,2026-08-16T05:00:00,{}
+ENG-01394,reetha,LEAD-0178,LinkedIn,webinar_registered,CMP-004,CRS-001,2026-01-29T17:00:00,{}
+ENG-01395,reetha,LEAD-0140,LinkedIn,landing_page_view,CMP-017,CRS-007,2026-01-23T03:00:00,{}
+ENG-01396,reetha,LEAD-0234,Meta,ad_click,CMP-008,CRS-007,2026-03-14T00:00:00,{}
+ENG-01397,reetha,LEAD-0091,Email,form_submitted,CMP-008,CRS-011,2026-07-17T04:00:00,{}
+ENG-01398,reetha,LEAD-0227,Email,landing_page_view,CMP-016,CRS-003,2026-07-16T21:00:00,{}
+ENG-01399,reetha,LEAD-0027,LinkedIn,email_opened,CMP-003,CRS-010,2026-02-26T07:00:00,{}
+ENG-01400,reetha,LEAD-0093,Google Ads,ad_click,CMP-020,CRS-003,2026-06-20T03:00:00,{}
+ENG-01401,reetha,LEAD-0136,LinkedIn,demo_requested,CMP-006,CRS-011,2026-04-02T13:00:00,{}
+ENG-01402,reetha,LEAD-0229,Email,form_submitted,CMP-020,CRS-005,2026-08-06T04:00:00,{}
+ENG-01403,reetha,LEAD-0070,Instagram,email_opened,CMP-009,CRS-012,2026-06-28T03:00:00,{}
+ENG-01404,reetha,LEAD-0221,Meta,course_page_view,CMP-011,CRS-003,2026-02-09T00:00:00,{}
+ENG-01405,reetha,LEAD-0185,Organic Search,whatsapp_message,CMP-003,CRS-002,2026-07-19T14:00:00,{}
+ENG-01406,reetha,LEAD-0072,Meta,landing_page_view,CMP-011,CRS-003,2026-08-07T23:00:00,{}
+ENG-01407,reetha,LEAD-0091,LinkedIn,whatsapp_message,CMP-014,CRS-008,2026-04-04T12:00:00,{}
+ENG-01408,reetha,LEAD-0204,Email,email_opened,CMP-005,CRS-011,2026-07-31T19:00:00,{}
+ENG-01409,reetha,LEAD-0108,WhatsApp,whatsapp_message,CMP-018,CRS-009,2026-05-06T12:00:00,{}
+ENG-01410,reetha,LEAD-0138,Organic Search,form_started,CMP-013,CRS-002,2026-09-10T17:00:00,{}
+ENG-01411,reetha,LEAD-0148,Organic Search,form_started,CMP-003,CRS-004,2026-08-04T16:00:00,{}
+ENG-01412,reetha,LEAD-0053,Organic Search,ad_click,CMP-012,CRS-009,2026-07-05T00:00:00,{}
+ENG-01413,reetha,LEAD-0236,Google Ads,ad_click,CMP-012,CRS-006,2026-08-31T04:00:00,{}
+ENG-01414,reetha,LEAD-0118,Meta,webinar_registered,CMP-014,CRS-004,2026-03-13T09:00:00,{}
+ENG-01415,reetha,LEAD-0015,Email,course_page_view,CMP-004,CRS-012,2026-04-18T07:00:00,{}
+ENG-01416,reetha,LEAD-0188,Google Ads,email_clicked,CMP-012,CRS-001,2026-03-15T12:00:00,{}
+ENG-01417,reetha,LEAD-0149,Google Ads,whatsapp_message,CMP-020,CRS-003,2026-02-24T21:00:00,{}
+ENG-01418,reetha,LEAD-0094,Meta,landing_page_view,CMP-008,CRS-002,2026-01-16T04:00:00,{}
+ENG-01419,reetha,LEAD-0213,Organic Search,email_clicked,CMP-005,CRS-003,2026-01-07T18:00:00,{}
+ENG-01420,reetha,LEAD-0036,Email,webinar_registered,CMP-010,CRS-008,2026-08-29T23:00:00,{}
+ENG-01421,reetha,LEAD-0087,Instagram,ad_click,CMP-010,CRS-002,2026-07-30T23:00:00,{}
+ENG-01422,reetha,LEAD-0226,Email,ad_click,CMP-020,CRS-003,2026-03-21T01:00:00,{}
+ENG-01423,reetha,LEAD-0003,Instagram,email_clicked,CMP-015,CRS-009,2026-09-15T05:00:00,{}
+ENG-01424,reetha,LEAD-0129,LinkedIn,form_started,CMP-014,CRS-003,2026-05-13T18:00:00,{}
+ENG-01425,reetha,LEAD-0134,Instagram,course_page_view,CMP-007,CRS-007,2026-05-20T02:00:00,{}
+ENG-01426,reetha,LEAD-0101,Meta,webinar_registered,CMP-020,CRS-002,2026-01-29T07:00:00,{}
+ENG-01427,reetha,LEAD-0081,Email,email_clicked,CMP-013,CRS-003,2026-08-28T15:00:00,{}
+ENG-01428,reetha,LEAD-0166,Instagram,form_started,CMP-009,CRS-002,2026-01-28T11:00:00,{}
+ENG-01429,reetha,LEAD-0093,WhatsApp,email_opened,CMP-001,CRS-004,2026-02-23T02:00:00,{}
+ENG-01430,reetha,LEAD-0139,Google Ads,landing_page_view,CMP-007,CRS-010,2026-05-25T05:00:00,{}
+ENG-01431,reetha,LEAD-0049,WhatsApp,form_started,CMP-002,CRS-004,2026-01-06T09:00:00,{}
+ENG-01432,reetha,LEAD-0146,WhatsApp,ad_click,CMP-019,CRS-008,2026-05-18T02:00:00,{}
+ENG-01433,reetha,LEAD-0081,Google Ads,form_submitted,CMP-001,CRS-006,2026-01-24T01:00:00,{}
+ENG-01434,reetha,LEAD-0129,Meta,email_opened,CMP-013,CRS-012,2026-05-25T12:00:00,{}
+ENG-01435,reetha,LEAD-0180,Email,landing_page_view,CMP-011,CRS-007,2026-07-02T04:00:00,{}
+ENG-01436,reetha,LEAD-0129,Organic Search,course_page_view,CMP-001,CRS-010,2026-09-15T03:00:00,{}
+ENG-01437,reetha,LEAD-0151,Organic Search,ad_click,CMP-010,CRS-003,2026-07-15T15:00:00,{}
+ENG-01438,reetha,LEAD-0119,Google Ads,landing_page_view,CMP-008,CRS-004,2026-03-19T21:00:00,{}
+ENG-01439,reetha,LEAD-0042,WhatsApp,webinar_registered,CMP-020,CRS-011,2026-03-14T22:00:00,{}
+ENG-01440,reetha,LEAD-0115,Organic Search,course_page_view,CMP-011,CRS-005,2026-09-25T10:00:00,{}
+ENG-01441,reetha,LEAD-0220,Instagram,ad_click,CMP-013,CRS-004,2026-07-04T19:00:00,{}
+ENG-01442,reetha,LEAD-0156,Google Ads,course_page_view,CMP-019,CRS-011,2026-04-17T19:00:00,{}
+ENG-01443,reetha,LEAD-0207,Google Ads,course_page_view,CMP-010,CRS-009,2026-09-12T03:00:00,{}
+ENG-01444,reetha,LEAD-0025,Instagram,email_opened,CMP-006,CRS-005,2026-02-14T15:00:00,{}
+ENG-01445,reetha,LEAD-0072,WhatsApp,email_opened,CMP-012,CRS-002,2026-03-24T02:00:00,{}
+ENG-01446,reetha,LEAD-0182,Organic Search,whatsapp_message,CMP-009,CRS-008,2026-02-06T05:00:00,{}
+ENG-01447,reetha,LEAD-0167,Meta,landing_page_view,CMP-019,CRS-008,2026-05-12T14:00:00,{}
+ENG-01448,reetha,LEAD-0220,LinkedIn,email_clicked,CMP-014,CRS-010,2026-01-21T11:00:00,{}
+ENG-01449,reetha,LEAD-0094,WhatsApp,demo_requested,CMP-011,CRS-006,2026-03-08T14:00:00,{}
+ENG-01450,reetha,LEAD-0106,WhatsApp,whatsapp_message,CMP-009,CRS-011,2026-02-12T21:00:00,{}
+ENG-01451,reetha,LEAD-0165,Google Ads,form_started,CMP-018,CRS-001,2026-01-22T19:00:00,{}
+ENG-01452,reetha,LEAD-0075,Instagram,course_page_view,CMP-019,CRS-007,2026-03-21T03:00:00,{}
+ENG-01453,reetha,LEAD-0100,Organic Search,whatsapp_message,CMP-003,CRS-006,2026-02-07T07:00:00,{}
+ENG-01454,reetha,LEAD-0165,WhatsApp,whatsapp_message,CMP-004,CRS-002,2026-08-27T14:00:00,{}
+ENG-01455,reetha,LEAD-0028,Instagram,email_clicked,CMP-007,CRS-007,2026-04-03T23:00:00,{}
+ENG-01456,reetha,LEAD-0082,LinkedIn,demo_requested,CMP-016,CRS-004,2026-06-18T02:00:00,{}
+ENG-01457,reetha,LEAD-0072,Instagram,ad_click,CMP-018,CRS-003,2026-09-01T03:00:00,{}
+ENG-01458,reetha,LEAD-0164,Meta,email_opened,CMP-019,CRS-001,2026-08-29T04:00:00,{}
+ENG-01459,reetha,LEAD-0240,Organic Search,email_opened,CMP-014,CRS-008,2026-07-14T01:00:00,{}
+ENG-01460,reetha,LEAD-0055,Organic Search,ad_click,CMP-014,CRS-005,2026-04-20T01:00:00,{}
+ENG-01461,reetha,LEAD-0046,Google Ads,course_page_view,CMP-003,CRS-005,2026-05-10T20:00:00,{}
+ENG-01462,reetha,LEAD-0077,Organic Search,whatsapp_message,CMP-014,CRS-009,2026-07-27T02:00:00,{}
+ENG-01463,reetha,LEAD-0229,LinkedIn,course_page_view,CMP-002,CRS-002,2026-04-20T21:00:00,{}
+ENG-01464,reetha,LEAD-0247,Organic Search,form_submitted,CMP-006,CRS-004,2026-08-08T10:00:00,{}
+ENG-01465,reetha,LEAD-0124,Instagram,webinar_registered,CMP-006,CRS-012,2026-06-28T13:00:00,{}
+ENG-01466,reetha,LEAD-0234,Email,demo_requested,CMP-013,CRS-001,2026-08-12T11:00:00,{}
+ENG-01467,reetha,LEAD-0186,Email,demo_requested,CMP-020,CRS-003,2026-04-12T02:00:00,{}
+ENG-01468,reetha,LEAD-0211,Email,email_opened,CMP-001,CRS-003,2026-06-15T21:00:00,{}
+ENG-01469,reetha,LEAD-0128,Organic Search,email_opened,CMP-004,CRS-011,2026-08-23T04:00:00,{}
+ENG-01470,reetha,LEAD-0134,Email,ad_click,CMP-015,CRS-003,2026-07-28T08:00:00,{}
+ENG-01471,reetha,LEAD-0249,WhatsApp,landing_page_view,CMP-002,CRS-004,2026-08-19T20:00:00,{}
+ENG-01472,reetha,LEAD-0179,WhatsApp,course_page_view,CMP-020,CRS-007,2026-04-07T13:00:00,{}
+ENG-01473,reetha,LEAD-0054,Meta,demo_requested,CMP-001,CRS-006,2026-04-21T11:00:00,{}
+ENG-01474,reetha,LEAD-0078,LinkedIn,webinar_registered,CMP-004,CRS-012,2026-07-06T00:00:00,{}
+ENG-01475,reetha,LEAD-0117,Instagram,email_clicked,CMP-012,CRS-006,2026-09-13T20:00:00,{}
+ENG-01476,reetha,LEAD-0250,Organic Search,email_opened,CMP-004,CRS-003,2026-08-07T16:00:00,{}
+ENG-01477,reetha,LEAD-0096,Meta,webinar_registered,CMP-020,CRS-003,2026-08-23T13:00:00,{}
+ENG-01478,reetha,LEAD-0073,Organic Search,email_clicked,CMP-010,CRS-012,2026-08-12T12:00:00,{}
+ENG-01479,reetha,LEAD-0207,Organic Search,landing_page_view,CMP-003,CRS-011,2026-02-20T02:00:00,{}
+ENG-01480,reetha,LEAD-0239,Instagram,landing_page_view,CMP-016,CRS-012,2026-01-09T19:00:00,{}
+ENG-01481,reetha,LEAD-0114,WhatsApp,demo_requested,CMP-002,CRS-011,2026-02-21T20:00:00,{}
+ENG-01482,reetha,LEAD-0055,Meta,whatsapp_message,CMP-018,CRS-007,2026-05-29T13:00:00,{}
+ENG-01483,reetha,LEAD-0220,Instagram,landing_page_view,CMP-012,CRS-008,2026-02-28T06:00:00,{}
+ENG-01484,reetha,LEAD-0181,Organic Search,email_clicked,CMP-001,CRS-006,2026-07-31T20:00:00,{}
+ENG-01485,reetha,LEAD-0073,LinkedIn,form_submitted,CMP-010,CRS-007,2026-04-25T16:00:00,{}
+ENG-01486,reetha,LEAD-0231,Instagram,ad_click,CMP-001,CRS-001,2026-05-04T00:00:00,{}
+ENG-01487,reetha,LEAD-0216,Organic Search,webinar_registered,CMP-020,CRS-006,2026-03-20T11:00:00,{}
+ENG-01488,reetha,LEAD-0246,WhatsApp,email_clicked,CMP-008,CRS-009,2026-06-21T05:00:00,{}
+ENG-01489,reetha,LEAD-0158,Email,email_clicked,CMP-002,CRS-010,2026-07-20T06:00:00,{}
+ENG-01490,reetha,LEAD-0241,Email,email_clicked,CMP-006,CRS-007,2026-08-08T04:00:00,{}
+ENG-01491,reetha,LEAD-0041,Instagram,form_started,CMP-004,CRS-012,2026-06-12T16:00:00,{}
+ENG-01492,reetha,LEAD-0031,Email,demo_requested,CMP-013,CRS-011,2026-03-06T16:00:00,{}
+ENG-01493,reetha,LEAD-0041,LinkedIn,form_started,CMP-003,CRS-002,2026-05-14T17:00:00,{}
+ENG-01494,reetha,LEAD-0003,Email,demo_requested,CMP-005,CRS-001,2026-01-14T13:00:00,{}
+ENG-01495,reetha,LEAD-0098,Google Ads,course_page_view,CMP-015,CRS-011,2026-02-10T18:00:00,{}
+ENG-01496,reetha,LEAD-0062,Email,form_started,CMP-010,CRS-004,2026-07-03T05:00:00,{}
+ENG-01497,reetha,LEAD-0200,Organic Search,email_clicked,CMP-009,CRS-011,2026-05-06T23:00:00,{}
+ENG-01498,reetha,LEAD-0022,Meta,ad_click,CMP-019,CRS-002,2026-01-27T08:00:00,{}
+ENG-01499,reetha,LEAD-0238,WhatsApp,landing_page_view,CMP-004,CRS-003,2026-02-26T14:00:00,{}
+ENG-01500,reetha,LEAD-0230,Meta,landing_page_view,CMP-003,CRS-008,2026-05-25T08:00:00,{}
