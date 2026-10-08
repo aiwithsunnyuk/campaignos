@@ -7,8 +7,11 @@ from .kpi_builder import MarketingIntelligenceKPIBuilder
 from .kpis import IntelligenceKPI
 from .models import MarketingIntelligence
 from .service import MarketingIntelligenceService
+from .summary import CommandCenterSummary
+from .summary_builder import CommandCenterSummaryBuilder
 
 __all__ = [
+    "CommandCenterSummary",
     "IntelligenceCard",
     "IntelligenceFeedItem",
     "IntelligenceKPI",
@@ -18,4 +21,5 @@ __all__ = [
     "MarketingIntelligenceFeedBuilder",
     "MarketingIntelligenceKPIBuilder",
     "MarketingIntelligenceService",
+    "CommandCenterSummaryBuilder",
 ]
