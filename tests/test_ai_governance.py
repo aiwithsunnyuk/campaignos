@@ -144,3 +144,66 @@ def test_nba_can_be_converted_to_pending_approval_request():
     assert request.approved_by is None
     assert request.rejection_reason is None
     assert request.evidence == action.evidence
+
+
+def test_approved_request_creates_audit_event():
+    from src.ai_governance import ApprovalEngine, AuditRecorder
+
+    request = ApprovalRequest(
+        request_id="APR-0020",
+        tenant_id="reetha",
+        lead_id="LEAD-0020",
+        action_type="registration_follow_up",
+        recommendation="Prioritize registration conversion",
+        reason="Registration is the current funnel bottleneck.",
+        evidence=(
+            "high engagement coverage",
+            "registration is the current funnel bottleneck",
+        ),
+    )
+
+    approved = ApprovalEngine().approve(
+        request,
+        approved_by="reetha-director",
+    )
+
+    event = AuditRecorder().record(
+        request=approved,
+        event_id="AUD-0020",
+        actor_id="reetha-director",
+        timestamp="2026-10-08T22:00:00+05:30",
+    )
+
+    assert event.event_id == "AUD-0020"
+    assert event.request_id == "APR-0020"
+    assert event.tenant_id == "reetha"
+    assert event.lead_id == "LEAD-0020"
+    assert event.event_type == "approval_approved"
+    assert event.actor_id == "reetha-director"
+    assert event.decision == "approved"
+    assert event.recommendation == approved.recommendation
+    assert event.reason == approved.reason
+    assert event.evidence == approved.evidence
+
+
+def test_pending_request_cannot_create_audit_event():
+    import pytest
+    from src.ai_governance import AuditRecorder
+
+    request = ApprovalRequest(
+        request_id="APR-0021",
+        tenant_id="reetha",
+        lead_id="LEAD-0021",
+        action_type="registration_follow_up",
+        recommendation="Prioritize registration conversion",
+        reason="Registration is the current funnel bottleneck.",
+        evidence=("registration bottleneck",),
+    )
+
+    with pytest.raises(ValueError):
+        AuditRecorder().record(
+            request=request,
+            event_id="AUD-0021",
+            actor_id="system",
+            timestamp="2026-10-08T22:00:00+05:30",
+        )
