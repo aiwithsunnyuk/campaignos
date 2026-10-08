@@ -207,3 +207,65 @@ def test_pending_request_cannot_create_audit_event():
             actor_id="system",
             timestamp="2026-10-08T22:00:00+05:30",
         )
+
+
+def test_reetha_director_can_approve_reetha_request():
+    from src.ai_governance import TenantApprovalService
+    from src.auth.models import Permission, Role, User
+
+    user = User(
+        user_id="reetha-director",
+        email="director@reetha.example",
+        display_name="Reetha Director",
+        tenant_id="reetha",
+        role=Role.DIRECTOR,
+    )
+
+    request = ApprovalRequest(
+        request_id="APR-0030",
+        tenant_id="reetha",
+        lead_id="LEAD-0030",
+        action_type="registration_follow_up",
+        recommendation="Prioritize registration conversion",
+        reason="Registration is the current funnel bottleneck.",
+        evidence=("registration bottleneck",),
+    )
+
+    approved = TenantApprovalService().approve(
+        user=user,
+        request=request,
+    )
+
+    assert approved.status == "approved"
+    assert approved.approved_by == "reetha-director"
+
+
+def test_demo_user_cannot_approve_reetha_request():
+    import pytest
+    from src.ai_governance import TenantApprovalService
+    from src.auth.authorization import AuthorizationError
+    from src.auth.models import Role, User
+
+    user = User(
+        user_id="demo-admin",
+        email="admin@demo.example",
+        display_name="Demo Admin",
+        tenant_id="demo",
+        role=Role.ADMIN,
+    )
+
+    request = ApprovalRequest(
+        request_id="APR-0031",
+        tenant_id="reetha",
+        lead_id="LEAD-0031",
+        action_type="registration_follow_up",
+        recommendation="Prioritize registration conversion",
+        reason="Registration is the current funnel bottleneck.",
+        evidence=("registration bottleneck",),
+    )
+
+    with pytest.raises(AuthorizationError, match="Tenant access denied"):
+        TenantApprovalService().approve(
+            user=user,
+            request=request,
+        )
