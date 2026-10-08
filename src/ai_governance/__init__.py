@@ -25,6 +25,12 @@ __all__ = [
     "AuditRecorder",
     "TenantApprovalService",
     "TenantAuditService",
+    "DecisionTrace",
+    "DecisionTraceRecorder",
+    "DecisionTraceService",
 ]
 
 from .lead_action_service import LeadActionGovernanceService
+from .decision_trace import DecisionTrace
+from .decision_trace_recorder import DecisionTraceRecorder
+from .decision_trace_service import DecisionTraceService

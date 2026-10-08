@@ -21,8 +21,14 @@ from src.marketing_intelligence import (
     CommandCenterSummaryBuilder,
 )
 from src.next_best_action import LeadNextBestActionService
+from datetime import datetime, timezone
+
 from src.ai_governance.lead_action_service import LeadActionGovernanceService
 from src.ai_governance.action_lifecycle import GovernedAction
+from src.ai_governance.lifecycle_audit import LifecycleAuditRecorder
+from src.ai_governance.execution_audit import ExecutionAuditRecorder
+from src.ai_governance.decision_trace_service import DecisionTraceService
+from src.execution.dry_run import DryRunExecutionAdapter
 
 
 # =========================================================
@@ -155,6 +161,7 @@ if (
 ):
     st.session_state.pop("governed_action", None)
     st.session_state.pop("dry_run_result", None)
+    st.session_state.pop("decision_events", None)
 
 lead_360 = Lead360Service().get_lead(
     user=current_user,
@@ -571,7 +578,7 @@ st.html(
 
 
 # =========================================================
-# Governed Action
+# Governed Action + Decision Trace
 # =========================================================
 
 st.markdown(
@@ -582,13 +589,44 @@ st.markdown(
 if "governed_action" not in st.session_state:
     st.session_state.governed_action = None
 
+if "decision_events" not in st.session_state:
+    st.session_state.decision_events = []
+
+if "dry_run_result" not in st.session_state:
+    st.session_state.dry_run_result = None
+
 governance = LeadActionGovernanceService()
+lifecycle_audit = LifecycleAuditRecorder()
+execution_audit = ExecutionAuditRecorder()
+decision_trace_service = DecisionTraceService()
+
 governed_action = st.session_state.governed_action
+
+
+def audit_timestamp() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def append_lifecycle_event(action, actor_id: str) -> None:
+    event = lifecycle_audit.record(
+        action=action,
+        event_id=(
+            f"AUD-{action.action_id}-"
+            f"{action.status.upper()}-"
+            f"{len(st.session_state.decision_events) + 1}"
+        ),
+        actor_id=actor_id,
+        timestamp=audit_timestamp(),
+    )
+
+    st.session_state.decision_events.append(event)
+
 
 if governed_action is None:
 
     st.info(
-        "AI recommendation is advisory. No external system will be contacted."
+        "AI recommendation is advisory. "
+        "No external system will be contacted."
     )
 
     if st.button(
@@ -596,17 +634,29 @@ if governed_action is None:
         type="primary",
         key="submit_governed_action",
     ):
+
         governed_action = governance.create_governed_action(
             user=current_user,
             action=lead_nba,
         )
 
         st.session_state.governed_action = governed_action
+        st.session_state.decision_events = []
+        st.session_state.dry_run_result = None
+
+        append_lifecycle_event(
+            action=governed_action,
+            actor_id=current_user.user_id,
+        )
+
         st.rerun()
 
 else:
 
-    status_label = governed_action.status.replace("_", " ").title()
+    status_label = governed_action.status.replace(
+        "_",
+        " ",
+    ).title()
 
     st.html(
         f"""
@@ -651,33 +701,52 @@ else:
             "been executed."
         )
 
-        approval_left, approval_right = st.columns(2, gap="medium")
+        approval_left, approval_right = st.columns(
+            2,
+            gap="medium",
+        )
 
         with approval_left:
+
             if st.button(
                 "Approve Action",
                 type="primary",
                 key="approve_governed_action",
             ):
-                st.session_state.governed_action = (
-                    governance.approve_action(
-                        user=approver_user,
-                        action=governed_action,
-                    )
+
+                approved_action = governance.approve_action(
+                    user=approver_user,
+                    action=governed_action,
                 )
+
+                st.session_state.governed_action = approved_action
+
+                append_lifecycle_event(
+                    action=approved_action,
+                    actor_id=approver_user.user_id,
+                )
+
                 st.rerun()
 
         with approval_right:
+
             if st.button(
                 "Reject Action",
                 key="reject_governed_action",
             ):
-                st.session_state.governed_action = (
-                    governance.reject_action(
-                        user=approver_user,
-                        action=governed_action,
-                    )
+
+                rejected_action = governance.reject_action(
+                    user=approver_user,
+                    action=governed_action,
                 )
+
+                st.session_state.governed_action = rejected_action
+
+                append_lifecycle_event(
+                    action=rejected_action,
+                    actor_id=approver_user.user_id,
+                )
+
                 st.rerun()
 
     elif governed_action.status == "approved":
@@ -692,12 +761,19 @@ else:
             type="primary",
             key="prepare_governed_action",
         ):
-            st.session_state.governed_action = (
-                governance.prepare_for_execution(
-                    user=approver_user,
-                    action=governed_action,
-                )
+
+            ready_action = governance.prepare_for_execution(
+                user=approver_user,
+                action=governed_action,
             )
+
+            st.session_state.governed_action = ready_action
+
+            append_lifecycle_event(
+                action=ready_action,
+                actor_id=approver_user.user_id,
+            )
+
             st.rerun()
 
     elif governed_action.status == "ready_for_execution":
@@ -711,17 +787,39 @@ else:
             type="primary",
             key="dry_run_governed_action",
         ):
-            st.session_state.dry_run_result = (
-                governance.dry_run_ready_action(
-                    user=approver_user,
-                    action=governed_action,
-                )
+
+            execution_id = (
+                f"EXEC-{governed_action.tenant_id.upper()}-"
+                f"{governed_action.lead_id}"
             )
+
+            execution_result = DryRunExecutionAdapter().execute(
+                action=governed_action,
+                execution_id=execution_id,
+            )
+
+            st.session_state.dry_run_result = execution_result
+
+            execution_event = execution_audit.record(
+                action=governed_action,
+                result=execution_result,
+                event_id=f"AUD-{execution_id}",
+                actor_id=approver_user.user_id,
+                timestamp=audit_timestamp(),
+            )
+
+            st.session_state.decision_events.append(
+                execution_event
+            )
+
             st.rerun()
 
         if st.session_state.get("dry_run_result"):
+
+            result = st.session_state.dry_run_result
+
             st.success(
-                "Dry-run completed. No external system was contacted."
+                f"Dry-run completed. {result.message}"
             )
 
     elif governed_action.status == "rejected":
@@ -730,13 +828,110 @@ else:
             "Action rejected. No external action was executed."
         )
 
+
+# =========================================================
+# Decision Trace
+# =========================================================
+
+if (
+    governed_action is not None
+    and st.session_state.decision_events
+):
+
+    st.markdown(
+        '<div class="section-title">🔎 Decision Trace</div>',
+        unsafe_allow_html=True,
+    )
+
+    trace = decision_trace_service.build_trace(
+        user=current_user,
+        action=governed_action,
+        events=tuple(
+            st.session_state.decision_events
+        ),
+    )
+
+    st.html(
+        f"""
+<div class="conversion-card">
+    <strong>Why did CampaignOS recommend this action?</strong>
+
+    <div class="conversion-row">
+        <span>Tenant</span>
+        <span class="conversion-value">
+            {trace.tenant_id}
+        </span>
+    </div>
+
+    <div class="conversion-row">
+        <span>Lead</span>
+        <span class="conversion-value">
+            {trace.lead_id}
+        </span>
+    </div>
+
+    <div class="conversion-row">
+        <span>Action</span>
+        <span class="conversion-value">
+            {trace.action_id}
+        </span>
+    </div>
+</div>
+"""
+    )
+
+    for index, event in enumerate(trace.events, start=1):
+
+        event_label = event.event_type.replace(
+            "_",
+            " ",
+        ).title()
+
+        evidence_html = "".join(
+            f"<li>{evidence}</li>"
+            for evidence in event.evidence
+        )
+
+        st.html(
+            f"""
+<div class="feed-card medium">
+    <div class="feed-title">
+        {index}. {event_label}
+    </div>
+
+    <div class="feed-meta">
+        Actor: {event.actor_id}
+        · {event.timestamp}
+    </div>
+
+    <br>
+
+    <strong>Decision</strong>
+    <div>{event.decision}</div>
+
+    <br>
+
+    <strong>Reason</strong>
+    <div>{event.reason}</div>
+
+    <br>
+
+    <strong>Evidence</strong>
+    <ul>
+        {evidence_html}
+    </ul>
+</div>
+"""
+        )
+
+
 st.caption(
     "Governance: recommendation → approval → readiness → dry run. "
+    "Decision Trace records the governed lifecycle and execution result. "
     "External execution is intentionally disabled."
 )
 
 
-# =========================================================
 # Lead 360
 st.html(
     f"""
