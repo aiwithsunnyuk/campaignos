@@ -4,6 +4,7 @@ from .defaults import build_default_registry
 from .factory import DataSourceAdapterFactory
 from .models import DataSource
 from .registry import DataSourceRegistry
+from .service import TenantDataService
 from .reetha import ReethaDataSourceLoader
 
 __all__ = [
@@ -13,5 +14,6 @@ __all__ = [
     "DataSourceAdapterFactory",
     "DataSourceRegistry",
     "ReethaDataSourceLoader",
+    "TenantDataService",
     "build_default_registry",
 ]
