@@ -58,6 +58,12 @@ class CSVLeadAdapter:
 
     def _to_lead(self, row: dict[str, str]) -> Lead:
         lead_score = row.get("lead_score")
+        row_tenant_id = row.get("tenant_id")
+
+        if row_tenant_id != self.tenant_id:
+            raise ValueError(
+                f"Tenant mismatch: adapter={self.tenant_id}, row={row_tenant_id}"
+            )
 
         return Lead(
             lead_id=row["lead_id"],
