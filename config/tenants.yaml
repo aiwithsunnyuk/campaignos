@@ -1,0 +1,15 @@
+tenants:
+  demo:
+    name: CampaignOS Demo
+    status: active
+    data_mode: synthetic
+    description: Synthetic demonstration tenant.
+
+  reetha:
+    name: Reetha IT Hub
+    status: active
+    data_mode: synthetic
+    description: >
+      Reetha IT Hub GTM tenant. Synthetic data is used during
+      development and validation. Authorized real-data integration
+      will be enabled in a later milestone.
