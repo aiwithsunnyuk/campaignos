@@ -20,6 +20,9 @@ from src.marketing_intelligence import (
     MarketingIntelligenceEngine,
     CommandCenterSummaryBuilder,
 )
+from src.next_best_action import LeadNextBestActionService
+from src.ai_governance.lead_action_service import LeadActionGovernanceService
+from src.ai_governance.action_lifecycle import GovernedAction
 
 
 # =========================================================
@@ -125,7 +128,10 @@ def build_command_center_summary():
 summary = build_command_center_summary()
 kpis = {k.key: k for k in summary.kpis}
 
-current_user = get_user("reetha-sales")
+# Demo users representing the governed operating model.
+# Marketing generates recommendations; the director approves them.
+current_user = get_user("reetha-marketing")
+approver_user = get_user("reetha-director")
 
 source_leads, source_engagements, source_registrations, source_enrollments = (
     load_reetha_source_records()
@@ -139,6 +145,17 @@ selected_lead_id = st.selectbox(
     index=0,
 )
 
+# Prevent governed actions or dry-run results from leaking
+# across lead selections.
+existing_governed_action = st.session_state.get("governed_action")
+
+if (
+    existing_governed_action is not None
+    and existing_governed_action.lead_id != selected_lead_id
+):
+    st.session_state.pop("governed_action", None)
+    st.session_state.pop("dry_run_result", None)
+
 lead_360 = Lead360Service().get_lead(
     user=current_user,
     tenant_id=TENANT_ID,
@@ -147,6 +164,12 @@ lead_360 = Lead360Service().get_lead(
     engagements=source_engagements,
     registrations=source_registrations,
     enrollments=source_enrollments,
+)
+
+lead_nba = LeadNextBestActionService().recommend(
+    user=current_user,
+    tenant_id=TENANT_ID,
+    lead=lead_360,
 )
 
 
@@ -502,38 +525,214 @@ with right:
 
 
 # =========================================================
-# Next Best Action preview
+# Lead-level Next Best Action
 # =========================================================
 
 st.markdown(
-    '<div class="section-title">🎯 What Should Happen Next?</div>',
+    '<div class="section-title">🎯 Next Best Action</div>',
     unsafe_allow_html=True,
+)
+
+nba_priority_class = {
+    "high": "critical",
+    "medium": "medium",
+    "low": "low",
+}.get(lead_nba.priority, "low")
+
+evidence_html = "".join(
+    f"<li>{evidence}</li>"
+    for evidence in lead_nba.evidence
 )
 
 st.html(
     f"""
-<div class="next-action">
-    <span class="next-action-priority">High Priority</span>
+<div class="feed-card {nba_priority_class}">
+    <div class="feed-title">
+        {lead_nba.priority.upper()} · {lead_nba.action_type}
+    </div>
 
     <div class="next-action-title">
-        Prioritize registration conversion
+        {lead_nba.recommendation}
     </div>
 
     <div>
-        The current funnel indicates that registration is the
-        primary conversion bottleneck.
+        {lead_nba.reason}
     </div>
 
     <br>
 
-    <strong>Evidence</strong><br>
-    {int(kpis["engaged_leads"].value):,} engaged leads
-    →
-    {int(kpis["registered_leads"].value):,} registered leads
-    →
-    {registration_rate:.2f}% conversion
+    <strong>Evidence</strong>
+    <ul>
+        {evidence_html}
+    </ul>
 </div>
 """
+)
+
+
+# =========================================================
+# Governed Action
+# =========================================================
+
+st.markdown(
+    '<div class="section-title">🛡️ Governed Action</div>',
+    unsafe_allow_html=True,
+)
+
+if "governed_action" not in st.session_state:
+    st.session_state.governed_action = None
+
+governance = LeadActionGovernanceService()
+governed_action = st.session_state.governed_action
+
+if governed_action is None:
+
+    st.info(
+        "AI recommendation is advisory. No external system will be contacted."
+    )
+
+    if st.button(
+        "Submit for Approval",
+        type="primary",
+        key="submit_governed_action",
+    ):
+        governed_action = governance.create_governed_action(
+            user=current_user,
+            action=lead_nba,
+        )
+
+        st.session_state.governed_action = governed_action
+        st.rerun()
+
+else:
+
+    status_label = governed_action.status.replace("_", " ").title()
+
+    st.html(
+        f"""
+<div class="conversion-card">
+    <strong>Governed Action</strong>
+
+    <div class="conversion-row">
+        <span>Action ID</span>
+        <span class="conversion-value">
+            {governed_action.action_id}
+        </span>
+    </div>
+
+    <div class="conversion-row">
+        <span>Lead</span>
+        <span class="conversion-value">
+            {governed_action.lead_id}
+        </span>
+    </div>
+
+    <div class="conversion-row">
+        <span>Action</span>
+        <span class="conversion-value">
+            {governed_action.action_type}
+        </span>
+    </div>
+
+    <div class="conversion-row">
+        <span>Status</span>
+        <span class="conversion-value">
+            {status_label}
+        </span>
+    </div>
+</div>
+"""
+    )
+
+    if governed_action.status == "pending_approval":
+
+        st.warning(
+            "Approval required. The marketing recommendation has not "
+            "been executed."
+        )
+
+        approval_left, approval_right = st.columns(2, gap="medium")
+
+        with approval_left:
+            if st.button(
+                "Approve Action",
+                type="primary",
+                key="approve_governed_action",
+            ):
+                st.session_state.governed_action = (
+                    governance.approve_action(
+                        user=approver_user,
+                        action=governed_action,
+                    )
+                )
+                st.rerun()
+
+        with approval_right:
+            if st.button(
+                "Reject Action",
+                key="reject_governed_action",
+            ):
+                st.session_state.governed_action = (
+                    governance.reject_action(
+                        user=approver_user,
+                        action=governed_action,
+                    )
+                )
+                st.rerun()
+
+    elif governed_action.status == "approved":
+
+        st.success(
+            f"Approved by {governed_action.approved_by}. "
+            "The action is approved but has not been executed."
+        )
+
+        if st.button(
+            "Prepare for Execution",
+            type="primary",
+            key="prepare_governed_action",
+        ):
+            st.session_state.governed_action = (
+                governance.prepare_for_execution(
+                    user=approver_user,
+                    action=governed_action,
+                )
+            )
+            st.rerun()
+
+    elif governed_action.status == "ready_for_execution":
+
+        st.warning(
+            "Ready for execution. The next step is a dry-run only."
+        )
+
+        if st.button(
+            "Run Dry Run",
+            type="primary",
+            key="dry_run_governed_action",
+        ):
+            st.session_state.dry_run_result = (
+                governance.dry_run_ready_action(
+                    user=approver_user,
+                    action=governed_action,
+                )
+            )
+            st.rerun()
+
+        if st.session_state.get("dry_run_result"):
+            st.success(
+                "Dry-run completed. No external system was contacted."
+            )
+
+    elif governed_action.status == "rejected":
+
+        st.error(
+            "Action rejected. No external action was executed."
+        )
+
+st.caption(
+    "Governance: recommendation → approval → readiness → dry run. "
+    "External execution is intentionally disabled."
 )
 
 

@@ -26,3 +26,5 @@ __all__ = [
     "TenantApprovalService",
     "TenantAuditService",
 ]
+
+from .lead_action_service import LeadActionGovernanceService
