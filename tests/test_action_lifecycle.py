@@ -115,3 +115,61 @@ def test_rejected_action_cannot_execute():
             rejected,
             executed_by="campaignos-system",
         )
+
+
+def test_nba_can_become_governed_action():
+    from src.ai_governance import GovernedActionFactory
+    from src.next_best_action import NextBestAction
+
+    nba = NextBestAction(
+        lead_id="LEAD-0100",
+        tenant_id="reetha",
+        action_type="registration_follow_up",
+        priority="high",
+        recommendation="Prioritize registration conversion",
+        reason="Registration is the current funnel bottleneck.",
+        evidence=(
+            "high engagement coverage",
+            "registration bottleneck",
+        ),
+    )
+
+    governed = GovernedActionFactory().create(
+        action=nba,
+        action_id="ACT-0100",
+    )
+
+    assert governed.action_id == "ACT-0100"
+    assert governed.tenant_id == "reetha"
+    assert governed.lead_id == "LEAD-0100"
+    assert governed.action_type == nba.action_type
+    assert governed.recommendation == nba.recommendation
+    assert governed.status == "recommended"
+
+
+def test_governed_action_can_enter_approval_lifecycle():
+    from src.ai_governance import (
+        ActionLifecycleEngine,
+        GovernedActionFactory,
+    )
+    from src.next_best_action import NextBestAction
+
+    nba = NextBestAction(
+        lead_id="LEAD-0101",
+        tenant_id="reetha",
+        action_type="registration_follow_up",
+        priority="high",
+        recommendation="Prioritize registration conversion",
+        reason="Registration is the current funnel bottleneck.",
+        evidence=("registration bottleneck",),
+    )
+
+    governed = GovernedActionFactory().create(
+        action=nba,
+        action_id="ACT-0101",
+    )
+
+    pending = ActionLifecycleEngine().submit_for_approval(governed)
+
+    assert pending.status == "pending_approval"
+    assert pending.tenant_id == "reetha"

@@ -1,3 +1,4 @@
+from .action_factory import GovernedActionFactory
 from .action_lifecycle import GovernedAction
 from .action_lifecycle_engine import (
     ActionLifecycleEngine,
@@ -13,6 +14,7 @@ from .tenant_audit import TenantAuditService
 
 __all__ = [
     "GovernedAction",
+    "GovernedActionFactory",
     "ActionLifecycleEngine",
     "ActionLifecycleError",
     "ApprovalRequest",
