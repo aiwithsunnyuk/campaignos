@@ -4,6 +4,7 @@ from .defaults import build_default_registry
 from .factory import DataSourceAdapterFactory
 from .models import DataSource
 from .registry import DataSourceRegistry
+from .reetha import ReethaDataSourceLoader
 
 __all__ = [
     "DataSource",
@@ -11,5 +12,6 @@ __all__ = [
     "CSVDataSourceAdapter",
     "DataSourceAdapterFactory",
     "DataSourceRegistry",
+    "ReethaDataSourceLoader",
     "build_default_registry",
 ]
