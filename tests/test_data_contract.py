@@ -2,6 +2,7 @@ from src.data_contract import (
     Campaign,
     Course,
     Engagement,
+    Enrollment,
     Lead,
     Registration,
 )
@@ -115,3 +116,23 @@ def test_registration_contract():
 
     assert registration.lead_id == "L001"
     assert registration.course_id == "CRS001"
+
+
+def test_enrollment_contract():
+    enrollment = Enrollment(
+        enrollment_id="ENR001",
+        tenant_id="reetha",
+        lead_id="L001",
+        course_id="CRS001",
+        enrollment_status="active",
+        enrollment_date="2026-10-08T10:00:00",
+        amount=25000.0,
+        payment_status="paid",
+        registration_id="REG001",
+    )
+
+    assert enrollment.enrollment_id == "ENR001"
+    assert enrollment.tenant_id == "reetha"
+    assert enrollment.lead_id == "L001"
+    assert enrollment.course_id == "CRS001"
+    assert enrollment.amount == 25000.0
