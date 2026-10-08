@@ -7,10 +7,6 @@ if str(ROOT) not in sys.path:
 
 import streamlit as st
 
-from src.data_adapters.csv_lead_adapter import CSVLeadAdapter
-from src.data_adapters.csv_engagement_adapter import CSVEngagementAdapter
-from src.data_adapters.csv_registration_adapter import CSVRegistrationAdapter
-from src.data_adapters.csv_enrollment_adapter import CSVEnrollmentAdapter
 
 from src.lead_360.builder import Lead360Builder
 from src.lead_360 import Lead360Service
@@ -23,6 +19,11 @@ from src.marketing_intelligence import (
 from src.next_best_action import LeadNextBestActionService
 from datetime import datetime, timezone
 
+from src.data_sources import (
+    DataSourceAdapterFactory,
+    TenantDataService,
+    build_default_registry,
+)
 from src.ai_governance.lead_action_service import LeadActionGovernanceService
 from src.ai_governance.action_lifecycle import GovernedAction
 from src.ai_governance.lifecycle_audit import LifecycleAuditRecorder
@@ -52,28 +53,28 @@ st.set_page_config(
 # =========================================================
 
 @st.cache_data
+def load_reetha_source_records():
+    service = TenantDataService(
+        registry=build_default_registry(),
+        factory=DataSourceAdapterFactory(),
+        base_path=ROOT / "data" / "reetha",
+    )
+
+    data = service.load_reetha()
+
+    return (
+        data["leads"],
+        data["engagements"],
+        data["registrations"],
+        data["enrollments"],
+    )
+
+
+@st.cache_data
 def load_reetha_lead_360():
-    base = ROOT / "data" / "reetha"
-
-    leads = CSVLeadAdapter(
-        TENANT_ID,
-        base / "leads.csv",
-    ).load()
-
-    engagements = CSVEngagementAdapter(
-        TENANT_ID,
-        base / "engagements.csv",
-    ).load()
-
-    registrations = CSVRegistrationAdapter(
-        TENANT_ID,
-        base / "registrations.csv",
-    ).load()
-
-    enrollments = CSVEnrollmentAdapter(
-        TENANT_ID,
-        base / "enrollments.csv",
-    ).load()
+    leads, engagements, registrations, enrollments = (
+        load_reetha_source_records()
+    )
 
     return Lead360Builder(
         tenant_id=TENANT_ID,
@@ -83,33 +84,6 @@ def load_reetha_lead_360():
         registrations=registrations,
         enrollments=enrollments,
     )
-
-
-@st.cache_data
-def load_reetha_source_records():
-    base = ROOT / "data" / "reetha"
-
-    leads = CSVLeadAdapter(
-        TENANT_ID,
-        base / "leads.csv",
-    ).load()
-
-    engagements = CSVEngagementAdapter(
-        TENANT_ID,
-        base / "engagements.csv",
-    ).load()
-
-    registrations = CSVRegistrationAdapter(
-        TENANT_ID,
-        base / "registrations.csv",
-    ).load()
-
-    enrollments = CSVEnrollmentAdapter(
-        TENANT_ID,
-        base / "enrollments.csv",
-    ).load()
-
-    return leads, engagements, registrations, enrollments
 
 
 @st.cache_data
