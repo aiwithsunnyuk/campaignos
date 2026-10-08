@@ -7,3 +7,6 @@ __all__ = [
     "NextBestActionEngine",
     "NextBestActionService",
 ]
+
+from .lead_engine import LeadNextBestActionEngine
+from .lead_service import LeadNextBestActionService
