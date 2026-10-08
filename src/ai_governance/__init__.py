@@ -4,6 +4,7 @@ from .audit_recorder import AuditRecorder
 from .models import ApprovalRequest
 from .request_factory import ApprovalRequestFactory
 from .tenant_approval import TenantApprovalService
+from .tenant_audit import TenantAuditService
 
 __all__ = [
     "ApprovalRequest",
@@ -13,4 +14,5 @@ __all__ = [
     "AuditEvent",
     "AuditRecorder",
     "TenantApprovalService",
+    "TenantAuditService",
 ]

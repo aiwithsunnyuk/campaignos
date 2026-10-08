@@ -269,3 +269,81 @@ def test_demo_user_cannot_approve_reetha_request():
             user=user,
             request=request,
         )
+
+
+def test_reetha_director_can_record_reetha_audit():
+    from src.ai_governance import ApprovalEngine, TenantAuditService
+    from src.auth.models import Role, User
+
+    user = User(
+        user_id="reetha-director",
+        email="director@reetha.example",
+        display_name="Reetha Director",
+        tenant_id="reetha",
+        role=Role.DIRECTOR,
+    )
+
+    request = ApprovalRequest(
+        request_id="APR-0040",
+        tenant_id="reetha",
+        lead_id="LEAD-0040",
+        action_type="registration_follow_up",
+        recommendation="Prioritize registration conversion",
+        reason="Registration is the current funnel bottleneck.",
+        evidence=("registration bottleneck",),
+    )
+
+    approved = ApprovalEngine().approve(
+        request=request,
+        approved_by=user.user_id,
+    )
+
+    event = TenantAuditService().record(
+        user=user,
+        request=approved,
+        event_id="AUD-0040",
+        timestamp="2026-10-08T23:00:00+05:30",
+    )
+
+    assert event.tenant_id == "reetha"
+    assert event.request_id == "APR-0040"
+    assert event.actor_id == "reetha-director"
+    assert event.decision == "approved"
+
+
+def test_demo_admin_cannot_record_reetha_audit():
+    import pytest
+    from src.ai_governance import ApprovalEngine, TenantAuditService
+    from src.auth.authorization import AuthorizationError
+    from src.auth.models import Role, User
+
+    user = User(
+        user_id="demo-admin",
+        email="admin@demo.example",
+        display_name="Demo Admin",
+        tenant_id="demo",
+        role=Role.ADMIN,
+    )
+
+    request = ApprovalRequest(
+        request_id="APR-0041",
+        tenant_id="reetha",
+        lead_id="LEAD-0041",
+        action_type="registration_follow_up",
+        recommendation="Prioritize registration conversion",
+        reason="Registration is the current funnel bottleneck.",
+        evidence=("registration bottleneck",),
+    )
+
+    approved = ApprovalEngine().approve(
+        request=request,
+        approved_by="reetha-director",
+    )
+
+    with pytest.raises(AuthorizationError, match="Tenant access denied"):
+        TenantAuditService().record(
+            user=user,
+            request=approved,
+            event_id="AUD-0041",
+            timestamp="2026-10-08T23:00:00+05:30",
+        )
