@@ -3,6 +3,8 @@ from .csv_lead_adapter import CSVLeadAdapter
 from .csv_campaign_adapter import CSVCampaignAdapter
 from .csv_course_adapter import CSVCourseAdapter
 from .csv_engagement_adapter import CSVEngagementAdapter
+from .csv_registration_adapter import CSVRegistrationAdapter
+from .csv_enrollment_adapter import CSVEnrollmentAdapter
 from .synthetic_contact_adapter import SyntheticContactLeadAdapter
 
 __all__ = [
@@ -10,6 +12,8 @@ __all__ = [
     "CSVCampaignAdapter",
     "CSVCourseAdapter",
     "CSVEngagementAdapter",
+    "CSVRegistrationAdapter",
+    "CSVEnrollmentAdapter",
     "LeadAdapter",
     "SyntheticContactLeadAdapter",
 ]
