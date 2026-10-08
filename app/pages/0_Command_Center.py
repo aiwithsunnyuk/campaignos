@@ -13,6 +13,8 @@ from src.data_adapters.csv_registration_adapter import CSVRegistrationAdapter
 from src.data_adapters.csv_enrollment_adapter import CSVEnrollmentAdapter
 
 from src.lead_360.builder import Lead360Builder
+from src.lead_360 import Lead360Service
+from src.auth.users import get_user
 from src.gtm_intelligence import GTMIntelligenceSnapshotBuilder
 from src.marketing_intelligence import (
     MarketingIntelligenceEngine,
@@ -75,6 +77,33 @@ def load_reetha_lead_360():
 
 
 @st.cache_data
+def load_reetha_source_records():
+    base = ROOT / "data" / "reetha"
+
+    leads = CSVLeadAdapter(
+        TENANT_ID,
+        base / "leads.csv",
+    ).load()
+
+    engagements = CSVEngagementAdapter(
+        TENANT_ID,
+        base / "engagements.csv",
+    ).load()
+
+    registrations = CSVRegistrationAdapter(
+        TENANT_ID,
+        base / "registrations.csv",
+    ).load()
+
+    enrollments = CSVEnrollmentAdapter(
+        TENANT_ID,
+        base / "enrollments.csv",
+    ).load()
+
+    return leads, engagements, registrations, enrollments
+
+
+@st.cache_data
 def build_command_center_summary():
     records = load_reetha_lead_360()
 
@@ -95,6 +124,30 @@ def build_command_center_summary():
 
 summary = build_command_center_summary()
 kpis = {k.key: k for k in summary.kpis}
+
+current_user = get_user("reetha-sales")
+
+source_leads, source_engagements, source_registrations, source_enrollments = (
+    load_reetha_source_records()
+)
+
+lead_ids = [lead.lead_id for lead in source_leads]
+
+selected_lead_id = st.selectbox(
+    "Select Lead",
+    options=lead_ids,
+    index=0,
+)
+
+lead_360 = Lead360Service().get_lead(
+    user=current_user,
+    tenant_id=TENANT_ID,
+    lead_id=selected_lead_id,
+    leads=source_leads,
+    engagements=source_engagements,
+    registrations=source_registrations,
+    enrollments=source_enrollments,
+)
 
 
 # =========================================================
@@ -485,6 +538,74 @@ st.html(
 
 
 # =========================================================
+# Lead 360
+st.html(
+    f"""
+    <div class="section-title">👤 Lead 360 · {lead_360.lead_id}</div>
+
+    <div class="decision-card">
+        <div class="decision-card-header">
+            <div>
+                <div class="decision-label">LEAD INTELLIGENCE</div>
+                <div class="decision-title">{lead_360.lead_id}</div>
+            </div>
+            <div class="decision-badge">REETHA</div>
+        </div>
+
+        <div class="decision-grid">
+            <div>
+                <div class="metric-label">Lead Score</div>
+                <div class="metric-value">{lead_360.lead_score}</div>
+            </div>
+
+            <div>
+                <div class="metric-label">Engagements</div>
+                <div class="metric-value">{lead_360.total_engagements}</div>
+            </div>
+
+            <div>
+                <div class="metric-label">Campaigns</div>
+                <div class="metric-value">{lead_360.unique_campaigns}</div>
+            </div>
+
+            <div>
+                <div class="metric-label">Courses</div>
+                <div class="metric-value">{lead_360.unique_courses}</div>
+            </div>
+
+            <div>
+                <div class="metric-label">Registrations</div>
+                <div class="metric-value">{lead_360.registration_count}</div>
+            </div>
+
+            <div>
+                <div class="metric-label">Enrollments</div>
+                <div class="metric-value">{lead_360.enrollment_count}</div>
+            </div>
+        </div>
+
+        <div class="evidence-box">
+            <div class="evidence-title">Lead Evidence</div>
+
+            <div class="evidence-item">
+                Engagement channels:
+                {", ".join(lead_360.engagement_channels) or "None"}
+            </div>
+
+            <div class="evidence-item">
+                Event types:
+                {", ".join(lead_360.engagement_event_types) or "None"}
+            </div>
+
+            <div class="evidence-item">
+                Last engagement:
+                {lead_360.last_engagement_at or "Unknown"}
+            </div>
+        </div>
+    </div>
+    """
+)
+
 # Intelligence Feed
 # =========================================================
 
