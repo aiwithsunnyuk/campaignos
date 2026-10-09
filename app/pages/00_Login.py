@@ -11,6 +11,8 @@ from src.identity.oidc import (
     is_authenticated as oidc_authenticated,
 )
 from src.identity.access import IdentityAccessService, IdentityAccessError
+from src.session.identity_session import IdentitySession
+from src.session.streamlit_session import sign_in_identity
 
 
 st.set_page_config(
@@ -257,14 +259,17 @@ if oidc_authenticated(st.user) and get_session() is None:
 
         access_service = IdentityAccessService()
 
-        campaignos_user_id, membership = (
-            access_service.resolve_campaignos_user(
-                identity,
-                tenant_id="reetha",
-            )
+        membership = access_service.resolve_membership(
+            identity,
+            tenant_id="reetha",
         )
 
-        sign_in(campaignos_user_id)
+        identity_session = IdentitySession(
+            identity=identity,
+            membership=membership,
+        )
+
+        sign_in_identity(identity_session)
         st.rerun()
 
     except IdentityAccessError as exc:
@@ -273,6 +278,15 @@ if oidc_authenticated(st.user) and get_session() is None:
             "authorized for this CampaignOS tenant."
         )
         st.caption(str(exc))
+
+        st.info(
+            "You are signed in with a Google account that does not have "
+            "access to this CampaignOS workspace."
+        )
+
+        if st.button("Use another Google account", type="primary"):
+            st.login()
+
         st.stop()
 
     except Exception as exc:
@@ -312,7 +326,7 @@ if session is not None:
                 Welcome back, {workspace.display_name}
             </div>
             <div class="workspace-meta">
-                {workspace.tenant_id} · {workspace.role.value}
+                {workspace.tenant_id} · {workspace.role}
             </div>
             <div class="status-pill">
                 ● Authenticated workspace
