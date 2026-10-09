@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from .models import Identity, TenantMembership
 
 
@@ -25,10 +27,15 @@ class TenantMembershipService:
         self,
         identity: Identity,
     ) -> list[TenantMembership]:
+        identity_ids = {
+            identity.identity_id,
+            f"email:{identity.email}",
+        }
+
         return [
             membership
             for membership in self._memberships
-            if membership.identity_id == identity.identity_id
+            if membership.identity_id in identity_ids
             and membership.status == "active"
         ]
 

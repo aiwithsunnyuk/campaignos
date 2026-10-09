@@ -1,0 +1,5 @@
+memberships:
+  - identity_email: "sunnyukdesign@gmail.com"
+    tenant_id: "reetha"
+    role: "director"
+    status: "active"

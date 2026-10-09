@@ -6,19 +6,14 @@ from .models import Identity
 
 
 class OIDCIdentityError(ValueError):
-    """Raised when the authenticated OIDC identity is invalid."""
+    """Raised when an authenticated OIDC identity is invalid."""
 
 
 def identity_from_streamlit_user(user: Any) -> Identity:
-    """
-    Convert Streamlit's authenticated OIDC user into CampaignOS Identity.
-
-    Streamlit is responsible for authentication.
-    CampaignOS is responsible for identity normalization and authorization.
-    """
-
     if not user:
-        raise OIDCIdentityError("No authenticated identity was provided.")
+        raise OIDCIdentityError(
+            "No authenticated identity was provided."
+        )
 
     email = getattr(user, "email", None)
     name = getattr(user, "name", None)
@@ -44,3 +39,15 @@ def identity_from_streamlit_user(user: Any) -> Identity:
         provider_subject=str(subject),
         verified=True,
     )
+
+
+def is_authenticated(user: Any) -> bool:
+    if not user:
+        return False
+
+    authenticated = getattr(user, "is_logged_in", None)
+
+    if authenticated is not None:
+        return bool(authenticated)
+
+    return bool(getattr(user, "email", None))
