@@ -1,6 +1,7 @@
 from .inspector import DatasetInspector
 from .mapping import ColumnMapping, ColumnMappingService, MappingDecision
 from .models import UploadedDataset
+from .promotion import DatasetPromotion, DatasetPromotionService
 from .schema_detection import SchemaDetectionResult, SchemaDetector
 from .validation import (
     DataQualityReport,
@@ -19,4 +20,6 @@ __all__ = [
     "ValidationIssue",
     "DataQualityReport",
     "DatasetValidator",
+    "DatasetPromotion",
+    "DatasetPromotionService",
 ]
