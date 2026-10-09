@@ -109,3 +109,37 @@ def test_identity_session_can_create_authenticated_workspace():
     assert workspace.display_name == "Sunny UK"
     assert workspace.role == "director"
     assert workspace.authenticated is True
+
+
+def test_identity_session_can_create_streamlit_compatible_session():
+    from src.session.streamlit_session import sign_in_identity
+    from src.session.models import AuthenticatedSession
+
+    identity = Identity(
+        identity_id="google:streamlit-123",
+        email="sunnyukdesign@gmail.com",
+        display_name="Sunny UK",
+        provider="google",
+        provider_subject="streamlit-123",
+        verified=True,
+    )
+
+    membership = TenantMembership(
+        identity_id="email:sunnyukdesign@gmail.com",
+        tenant_id="reetha",
+        role="director",
+        status="active",
+    )
+
+    identity_session = IdentitySession(
+        identity=identity,
+        membership=membership,
+    )
+
+    session = sign_in_identity(identity_session)
+
+    assert isinstance(session, AuthenticatedSession)
+    assert session.user_id == "google:streamlit-123"
+    assert session.email == "sunnyukdesign@gmail.com"
+    assert session.tenant_id == "reetha"
+    assert session.role == "director"
