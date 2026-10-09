@@ -8,6 +8,7 @@ from .validation import (
     DatasetValidator,
     ValidationIssue,
 )
+from .versioning import DatasetVersion, DatasetVersionService
 
 __all__ = [
     "DatasetInspector",
@@ -22,4 +23,6 @@ __all__ = [
     "DatasetValidator",
     "DatasetPromotion",
     "DatasetPromotionService",
+    "DatasetVersion",
+    "DatasetVersionService",
 ]
