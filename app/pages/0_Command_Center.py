@@ -71,6 +71,24 @@ def load_reetha_source_records():
 
 
 @st.cache_data
+def load_reetha_source_records():
+    service = TenantDataService(
+        registry=build_default_registry(),
+        factory=DataSourceAdapterFactory(),
+        base_path=ROOT / "data" / "reetha",
+    )
+
+    data = service.load_reetha()
+
+    return (
+        data["leads"],
+        data["engagements"],
+        data["registrations"],
+        data["enrollments"],
+    )
+
+
+@st.cache_data
 def load_reetha_lead_360():
     leads, engagements, registrations, enrollments = (
         load_reetha_source_records()
