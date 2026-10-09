@@ -50,3 +50,16 @@ class TenantWorkspaceService:
             session,
             permission,
         )
+
+
+def workspace_from_identity_session(identity_session):
+    from src.workspace.models import TenantWorkspace
+
+    return TenantWorkspace(
+        tenant_id=identity_session.tenant_id,
+        tenant_name=identity_session.tenant_id,
+        user_id=identity_session.user_id,
+        display_name=identity_session.display_name,
+        role=identity_session.role,
+        authenticated=True,
+    )

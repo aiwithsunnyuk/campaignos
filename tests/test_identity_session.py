@@ -80,3 +80,32 @@ def test_identity_session_factory_preserves_tenant_and_role():
     assert session.user_id == "google:456"
     assert session.tenant_id == "reetha"
     assert session.role == "director"
+
+
+def test_identity_session_can_create_authenticated_workspace():
+    from src.workspace.service import workspace_from_identity_session
+
+    identity = Identity(
+        identity_id="google:789",
+        email="sunnyukdesign@gmail.com",
+        display_name="Sunny UK",
+        provider="google",
+        provider_subject="789",
+        verified=True,
+    )
+
+    membership = TenantMembership(
+        identity_id="email:sunnyukdesign@gmail.com",
+        tenant_id="reetha",
+        role="director",
+        status="active",
+    )
+
+    session = IdentitySession(identity=identity, membership=membership)
+    workspace = workspace_from_identity_session(session)
+
+    assert workspace.tenant_id == "reetha"
+    assert workspace.user_id == "google:789"
+    assert workspace.display_name == "Sunny UK"
+    assert workspace.role == "director"
+    assert workspace.authenticated is True
