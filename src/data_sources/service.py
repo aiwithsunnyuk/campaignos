@@ -2,6 +2,7 @@ from pathlib import Path
 
 from .factory import DataSourceAdapterFactory
 from .reetha import ReethaDataSourceLoader
+from .canonical import canonicalize_records
 from .registry import DataSourceRegistry
 
 
@@ -31,8 +32,8 @@ class TenantDataService:
         )
 
         return {
-            "leads": loader.load_leads(),
-            "engagements": loader.load_engagements(),
-            "registrations": loader.load_registrations(),
-            "enrollments": loader.load_enrollments(),
+            "leads": canonicalize_records(loader.load_leads()),
+            "engagements": canonicalize_records(loader.load_engagements()),
+            "registrations": canonicalize_records(loader.load_registrations()),
+            "enrollments": canonicalize_records(loader.load_enrollments()),
         }

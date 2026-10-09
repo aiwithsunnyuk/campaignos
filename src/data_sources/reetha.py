@@ -1,58 +1,75 @@
 from pathlib import Path
 
-from src.data_adapters.csv_campaign_adapter import CSVCampaignAdapter
-from src.data_adapters.csv_course_adapter import CSVCourseAdapter
-from src.data_adapters.csv_engagement_adapter import CSVEngagementAdapter
-from src.data_adapters.csv_enrollment_adapter import CSVEnrollmentAdapter
 from src.data_adapters.csv_lead_adapter import CSVLeadAdapter
+from src.data_adapters.csv_engagement_adapter import CSVEngagementAdapter
 from src.data_adapters.csv_registration_adapter import CSVRegistrationAdapter
+from src.data_adapters.csv_enrollment_adapter import CSVEnrollmentAdapter
+
+from .factory import DataSourceAdapterFactory
+from .registry import DataSourceRegistry
 
 
 class ReethaDataSourceLoader:
-    """
-    Canonical Reetha tenant loader.
-
-    The generic DataSourceAdapter layer is intentionally allowed to
-    return ingestion dictionaries. This loader is the canonical
-    domain boundary used by CampaignOS intelligence services.
-    """
+    """Loads authorized Reetha sources through the data-source layer."""
 
     def __init__(
         self,
-        registry,
-        factory,
-        base_path: str | Path,
+        registry: DataSourceRegistry,
+        factory: DataSourceAdapterFactory,
+        base_path: Path,
     ):
-        self._registry = registry
-        self._factory = factory
-        self._base_path = Path(base_path)
+        self.registry = registry
+        self.factory = factory
+        self.base_path = base_path
 
-    def load_leads(self):
-        return CSVLeadAdapter(
-            self._base_path / "leads.csv"
-        ).load()
+    def load_leads(self) -> list[dict]:
+        source = self.registry.get("reetha-leads")
 
-    def load_campaigns(self):
-        return CSVCampaignAdapter(
-            self._base_path / "campaigns.csv"
-        ).load()
+        adapter = self.factory.create(
+            source,
+            csv_loader=lambda: CSVLeadAdapter(
+                "reetha",
+                self.base_path / "leads.csv",
+            ).load(),
+        )
 
-    def load_courses(self):
-        return CSVCourseAdapter(
-            self._base_path / "courses.csv"
-        ).load()
+        return adapter.load()
 
-    def load_engagements(self):
-        return CSVEngagementAdapter(
-            self._base_path / "engagements.csv"
-        ).load()
+    def load_engagements(self) -> list[dict]:
+        source = self.registry.get("reetha-engagements")
 
-    def load_registrations(self):
-        return CSVRegistrationAdapter(
-            self._base_path / "registrations.csv"
-        ).load()
+        adapter = self.factory.create(
+            source,
+            csv_loader=lambda: CSVEngagementAdapter(
+                "reetha",
+                self.base_path / "engagements.csv",
+            ).load(),
+        )
 
-    def load_enrollments(self):
-        return CSVEnrollmentAdapter(
-            self._base_path / "enrollments.csv"
-        ).load()
+        return adapter.load()
+
+    def load_registrations(self) -> list[dict]:
+        source = self.registry.get("reetha-registrations")
+
+        adapter = self.factory.create(
+            source,
+            csv_loader=lambda: CSVRegistrationAdapter(
+                "reetha",
+                self.base_path / "registrations.csv",
+            ).load(),
+        )
+
+        return adapter.load()
+
+    def load_enrollments(self) -> list[dict]:
+        source = self.registry.get("reetha-enrollments")
+
+        adapter = self.factory.create(
+            source,
+            csv_loader=lambda: CSVEnrollmentAdapter(
+                "reetha",
+                self.base_path / "enrollments.csv",
+            ).load(),
+        )
+
+        return adapter.load()

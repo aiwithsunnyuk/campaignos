@@ -19,6 +19,9 @@ from src.marketing_intelligence import (
 from src.next_best_action import LeadNextBestActionService
 from datetime import datetime, timezone
 
+from src.session import get_session
+from src.workspace import TenantWorkspaceService
+
 from src.data_sources import (
     DataSourceAdapterFactory,
     TenantDataService,
@@ -36,7 +39,14 @@ from src.execution.dry_run import DryRunExecutionAdapter
 # Configuration
 # =========================================================
 
-TENANT_ID = "reetha"
+session = get_session()
+
+if session is None:
+    st.warning("Please sign in through the CampaignOS Login page.")
+    st.stop()
+
+workspace = TenantWorkspaceService().resolve(session)
+TENANT_ID = workspace.tenant_id
 TENANT_NAME = "Reetha IT Hub"
 DATA_MODE = "Synthetic"
 
@@ -51,24 +61,6 @@ st.set_page_config(
 # =========================================================
 # Data pipeline
 # =========================================================
-
-@st.cache_data
-def load_reetha_source_records():
-    service = TenantDataService(
-        registry=build_default_registry(),
-        factory=DataSourceAdapterFactory(),
-        base_path=ROOT / "data" / "reetha",
-    )
-
-    data = service.load_reetha()
-
-    return (
-        data["leads"],
-        data["engagements"],
-        data["registrations"],
-        data["enrollments"],
-    )
-
 
 @st.cache_data
 def load_reetha_source_records():
