@@ -1,3 +1,8 @@
+from .canonical import CanonicalLead, CanonicalLeadTransformer
+from .canonical_promotion import (
+    CanonicalDatasetPromotionService,
+    CanonicalPromotionResult,
+)
 from .inspector import DatasetInspector
 from .mapping import ColumnMapping, ColumnMappingService, MappingDecision
 from .models import UploadedDataset
@@ -25,4 +30,8 @@ __all__ = [
     "DatasetPromotionService",
     "DatasetVersion",
     "DatasetVersionService",
+    "CanonicalLead",
+    "CanonicalLeadTransformer",
+    "CanonicalDatasetPromotionService",
+    "CanonicalPromotionResult",
 ]
