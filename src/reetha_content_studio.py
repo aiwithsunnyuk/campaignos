@@ -242,11 +242,112 @@ def render_content_studio() -> None:
         cta = st.text_input("Call to action", value="Book a consultation")
         tone = st.selectbox("Tone", ["Professional and helpful", "Educational", "Concise", "Consultative"])
 
-    package = generate_content_package(CampaignBrief(
+    brief = CampaignBrief(
         campaign_name=campaign_name, objective=objective, audience=audience,
         demand_signal=demand, primary_offering=offering, channels=tuple(channels),
         call_to_action=cta, tone=tone,
-    ))
+    )
+    package = generate_content_package(brief)
+
+    from src.reetha_ai_provider import configured_provider, ProviderRequestError
+
+    provider = configured_provider()
+    st.caption(
+        "M13.7 · Deterministic drafts by default, with optional AI-assisted refinement. "
+        "External publishing remains disabled."
+    )
+    if provider is None:
+        st.info(
+            "AI provider is not configured. Deterministic drafts remain available. "
+            "Set CAMPAIGNOS_AI_API_KEY to enable optional refinement."
+        )
+    else:
+        st.caption(
+            "AI refinement is optional and may incur provider costs. "
+            "Review every result before approval."
+        )
+
+    use_ai = st.checkbox(
+        "Use configured AI provider to refine drafts",
+        value=False,
+        key="m137_use_ai",
+        disabled=(provider is None),
+    )
+
+    brief_signature = (
+        brief.campaign_name, brief.objective, brief.audience,
+        brief.demand_signal, brief.primary_offering, tuple(brief.channels),
+        brief.call_to_action, brief.tone,
+    )
+    saved_signature = st.session_state.get("m137_brief_signature")
+    saved_drafts = st.session_state.get("m137_ai_drafts")
+
+    if saved_signature != brief_signature:
+        saved_drafts = None
+        st.session_state.pop("m137_ai_drafts", None)
+        st.session_state.pop("m137_brief_signature", None)
+
+    if use_ai and provider is not None:
+        if st.button("Generate AI-refined drafts", key="m137_generate_ai"):
+            revised = []
+            try:
+                for draft in package.drafts:
+                    prompt = (
+                        "Improve grammar, clarity and natural tone. Preserve the facts "
+                        "and audience wording. Do not invent prices, results, certifications, "
+                        "guarantees, or customer claims. Return only revised copy.\n\n"
+                        f"Campaign: {brief.campaign_name}\n"
+                        f"Objective: {brief.objective}\n"
+                        f"Audience: {brief.audience}\n"
+                        f"Demand signal: {brief.demand_signal}\n"
+                        f"Offering: {brief.primary_offering}\n"
+                        f"Channel: {draft.channel}\n"
+                        f"Asset type: {draft.asset_type}\n"
+                        f"Call to action: {brief.call_to_action}\n"
+                        f"Existing draft:\n{draft.body}"
+                    )
+                    revised.append({
+                        "channel": draft.channel,
+                        "asset_type": draft.asset_type,
+                        "title": draft.title,
+                        "body": provider.generate_text(prompt),
+                        "call_to_action": draft.call_to_action,
+                        "rationale": (
+                            draft.rationale
+                            + " AI-refined; human review still required."
+                        ),
+                    })
+            except ProviderRequestError as exc:
+                st.session_state.pop("m137_ai_drafts", None)
+                st.session_state.pop("m137_brief_signature", None)
+                saved_drafts = None
+                st.error(
+                    f"AI refinement failed: {exc} "
+                    "Deterministic drafts remain available."
+                )
+            else:
+                st.session_state["m137_ai_drafts"] = revised
+                st.session_state["m137_brief_signature"] = brief_signature
+                saved_drafts = revised
+                st.success("AI drafts generated. Review and edit each asset below.")
+
+    if use_ai and provider is not None and saved_drafts:
+        from dataclasses import replace
+        base_drafts = {d.channel + "|" + d.asset_type: d for d in package.drafts}
+        refined_drafts = []
+        for item in saved_drafts:
+            key = item["channel"] + "|" + item["asset_type"]
+            original = base_drafts.get(key)
+            if original is None:
+                continue
+            refined_drafts.append(replace(
+                original,
+                title=item["title"],
+                body=item["body"],
+                rationale=item["rationale"],
+            ))
+        if len(refined_drafts) == len(package.drafts):
+            package = replace(package, drafts=tuple(refined_drafts))
 
     col1, col2 = st.columns(2)
     col1.metric("Content assets", len(package.drafts))
