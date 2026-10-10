@@ -1,3 +1,10 @@
+from pathlib import Path
+import sys
+
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
+
 from src.reetha_command_center import render_reetha_business_surface
 import sys
 from pathlib import Path
@@ -917,11 +924,12 @@ st.caption(
 )
 
 
+render_reetha_business_surface()
 # Lead 360
 st.html(
     f"""
 
-render_reetha_business_surface()
+
     <div class="section-title">👤 Lead 360 · {lead_360.lead_id}</div>
 
     <div class="decision-card">
