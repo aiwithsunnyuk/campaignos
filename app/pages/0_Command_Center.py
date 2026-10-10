@@ -1,3 +1,4 @@
+from src.reetha_command_center import render_reetha_business_surface
 import sys
 from pathlib import Path
 
@@ -919,6 +920,8 @@ st.caption(
 # Lead 360
 st.html(
     f"""
+
+render_reetha_business_surface()
     <div class="section-title">👤 Lead 360 · {lead_360.lead_id}</div>
 
     <div class="decision-card">

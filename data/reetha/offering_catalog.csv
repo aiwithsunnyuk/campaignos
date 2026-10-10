@@ -1,0 +1,20 @@
+offering_no,offering_name,offering_type,integration_backend,pricing,purpose
+1,SAP S/4HANA,Standalone,—,"1 Month – ₹800; 3 Months – ₹1,800; 6 Months – ₹3,500; 12 Months – ₹6,500",Training / Practice / Demo / Projects
+2,SAP ECC,Standalone,—,₹500 / Month,Functional & Technical Practice
+3,SAP Ariba,Standalone,—,"₹3,500 / Month",Training / Demo / Practice
+4,SAP Ariba,Integrated,S/4HANA + CIG,"₹15,000 / Month",Ariba & S/4HANA Integration
+5,SAP SuccessFactors,Standalone,—,"₹2,000 / Month",Training / Demo / Practice
+6,SAP IBP,Standalone,—,"₹8,000 / Month; 3 Months – ₹24,000",IBP Training / Practice
+7,SAP IBP,Integrated,S/4HANA,"₹15,000 / Month",IBP & S/4HANA Integration
+8,SAP IBP,Integrated,CPI-DS,"₹20,000 / Month",IBP & CPI-DS Integration
+9,SAP BTP,Standalone,—,"₹3,500 / Month",Development / Integration / Application
+10,SAP BTP,Integrated,S/4HANA,Contact Us,BTP & S/4HANA Integration
+11,SAP BTP,Integrated,CPI / Integration Suite,Contact Us,Integration & Middleware Practice
+12,SAP Joule / Business AI,Standalone,—,"₹18,000 / Month",AI / Joule Training & Demo
+13,SAP Joule / Business AI,Integrated,S/4HANA,"₹24,000 / Month",Joule & S/4HANA Integration
+14,SAP BRIM,Standalone,—,"₹4,500 / Month",Training / Demo / Project Practice
+15,SAP Datasphere,Standalone,—,"₹15,000 / Month",Data Modeling / Integration / Analytics
+16,SAP SAC,Standalone,—,"₹6,000 / Month",Analytics / Planning / Reporting
+17,SAP SAC,Integrated,S/4HANA + Datasphere,"₹20,000 / Month",End-to-End Analytics Environment
+18,SAP S/4HANA Public Cloud,Standalone,—,Contact Us,Public Cloud Training / Practice
+19,SAP S/4HANA Public Cloud,Integrated,CBC,"₹20,000 / Month",Cloud Configuration & Practice
