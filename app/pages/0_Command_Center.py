@@ -1,4 +1,8 @@
+from src.reetha_audience_builder import render_ai_audience_builder
+from src.reetha_sap_audience_intelligence import render_sap_audience_intelligence
 from src.reetha_campaign_opportunities import render_campaign_opportunity_engine
+from src.reetha_command_center import render_reetha_business_surface
+from src.reetha_demand_intelligence import render_reetha_demand_intelligence
 from pathlib import Path
 import sys
 
@@ -929,6 +933,10 @@ st.caption(
 render_reetha_business_surface()
 
 render_campaign_opportunity_engine()
+
+render_ai_audience_builder()
+
+render_sap_audience_intelligence()
 
 render_reetha_demand_intelligence()
 # Lead 360
