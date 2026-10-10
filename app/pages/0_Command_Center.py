@@ -1,3 +1,4 @@
+from src.reetha_content_studio import render_content_studio
 from src.reetha_campaign_planner import render_campaign_planner
 from src.reetha_audience_builder import render_ai_audience_builder
 from src.reetha_sap_audience_intelligence import render_sap_audience_intelligence
@@ -1070,3 +1071,7 @@ st.caption(
     "Synthetic intelligence dataset · "
     "No external systems contacted"
 )
+
+# M13.6 · AI Content Studio
+
+render_content_studio()
