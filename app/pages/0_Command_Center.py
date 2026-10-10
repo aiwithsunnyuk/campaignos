@@ -1,3 +1,4 @@
+from src.reetha_campaign_opportunities import render_campaign_opportunity_engine
 from pathlib import Path
 import sys
 
@@ -926,6 +927,8 @@ st.caption(
 
 
 render_reetha_business_surface()
+
+render_campaign_opportunity_engine()
 
 render_reetha_demand_intelligence()
 # Lead 360
