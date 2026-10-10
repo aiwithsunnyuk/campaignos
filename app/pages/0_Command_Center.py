@@ -6,6 +6,7 @@ if str(_REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(_REPO_ROOT))
 
 from src.reetha_command_center import render_reetha_business_surface
+from src.reetha_demand_intelligence import render_reetha_demand_intelligence
 import sys
 from pathlib import Path
 
@@ -925,6 +926,8 @@ st.caption(
 
 
 render_reetha_business_surface()
+
+render_reetha_demand_intelligence()
 # Lead 360
 st.html(
     f"""
