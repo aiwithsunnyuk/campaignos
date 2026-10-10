@@ -1,3 +1,4 @@
+from src.reetha_campaign_planner import render_campaign_planner
 from src.reetha_audience_builder import render_ai_audience_builder
 from src.reetha_sap_audience_intelligence import render_sap_audience_intelligence
 from src.reetha_campaign_opportunities import render_campaign_opportunity_engine
@@ -937,6 +938,7 @@ render_campaign_opportunity_engine()
 render_ai_audience_builder()
 
 render_sap_audience_intelligence()
+render_campaign_planner()
 
 render_reetha_demand_intelligence()
 # Lead 360
