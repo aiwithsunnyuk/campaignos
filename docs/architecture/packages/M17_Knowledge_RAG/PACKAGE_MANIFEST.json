@@ -1,0 +1,12 @@
+{
+  "package": "M17_Knowledge_RAG",
+  "status": "architecture-plan",
+  "implementation_status": "not_claimed",
+  "safety_defaults": {
+    "external_execution_enabled": false
+  },
+  "contents": [
+    "README.md",
+    "PACKAGE_MANIFEST.json"
+  ]
+}

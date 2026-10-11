@@ -1,0 +1,12 @@
+{
+  "package": "M13.13.2_Content_Audit_Integration",
+  "status": "architecture-plan",
+  "implementation_status": "not_claimed",
+  "safety_defaults": {
+    "external_execution_enabled": false
+  },
+  "contents": [
+    "README.md",
+    "PACKAGE_MANIFEST.json"
+  ]
+}
