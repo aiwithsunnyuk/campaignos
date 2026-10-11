@@ -272,10 +272,12 @@ def refine_content_drafts(package, brief, provider):
 
 def render_content_studio() -> None:
     """Streamlit UI for building and reviewing a campaign content package."""
+    import hashlib
     import json
     import streamlit as st
 
     st.divider()
+
     st.header("AI Content Studio")
     st.caption(
         "M13.6 · Convert a campaign brief into editable multi-channel drafts. "
@@ -399,6 +401,39 @@ def render_content_studio() -> None:
                 call_to_action=draft.call_to_action, rationale=draft.rationale,
             ))
             st.caption(f"Rationale: {draft.rationale}")
+
+    # M13.8.6: approval is tied to the exact brief and edited draft content.
+    current_content_signature = hashlib.sha256(
+        json.dumps(
+            {
+                "brief": content_brief_signature(brief),
+                "drafts": [
+                    {
+                        "channel": draft.channel,
+                        "asset_type": draft.asset_type,
+                        "title": draft.title,
+                        "body": draft.body,
+                        "call_to_action": draft.call_to_action,
+                    }
+                    for draft in edited
+                ],
+            },
+            sort_keys=True,
+            ensure_ascii=False,
+        ).encode("utf-8")
+    ).hexdigest()
+
+    previous_content_signature = st.session_state.get(
+        "m1386_content_signature"
+    )
+    if (
+        previous_content_signature is not None
+        and previous_content_signature != current_content_signature
+    ):
+        # Reset before the approval checkbox is instantiated on this run.
+        st.session_state["m136_content_approval"] = False
+
+    st.session_state["m1386_content_signature"] = current_content_signature
 
     st.subheader("Approval gate")
     st.warning("Approval is a review-state only in M13.6. It does not send, schedule, or publish content.")

@@ -338,3 +338,38 @@ def test_streamlit_content_studio_invalidates_refinements_when_brief_changes(
         "Old campaign refinement" not in item.value
         for item in app.text_area
     )
+
+
+def test_streamlit_content_studio_resets_approval_when_brief_changes():
+    from streamlit.testing.v1 import AppTest
+
+    app = AppTest.from_string(
+        "from src.reetha_content_studio import render_content_studio\n"
+        "render_content_studio()\n"
+    ).run()
+
+    app.checkbox(key="m136_content_approval").set_value(True).run()
+    assert app.session_state["m136_content_approval"] is True
+
+    app.text_input[0].set_value("New Campaign Name").run()
+
+    assert not app.exception
+    assert app.session_state["m136_content_approval"] is False
+
+
+def test_streamlit_content_studio_resets_approval_when_draft_changes():
+    from streamlit.testing.v1 import AppTest
+
+    app = AppTest.from_string(
+        "from src.reetha_content_studio import render_content_studio\n"
+        "render_content_studio()\n"
+    ).run()
+
+    app.checkbox(key="m136_content_approval").set_value(True).run()
+    assert app.session_state["m136_content_approval"] is True
+
+    original = app.text_area[0].value
+    app.text_area[0].set_value(original + " Updated after approval.").run()
+
+    assert not app.exception
+    assert app.session_state["m136_content_approval"] is False
