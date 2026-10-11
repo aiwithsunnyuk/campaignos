@@ -1,4 +1,7 @@
-from src.reetha_content_studio import generate_content_package, normalize_brief
+from src.reetha_content_studio import (
+    CampaignBrief, content_brief_signature, generate_content_package,
+    matching_saved_drafts, normalize_brief,
+)
 
 
 def _default_package():
@@ -53,3 +56,84 @@ def test_export_contract_preserves_approval_safety():
     assert data["approval_required"] is True
     assert data["external_execution_enabled"] is False
     assert len(data["drafts"]) == 4
+
+
+def test_brief_signature_changes_when_campaign_inputs_change():
+    original = CampaignBrief(
+        campaign_name="Campaign A", objective="Educate", audience="SAP professionals",
+        demand_signal="SAP FICO", primary_offering="Training",
+        channels=("Email", "LinkedIn"), call_to_action="Learn more",
+    )
+    changed = CampaignBrief(
+        campaign_name="Campaign A", objective="Educate", audience="SAP professionals",
+        demand_signal="SAP FICO", primary_offering="Training",
+        channels=("Email",), call_to_action="Learn more",
+    )
+    assert content_brief_signature(original) != content_brief_signature(changed)
+
+
+def test_matching_saved_drafts_are_reused_for_same_brief():
+    signature = ("Campaign A", "SAP professionals", ("Email",))
+    saved = [{"channel": "Email", "body": "Reviewed draft"}]
+    assert matching_saved_drafts(signature, signature, saved) == saved
+
+
+def test_stale_saved_drafts_are_rejected_for_changed_brief():
+    current = ("Campaign B", "SAP professionals", ("Email",))
+    previous = ("Campaign A", "SAP professionals", ("Email",))
+    saved = [{"channel": "Email", "body": "Old draft"}]
+    assert matching_saved_drafts(current, previous, saved) is None
+
+
+def test_deterministic_drafts_remain_available_without_provider():
+    from src.reetha_ai_provider import load_provider_config
+
+    config = load_provider_config(environ={}, secrets_reader=lambda _name: "")
+    package = _default_package()
+
+    assert config is None
+    assert len(package.drafts) == 4
+    assert package.approval_required is True
+    assert package.external_execution_enabled is False
+
+
+
+def test_provider_failure_returns_no_partial_refinement():
+    from src.reetha_ai_provider import ProviderRequestError
+    from src.reetha_content_studio import refine_content_drafts
+
+    package = _default_package()
+
+    class FailingProvider:
+        def __init__(self):
+            self.calls = 0
+
+        def generate_text(self, prompt):
+            self.calls += 1
+            if self.calls == 2:
+                raise ProviderRequestError(
+                    "AI provider could not be reached or timed out."
+                )
+            return "Partially refined copy"
+
+    provider = FailingProvider()
+    revised, error = refine_content_drafts(
+        package,
+        normalize_brief({
+            "campaign_name": "SAP Finance / FICO Growth Campaign",
+            "objective": "Nurture demand and generate qualified enquiries",
+            "audience": "sap finance / fico professionals",
+            "demand_signal": "SAP Finance / FICO",
+            "primary_offering": "SAP Finance / FICO training",
+            "channels": ["Email", "WhatsApp", "LinkedIn"],
+            "cta": "Book a consultation",
+        }),
+        provider,
+    )
+
+    assert provider.calls == 2
+    assert revised is None
+    assert "could not be reached" in error
+    assert len(package.drafts) == 4
+    assert package.approval_required is True
+    assert package.external_execution_enabled is False

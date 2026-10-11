@@ -210,6 +210,60 @@ def generate_content_package(brief: CampaignBrief | Mapping[str, Any]) -> Conten
     )
 
 
+def content_brief_signature(brief: CampaignBrief) -> tuple:
+    """Stable identity for the brief inputs that determine generated drafts."""
+    return (
+        brief.campaign_name, brief.objective, brief.audience,
+        brief.demand_signal, brief.primary_offering, tuple(brief.channels),
+        brief.call_to_action, brief.tone,
+    )
+
+
+def matching_saved_drafts(current_signature, saved_signature, saved_drafts):
+    """Return saved drafts only when they belong to the current brief."""
+    if current_signature != saved_signature:
+        return None
+    return saved_drafts
+
+
+
+def refine_content_drafts(package, brief, provider):
+    """Refine every draft atomically; return no partial result on provider failure."""
+    from src.reetha_ai_provider import ProviderRequestError
+
+    revised = []
+    try:
+        for draft in package.drafts:
+            prompt = (
+                "Improve grammar, clarity and natural tone. Preserve the facts "
+                "and audience wording. Do not invent prices, results, certifications, "
+                "guarantees, or customer claims. Return only revised copy.\n\n"
+                f"Campaign: {brief.campaign_name}\n"
+                f"Objective: {brief.objective}\n"
+                f"Audience: {brief.audience}\n"
+                f"Demand signal: {brief.demand_signal}\n"
+                f"Offering: {brief.primary_offering}\n"
+                f"Channel: {draft.channel}\n"
+                f"Asset type: {draft.asset_type}\n"
+                f"Call to action: {brief.call_to_action}\n"
+                f"Existing draft:\n{draft.body}"
+            )
+            revised.append({
+                "channel": draft.channel,
+                "asset_type": draft.asset_type,
+                "title": draft.title,
+                "body": provider.generate_text(prompt),
+                "call_to_action": draft.call_to_action,
+                "rationale": (
+                    draft.rationale
+                    + " AI-refined; human review still required."
+                ),
+            })
+    except ProviderRequestError as exc:
+        return None, str(exc)
+
+    return revised, None
+
 def render_content_studio() -> None:
     """Streamlit UI for building and reviewing a campaign content package."""
     import json
@@ -222,8 +276,9 @@ def render_content_studio() -> None:
         "Draft generation is deterministic in this milestone; external publishing is disabled."
     )
     st.info(
-        "DEMO / GOVERNED MODE: review and edit all copy before approval. "
-        "No external AI provider, contact list, or publishing channel is called."
+        "GOVERNED MODE: review and edit all copy before approval. "
+        "When enabled, AI refinement sends the campaign brief and draft copy "
+        "to the configured provider. Contact-list access and publishing are disabled."
     )
 
     with st.container(border=True):
@@ -274,55 +329,26 @@ def render_content_studio() -> None:
         disabled=(provider is None),
     )
 
-    brief_signature = (
-        brief.campaign_name, brief.objective, brief.audience,
-        brief.demand_signal, brief.primary_offering, tuple(brief.channels),
-        brief.call_to_action, brief.tone,
-    )
+    brief_signature = content_brief_signature(brief)
     saved_signature = st.session_state.get("m137_brief_signature")
     saved_drafts = st.session_state.get("m137_ai_drafts")
+    saved_drafts = matching_saved_drafts(
+        brief_signature, saved_signature, saved_drafts
+    )
 
     if saved_signature != brief_signature:
-        saved_drafts = None
         st.session_state.pop("m137_ai_drafts", None)
         st.session_state.pop("m137_brief_signature", None)
 
     if use_ai and provider is not None:
         if st.button("Generate AI-refined drafts", key="m137_generate_ai"):
-            revised = []
-            try:
-                for draft in package.drafts:
-                    prompt = (
-                        "Improve grammar, clarity and natural tone. Preserve the facts "
-                        "and audience wording. Do not invent prices, results, certifications, "
-                        "guarantees, or customer claims. Return only revised copy.\n\n"
-                        f"Campaign: {brief.campaign_name}\n"
-                        f"Objective: {brief.objective}\n"
-                        f"Audience: {brief.audience}\n"
-                        f"Demand signal: {brief.demand_signal}\n"
-                        f"Offering: {brief.primary_offering}\n"
-                        f"Channel: {draft.channel}\n"
-                        f"Asset type: {draft.asset_type}\n"
-                        f"Call to action: {brief.call_to_action}\n"
-                        f"Existing draft:\n{draft.body}"
-                    )
-                    revised.append({
-                        "channel": draft.channel,
-                        "asset_type": draft.asset_type,
-                        "title": draft.title,
-                        "body": provider.generate_text(prompt),
-                        "call_to_action": draft.call_to_action,
-                        "rationale": (
-                            draft.rationale
-                            + " AI-refined; human review still required."
-                        ),
-                    })
-            except ProviderRequestError as exc:
+            revised, error = refine_content_drafts(package, brief, provider)
+            if error is not None:
                 st.session_state.pop("m137_ai_drafts", None)
                 st.session_state.pop("m137_brief_signature", None)
                 saved_drafts = None
                 st.error(
-                    f"AI refinement failed: {exc} "
+                    f"AI refinement failed: {error} "
                     "Deterministic drafts remain available."
                 )
             else:
