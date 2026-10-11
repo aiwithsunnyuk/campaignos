@@ -84,7 +84,7 @@ def build_content_audit_event(
     approved: bool | None = None,
 ) -> dict[str, Any]:
     """Build a structured audit event without executing external actions."""
-    allowed_events = {"package_created", "approval_changed"}
+    allowed_events = {"package_created", "content_changed", "approval_changed"}
     if event_type not in allowed_events:
         raise ValueError(f"Unsupported content audit event: {event_type}")
 
@@ -95,11 +95,19 @@ def build_content_audit_event(
         "external_execution_enabled": False,
     }
     if event_type == "approval_changed":
-        if approved is None:
-            raise ValueError("Approval events require an explicit approved value.")
+        if not isinstance(approved, bool):
+            raise ValueError(
+                "Approval events require an explicit boolean approved value."
+            )
         event["approved"] = approved
     elif approved is not None:
-        raise ValueError("Creation events must not specify approval state.")
+        if event_type == "package_created":
+            raise ValueError(
+                "Creation events must not specify approval state."
+            )
+        raise ValueError(
+            "Only approval_changed events may include approved."
+        )
     return event
 
 
@@ -329,6 +337,65 @@ def refine_content_drafts(package, brief, provider):
 
     return revised, None
 
+
+
+def _m13132_audit_store():
+    import os
+    from pathlib import Path
+    from src.content_audit_store import ContentAuditStore
+    configured = os.environ.get("CAMPAIGNOS_CONTENT_AUDIT_DB", "").strip()
+    db_path = Path(configured).expanduser() if configured else (
+        Path.home() / ".campaignos" / "content_audit.sqlite3"
+    )
+    return ContentAuditStore(db_path)
+
+
+def _m13132_authenticated_tenant():
+    try:
+        from src.session.streamlit_session import get_session
+        session = get_session()
+    except Exception:
+        return None
+    if session is None or not getattr(session, "authenticated", False):
+        return None
+    tenant_id = getattr(session, "tenant_id", None)
+    return tenant_id.strip() if isinstance(tenant_id, str) and tenant_id.strip() else None
+
+
+def _m13132_record_once(st, store, tenant_id, package, event_type, approved=None):
+    event = build_content_audit_event(package, event_type, approved=approved)
+    marker = "m13132_audit_last_" + event_type
+    signature = event["content_fingerprint"]
+    if event_type == "approval_changed":
+        marker += "_" + str(approved).lower()
+        signature += ":" + str(approved).lower()
+    if st.session_state.get(marker) == signature:
+        return False
+    store.append_event(tenant_id, event)
+    st.session_state[marker] = signature
+    return True
+
+
+def _m13132_render_timeline(st, store, tenant_id, campaign_name):
+    with st.expander("Content audit timeline", expanded=False):
+        try:
+            events = store.list_events(tenant_id, campaign_name=campaign_name, limit=50)
+        except Exception:
+            st.warning("Audit history is temporarily unavailable.")
+            return
+        if not events:
+            st.caption("No audit events recorded for this campaign yet.")
+            return
+        rows = [{
+            "Time (UTC)": event.get("occurred_at", ""),
+            "Event": event.get("event_type", ""),
+            "Campaign": event.get("campaign_name", ""),
+            "Fingerprint": str(event.get("content_fingerprint", ""))[:12],
+            "Approved": event.get("approved", "N/A"),
+        } for event in events]
+        st.dataframe(rows, use_container_width=True, hide_index=True)
+
+
 def render_content_studio() -> None:
     """Streamlit UI for building and reviewing a campaign content package."""
     import hashlib
@@ -504,6 +571,28 @@ def render_content_studio() -> None:
         key="m136_content_approval",
     )
     package_out = build_export_package(package, edited, approved)
+    # M13.13.2: persistent audit trail for authenticated tenants only.
+    _audit_tenant = _m13132_authenticated_tenant()
+    if _audit_tenant:
+        try:
+            _audit_store = _m13132_audit_store()
+            _audit_fingerprint = content_package_fingerprint(package_out)
+            _old_fingerprint = st.session_state.get("m13132_last_content_fingerprint")
+            if _old_fingerprint is None:
+                _m13132_record_once(st, _audit_store, _audit_tenant, package_out, "package_created")
+            elif _old_fingerprint != _audit_fingerprint:
+                _m13132_record_once(st, _audit_store, _audit_tenant, package_out, "content_changed")
+            _approval_key = "m13132_last_approval"
+            _old_approval = st.session_state.get(_approval_key)
+            if _old_approval is not None and _old_approval != bool(approved):
+                _m13132_record_once(st, _audit_store, _audit_tenant, package_out,
+                                    "approval_changed", approved=bool(approved))
+            st.session_state["m13132_last_content_fingerprint"] = _audit_fingerprint
+            st.session_state[_approval_key] = bool(approved)
+            _m13132_render_timeline(st, _audit_store, _audit_tenant, package_out.campaign_name)
+        except Exception as exc:
+            st.warning(f"Content audit recording failed: {type(exc).__name__}")
+
     st.download_button(
         "Export content package (JSON)",
         data=json.dumps(package_out.to_dict(), indent=2, ensure_ascii=False),
