@@ -373,3 +373,64 @@ def test_streamlit_content_studio_resets_approval_when_draft_changes():
 
     assert not app.exception
     assert app.session_state["m136_content_approval"] is False
+
+
+def test_streamlit_content_studio_preserves_approval_when_content_is_unchanged():
+    from streamlit.testing.v1 import AppTest
+
+    app = AppTest.from_string(
+        "from src.reetha_content_studio import render_content_studio\n"
+        "render_content_studio()\n"
+    ).run()
+
+    app.checkbox(key="m136_content_approval").set_value(True).run()
+    assert app.session_state["m136_content_approval"] is True
+
+    # An unchanged rerun must not revoke the approval.
+    app.run()
+
+    assert not app.exception
+    assert app.session_state["m136_content_approval"] is True
+
+
+
+def test_export_package_uses_latest_edited_drafts_and_preserves_governance():
+    from dataclasses import replace
+    from src.reetha_content_studio import build_export_package
+
+    package = _default_package()
+    edited = list(package.drafts)
+    edited[0] = replace(
+        edited[0],
+        title="Reviewed title",
+        body="Latest reviewed body",
+    )
+
+    exported = build_export_package(package, edited, approved=False)
+    data = exported.to_dict()
+
+    assert data["drafts"][0]["title"] == "Reviewed title"
+    assert data["drafts"][0]["body"] == "Latest reviewed body"
+    assert data["approval_required"] is True
+    assert data["external_execution_enabled"] is False
+
+    approved_export = build_export_package(package, edited, approved=True)
+    assert approved_export.to_dict()["approval_required"] is False
+    assert approved_export.to_dict()["external_execution_enabled"] is False
+
+
+def test_streamlit_content_studio_preserves_approval_when_content_is_unchanged():
+    from streamlit.testing.v1 import AppTest
+
+    app = AppTest.from_string(
+        "from src.reetha_content_studio import render_content_studio\n"
+        "render_content_studio()\n"
+    ).run()
+
+    app.checkbox(key="m136_content_approval").set_value(True).run()
+    assert app.session_state["m136_content_approval"] is True
+
+    app.run()
+
+    assert not app.exception
+    assert app.session_state["m136_content_approval"] is True

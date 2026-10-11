@@ -1,7 +1,7 @@
 """M13.6.1: copy-quality refinement for CampaignOS Content Studio."""
 from __future__ import annotations
 
-from dataclasses import dataclass, asdict
+from dataclasses import dataclass, asdict, replace
 from typing import Any, Mapping
 
 
@@ -42,6 +42,21 @@ class ContentPackage:
         result = asdict(self)
         result["drafts"] = [asdict(draft) for draft in self.drafts]
         return result
+
+
+
+def build_export_package(
+    package: ContentPackage,
+    drafts: tuple[ContentDraft, ...] | list[ContentDraft],
+    approved: bool,
+) -> ContentPackage:
+    """Build a governed export from the latest edited drafts."""
+    return replace(
+        package,
+        drafts=tuple(drafts),
+        approval_required=not approved,
+        external_execution_enabled=False,
+    )
 
 
 SUPPORTED_CHANNELS = ("Email", "WhatsApp", "LinkedIn")
@@ -441,11 +456,7 @@ def render_content_studio() -> None:
         "I have reviewed these drafts and mark this content package approved for the next governed workflow.",
         key="m136_content_approval",
     )
-    package_out = ContentPackage(
-        campaign_name=package.campaign_name, objective=package.objective,
-        audience=package.audience, offering=package.offering, drafts=tuple(edited),
-        approval_required=not approved, external_execution_enabled=False,
-    )
+    package_out = build_export_package(package, edited, approved)
     st.download_button(
         "Export content package (JSON)",
         data=json.dumps(package_out.to_dict(), indent=2, ensure_ascii=False),
