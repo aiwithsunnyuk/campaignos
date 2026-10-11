@@ -137,3 +137,44 @@ def test_provider_failure_returns_no_partial_refinement():
     assert len(package.drafts) == 4
     assert package.approval_required is True
     assert package.external_execution_enabled is False
+
+
+def test_unexpected_provider_error_discards_partial_refinement():
+    from src.reetha_content_studio import refine_content_drafts
+
+    package = _default_package()
+    brief = normalize_brief({
+        "campaign_name": "SAP Finance / FICO Growth Campaign",
+        "objective": "Nurture demand and generate qualified enquiries",
+        "audience": "sap finance / fico professionals",
+        "demand_signal": "SAP Finance / FICO",
+        "primary_offering": "SAP Finance / FICO training",
+        "channels": ["Email", "WhatsApp", "LinkedIn"],
+        "cta": "Book a consultation",
+    })
+
+    class UnexpectedFailureProvider:
+        def __init__(self):
+            self.calls = 0
+
+        def generate_text(self, prompt):
+            self.calls += 1
+            if self.calls == 2:
+                raise RuntimeError(
+                    "sensitive internal endpoint and credentials detail"
+                )
+            return "Partially refined copy"
+
+    provider = UnexpectedFailureProvider()
+    revised, error = refine_content_drafts(package, brief, provider)
+
+    assert provider.calls == 2
+    assert revised is None
+    assert error == (
+        "An unexpected error occurred during AI refinement. "
+        "Deterministic drafts remain available."
+    )
+    assert "credentials" not in error
+    assert len(package.drafts) == 4
+    assert package.approval_required is True
+    assert package.external_execution_enabled is False

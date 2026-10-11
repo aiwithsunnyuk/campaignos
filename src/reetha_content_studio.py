@@ -261,6 +261,12 @@ def refine_content_drafts(package, brief, provider):
             })
     except ProviderRequestError as exc:
         return None, str(exc)
+    except Exception:
+        # Do not expose unexpected exception details or return partial AI output.
+        return None, (
+            "An unexpected error occurred during AI refinement. "
+            "Deterministic drafts remain available."
+        )
 
     return revised, None
 
