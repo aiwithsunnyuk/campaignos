@@ -479,3 +479,60 @@ def test_export_json_serialization_preserves_latest_content_and_safety():
     assert payload["approval_required"] is False
     assert payload["external_execution_enabled"] is False
 
+def test_content_package_fingerprint_is_stable():
+    from src.reetha_content_studio import content_package_fingerprint
+
+    package = _default_package()
+    assert content_package_fingerprint(package) == content_package_fingerprint(package)
+
+
+def test_content_package_fingerprint_changes_when_draft_changes():
+    from dataclasses import replace
+    from src.reetha_content_studio import content_package_fingerprint
+
+    package = _default_package()
+    drafts = list(package.drafts)
+    drafts[0] = replace(drafts[0], body=drafts[0].body + " Revised.")
+    changed = replace(package, drafts=tuple(drafts))
+
+    assert content_package_fingerprint(package) != content_package_fingerprint(changed)
+
+
+def test_content_audit_event_records_fingerprint_without_enabling_execution():
+    from src.reetha_content_studio import (
+        build_content_audit_event,
+        content_package_fingerprint,
+    )
+
+    package = _default_package()
+    created = build_content_audit_event(package, "package_created")
+    approved = build_content_audit_event(
+        package, "approval_changed", approved=True
+    )
+
+    assert created["event_type"] == "package_created"
+    assert created["content_fingerprint"] == content_package_fingerprint(package)
+    assert "approved" not in created
+    assert approved["approved"] is True
+    assert approved["content_fingerprint"] == created["content_fingerprint"]
+    assert created["external_execution_enabled"] is False
+    assert approved["external_execution_enabled"] is False
+
+
+def test_content_audit_event_rejects_invalid_event_shapes():
+    import pytest
+    from src.reetha_content_studio import build_content_audit_event
+
+    package = _default_package()
+
+    with pytest.raises(ValueError):
+        build_content_audit_event(package, "published")
+
+    with pytest.raises(ValueError):
+        build_content_audit_event(package, "approval_changed")
+
+    with pytest.raises(ValueError):
+        build_content_audit_event(
+            package, "package_created", approved=True
+        )
+

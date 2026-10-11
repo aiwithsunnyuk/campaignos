@@ -3,6 +3,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass, asdict, replace
 from typing import Any, Mapping
+import hashlib
+import json
 
 
 @dataclass(frozen=True)
@@ -57,6 +59,48 @@ def build_export_package(
         approval_required=not approved,
         external_execution_enabled=False,
     )
+
+
+
+def content_package_fingerprint(package: ContentPackage) -> str:
+    """Return a stable SHA-256 identity for the package's content."""
+    content = {
+        "campaign_name": package.campaign_name,
+        "objective": package.objective,
+        "audience": package.audience,
+        "offering": package.offering,
+        "drafts": [asdict(draft) for draft in package.drafts],
+    }
+    canonical = json.dumps(
+        content, sort_keys=True, ensure_ascii=False, separators=(",", ":")
+    )
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
+def build_content_audit_event(
+    package: ContentPackage,
+    event_type: str,
+    *,
+    approved: bool | None = None,
+) -> dict[str, Any]:
+    """Build a structured audit event without executing external actions."""
+    allowed_events = {"package_created", "approval_changed"}
+    if event_type not in allowed_events:
+        raise ValueError(f"Unsupported content audit event: {event_type}")
+
+    event: dict[str, Any] = {
+        "event_type": event_type,
+        "content_fingerprint": content_package_fingerprint(package),
+        "campaign_name": package.campaign_name,
+        "external_execution_enabled": False,
+    }
+    if event_type == "approval_changed":
+        if approved is None:
+            raise ValueError("Approval events require an explicit approved value.")
+        event["approved"] = approved
+    elif approved is not None:
+        raise ValueError("Creation events must not specify approval state.")
+    return event
 
 
 SUPPORTED_CHANNELS = ("Email", "WhatsApp", "LinkedIn")
