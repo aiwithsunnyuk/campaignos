@@ -257,3 +257,84 @@ def test_streamlit_content_studio_saves_successful_refinement(monkeypatch):
         "AI drafts generated" in item.value
         for item in app.success
     )
+
+
+def test_streamlit_content_studio_preserves_refinements_on_unchanged_brief(
+    monkeypatch,
+):
+    from streamlit.testing.v1 import AppTest
+    import src.reetha_ai_provider as ai_provider
+
+    class SuccessfulProvider:
+        def __init__(self):
+            self.calls = 0
+
+        def generate_text(self, prompt):
+            self.calls += 1
+            return f"Saved refinement {self.calls}"
+
+    provider = SuccessfulProvider()
+    monkeypatch.setattr(
+        ai_provider, "configured_provider", lambda: provider
+    )
+
+    app = AppTest.from_string(
+        "from src.reetha_content_studio import render_content_studio\n"
+        "render_content_studio()\n"
+    ).run()
+
+    app.checkbox(key="m137_use_ai").set_value(True).run()
+    app.button(key="m137_generate_ai").click().run()
+
+    before = list(app.session_state["m137_ai_drafts"])
+    signature_before = app.session_state["m137_brief_signature"]
+
+    # A plain rerun with the same brief must preserve saved refinements.
+    app.run()
+
+    assert not app.exception
+    assert app.session_state["m137_ai_drafts"] == before
+    assert app.session_state["m137_brief_signature"] == signature_before
+    assert provider.calls == 4
+
+
+def test_streamlit_content_studio_invalidates_refinements_when_brief_changes(
+    monkeypatch,
+):
+    from streamlit.testing.v1 import AppTest
+    import src.reetha_ai_provider as ai_provider
+
+    class SuccessfulProvider:
+        def __init__(self):
+            self.calls = 0
+
+        def generate_text(self, prompt):
+            self.calls += 1
+            return f"Old campaign refinement {self.calls}"
+
+    provider = SuccessfulProvider()
+    monkeypatch.setattr(
+        ai_provider, "configured_provider", lambda: provider
+    )
+
+    app = AppTest.from_string(
+        "from src.reetha_content_studio import render_content_studio\n"
+        "render_content_studio()\n"
+    ).run()
+
+    app.checkbox(key="m137_use_ai").set_value(True).run()
+    app.button(key="m137_generate_ai").click().run()
+
+    assert len(app.session_state["m137_ai_drafts"]) == 4
+
+    # Campaign name is the first text input in the current Content Studio UI.
+    app.text_input[0].set_value("New Campaign Name").run()
+
+    assert not app.exception
+    assert "m137_ai_drafts" not in app.session_state
+    assert "m137_brief_signature" not in app.session_state
+    assert provider.calls == 4
+    assert all(
+        "Old campaign refinement" not in item.value
+        for item in app.text_area
+    )
