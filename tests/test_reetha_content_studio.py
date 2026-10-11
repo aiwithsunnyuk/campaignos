@@ -434,3 +434,48 @@ def test_streamlit_content_studio_revokes_approval_when_all_channels_are_removed
 
     assert not app.exception
     assert app.session_state["m136_content_approval"] is False
+
+def test_streamlit_content_studio_allows_reapproval_after_edit():
+    from streamlit.testing.v1 import AppTest
+
+    app = AppTest.from_string(
+        "from src.reetha_content_studio import render_content_studio\n"
+        "render_content_studio()\n"
+    ).run()
+
+    app.checkbox(key="m136_content_approval").set_value(True).run()
+    assert app.session_state["m136_content_approval"] is True
+
+    original = app.text_area[0].value
+    app.text_area[0].set_value(original + " Revised for final review.").run()
+    assert app.session_state["m136_content_approval"] is False
+
+    app.checkbox(key="m136_content_approval").set_value(True).run()
+    assert app.session_state["m136_content_approval"] is True
+
+    app.run()
+    assert not app.exception
+    assert app.session_state["m136_content_approval"] is True
+
+
+def test_export_json_serialization_preserves_latest_content_and_safety():
+    import json
+    from dataclasses import replace
+    from src.reetha_content_studio import build_export_package
+
+    package = _default_package()
+    drafts = list(package.drafts)
+    drafts[0] = replace(
+        drafts[0],
+        title="Final reviewed title",
+        body="Final reviewed body",
+    )
+
+    exported = build_export_package(package, drafts, approved=True)
+    payload = json.loads(json.dumps(exported.to_dict(), ensure_ascii=False))
+
+    assert payload["drafts"][0]["title"] == "Final reviewed title"
+    assert payload["drafts"][0]["body"] == "Final reviewed body"
+    assert payload["approval_required"] is False
+    assert payload["external_execution_enabled"] is False
+
