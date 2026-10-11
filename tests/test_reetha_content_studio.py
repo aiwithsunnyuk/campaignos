@@ -178,3 +178,82 @@ def test_unexpected_provider_error_discards_partial_refinement():
     assert len(package.drafts) == 4
     assert package.approval_required is True
     assert package.external_execution_enabled is False
+
+
+def test_streamlit_content_studio_handles_provider_failure(monkeypatch):
+    from streamlit.testing.v1 import AppTest
+    import src.reetha_ai_provider as ai_provider
+    from src.reetha_ai_provider import ProviderRequestError
+
+    class FailingProvider:
+        def __init__(self):
+            self.calls = 0
+
+        def generate_text(self, prompt):
+            self.calls += 1
+            if self.calls == 2:
+                raise ProviderRequestError(
+                    "AI provider could not be reached or timed out."
+                )
+            return "Partial AI result"
+
+    provider = FailingProvider()
+    monkeypatch.setattr(
+        ai_provider, "configured_provider", lambda: provider
+    )
+
+    app = AppTest.from_string(
+        "from src.reetha_content_studio import render_content_studio\n"
+        "render_content_studio()\n"
+    ).run()
+
+    app.checkbox(key="m137_use_ai").set_value(True).run()
+    app.button(key="m137_generate_ai").click().run()
+
+    assert not app.exception
+    assert provider.calls == 2
+    assert any(
+        "AI refinement failed" in item.value
+        for item in app.error
+    )
+    assert "m137_ai_drafts" not in app.session_state
+    assert "m137_brief_signature" not in app.session_state
+    assert len(app.text_area) == 4
+    assert app.session_state["m136_content_approval"] is False
+
+
+def test_streamlit_content_studio_saves_successful_refinement(monkeypatch):
+    from streamlit.testing.v1 import AppTest
+    import src.reetha_ai_provider as ai_provider
+
+    class SuccessfulProvider:
+        def __init__(self):
+            self.calls = 0
+
+        def generate_text(self, prompt):
+            self.calls += 1
+            return f"Refined campaign copy {self.calls}"
+
+    provider = SuccessfulProvider()
+    monkeypatch.setattr(
+        ai_provider, "configured_provider", lambda: provider
+    )
+
+    app = AppTest.from_string(
+        "from src.reetha_content_studio import render_content_studio\n"
+        "render_content_studio()\n"
+    ).run()
+
+    app.checkbox(key="m137_use_ai").set_value(True).run()
+    app.button(key="m137_generate_ai").click().run()
+
+    assert not app.exception
+    assert provider.calls == 4
+    saved = app.session_state["m137_ai_drafts"]
+    assert len(saved) == 4
+    assert all(item["body"].startswith("Refined campaign copy ") for item in saved)
+    assert app.session_state["m137_brief_signature"]
+    assert any(
+        "AI drafts generated" in item.value
+        for item in app.success
+    )
