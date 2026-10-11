@@ -402,6 +402,9 @@ def render_content_studio() -> None:
     col1.metric("Content assets", len(package.drafts))
     col2.metric("Channels", len({draft.channel for draft in package.drafts}))
     if not package.drafts:
+        # Revoke approval when the content package becomes empty.
+        st.session_state["m136_content_approval"] = False
+        st.session_state.pop("m1386_content_signature", None)
         st.warning("Select at least one channel to generate drafts.")
         return
 

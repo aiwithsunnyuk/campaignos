@@ -419,7 +419,7 @@ def test_export_package_uses_latest_edited_drafts_and_preserves_governance():
     assert approved_export.to_dict()["external_execution_enabled"] is False
 
 
-def test_streamlit_content_studio_preserves_approval_when_content_is_unchanged():
+def test_streamlit_content_studio_revokes_approval_when_all_channels_are_removed():
     from streamlit.testing.v1 import AppTest
 
     app = AppTest.from_string(
@@ -430,7 +430,7 @@ def test_streamlit_content_studio_preserves_approval_when_content_is_unchanged()
     app.checkbox(key="m136_content_approval").set_value(True).run()
     assert app.session_state["m136_content_approval"] is True
 
-    app.run()
+    app.multiselect[0].set_value([]).run()
 
     assert not app.exception
-    assert app.session_state["m136_content_approval"] is True
+    assert app.session_state["m136_content_approval"] is False
